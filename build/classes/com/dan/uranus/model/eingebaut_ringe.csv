@@ -1,0 +1,14 @@
+name;a_km;width_min_km;width_max_km;ecc;incl_deg;tau_min;tau_max;dusty;discovered_year;discoverer
+ζ;39600;3500;3500;;;0.0045;0.0045;J;1986;Voyager 2 (als 1986U2R)
+6;41837;1.6;2.2;0.001;0.062;0.18;0.25;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+5;42234;1.9;4.9;0.0019;0.054;0.18;0.48;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+4;42570;2.4;4.4;0.0011;0.032;0.16;0.3;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+α;44718;4.8;10;0.0008;0.015;0.3;0.7;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+β;45661;6.1;11.4;0.004;0.005;0.2;0.35;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+η;47175;1.9;2.7;0;0.001;0.16;0.25;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+γ;47627;3.6;4.7;0.001;0.002;0.7;0.9;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+δ;48300;4.1;6.1;0;0.001;0.3;0.6;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+λ;50023;1;2;0;0;0.1;0.2;N;1986;Voyager 2
+ε;51149;19.7;96.4;0.0079;0;0.5;2.5;N;1977;Elliot, Dunham, Mink (Sternbedeckung, Kuiper Airborne Observatory)
+ν;67300;3800;3800;;;0.0000054;0.0000054;J;2003;Showalter, Lissauer (Hubble)
+μ;97700;17000;17000;;;0.0000085;0.0000085;J;2003;Showalter, Lissauer (Hubble)

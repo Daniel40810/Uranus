@@ -1,0 +1,39 @@
+Phase 7 — Spielwiese (ohne Verbindung)
+[ok]     IAS15: Keplerbahn e = 0,3 nach 1000 Umläufen wieder am Perizentrum — 6,7e-06 km daneben, 88934 Schritte (89 je Umlauf), 357 ms
+[ok]     IAS15: Energie auf 10⁻¹² erhalten — 2,2e-15
+[ok]     IAS15: rückwärts gerechnet wieder am Start — 8,1e-06 km
+[ok]     J2: Perizentrum am ε-Ring dreht wie die Formel (J4 und J2² ändern < 2 %) — 1,3724°/Tag gerechnet, Formel 1,3545°/Tag
+[ok]     Hauptmonde ohne Sonne: Energie über ein Jahr erhalten (mit J2, J4, gegenseitig) — -3,8e-16
+[ok]     „Heute, frei“ nach einem Jahr: Hauptmonde höchstens 1° neben der Ephemeride — größte Abweichung 0,14° (Oberon)
+[ok]     Gegen Horizons: ab J2000 nach 1000 Tagen alle Hauptmonde unter 2° — größte Abweichung 1,11° (Miranda); die Ephemeride selbst 1,53°
+[ok]     Miranda zerbricht beim ersten Durchgang an der Roche-Grenze — nach 0,32 d bei 63.297 km (Grenze 63.689 km)
+[ok]     … Trümmer: über 2000 gebundene Teilchen, Miranda ist weg — 2500 Teilchen
+[ok]     Cordelia (von Anfang an innerhalb ihrer Grenze) zerbricht nicht
+[ok]     Zusammenstoß: verschmelzen, Masse und Gesamtimpuls bleiben — A und B verschmelzen · Impuls ±2,8e-06
+[ok]     Sturz in Uranus: Körper verschwindet, Uranus wird schwerer — Stein stürzt in Uranus
+[ok]     Wer die Hill-Sphäre (70 Mio. km) verlässt, wird gemeldet und entfernt — Flüchtling verlässt die Hill-Sphäre
+[ok]     Rückgängig: Masse und Lage wie vor dem Eingriff — GM 226,9, Zeit 0,0 s
+[ok]     5 eingebaute Szenarien mit 15/15/15/16/14 Körpern — [HEUTE, TITANIA, MIRANDA, BESUCHER, GEDRAENGE] [15, 15, 15, 16, 14]
+[ok]     Schwere Titania: hundertfache Masse, sonst derselbe Stand — 3,40e+23 kg
+[ok]     Gedränge: nur innere Monde, Massen als geschätzt markiert
+[ok]     Speichern ohne Verlust: Szenario → Spielwiese → Szenario — 4,2e-09 km, 1,0e-15 km/s
+[ok]     Vorausschau trifft, wohin Oberon in 5 Tagen wirklich kommt — 3,96e-07 km
+[ok]     Tempo: „Heute, frei“ schafft über 100 Tage je Rechensekunde — 610 Tage je Sekunde hier im Prüfcontainer
+[ok]     Knopf „Spielwiese“: echter Stand, Uhr folgt der Spielzeit — true
+[ok]     Titania im Bild anklickbar
+[ok]     Mausrad über Titania: Masse ×√10 — ×3,1623
+[ok]     Beim Ziehen steht die Spielzeit
+[ok]     Ziehen und Loslassen: Titania liegt weiter draußen — 437.171 → 3.224.065 km
+[ok]     Umschalt + Ziehen setzt einen Gast — Gast 1
+[ok]     Rückgängig nimmt den Gast wieder weg
+[ok]     Speichern erzeugt ein eigenes Szenario — Eigen · 23.09. 08:15
+[ok]     Szenario starten: Tempo aus dem Szenario
+[ok]     „Zurück“: Ephemeride, Uhr und Tempo wie vor der Spielwiese — 0,0000
+[ok]     Während der Spielwiese startet keine Geschichte
+[ok]     09_scenarios.sql: 5 Szenarien, 75 Körper — 5 / 75
+[ok]     Schema: URA_SCENARIO, URA_SCENARIO_BODY, Dichte nur ohne gemessene Masse
+[ok]     URA_API 1.2: scenarios, scenario_bodies, energy, put_/drop_scenario
+[ok]     00_drop räumt Szenarien und ihre Sequenzen mit ab
+[ok]     03_bodies.sql: 24 Monde mit angenommener Dichte 1,3 — 24
+
+Ergebnis: 36 ok, 0 Fehler

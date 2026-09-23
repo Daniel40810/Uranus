@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://16ad2b77-ba08-4c53-b579-89719d14f14d.frame.claudeusercontent.com/_f/1790147814-6b24/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.Kiow93e4.js","assets":"assets.DOAjpBS9.js","comments":"comments.DrhK3r8W.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.DcZf-TSv.js","endpoints":"endpoints.BPfoKaE1.js","mcp":"mcp.C8qKIFvQ.js","network":"network.B5UA9Su4.js","permissions":"permissions.DWFFeHI0.js","room":"room.BF1j0KPr.js","sample":"sample.C7KQQdQj.js","self":"artifact.Kiow93e4.js","user":"user.CCh6oTS_.js"},"transforms":"_transforms.CkRgqq9F.js","comments":"_comments.DUaNQZcg.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.CqNtBrkk.js"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </script><script>(function(){"use strict";function sr(t){return t==="cookie"||t==="query"?t:void 0}var Kn=3e5;function ir(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var lr=["light","dark","system"],cr=/^[A-Za-z0-9_-]{1,64}$/,St=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,ur=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function fr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||ur.has(e)}var At="data-ldx-props";function dr(t,e){if(e.toLowerCase()===At)return!0;const r=t.getAttribute(At);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var Gn="http://www.w3.org/1999/xhtml",hr="http://www.w3.org/2000/svg",pr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),mr=new Set(["script","style"]);function vr(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!pr.has(e):t.namespaceURI===hr?!mr.has(e):!1}function Ve(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function _r(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&Ve(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&Ve(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function yr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:c,s:d}=_r(n,e);c===a&&d===0&&a===s||r.replaceData(c,a-c-d,e.slice(c,s-d));const O=r.data,w=t.ownerDocument.getSelection?.()??null,b=w!==null&&w.rangeCount>0&&(w.anchorNode===r||w.focusNode===r)?{anchor:w.anchorNode,anchorOffset:w.anchorOffset,focus:w.focusNode,focusOffset:w.focusOffset}:null;let m=-1,R=-1;for(let h=0;h<O.length&&h<e.length;h++){const p=O.charCodeAt(h),D=e.charCodeAt(h);p!==D&&Ve(p,D)&&(m<0&&(m=h),R=h)}const M=m>=0;if(M&&r.replaceData(m,R-m+1,e.slice(m,R+1)),M&&b!==null&&b.anchor!==null&&b.focus!==null)try{w.setBaseAndExtent(b.anchor,b.anchorOffset,b.focus,b.focusOffset)}catch{}}var gr=new Set(["html","head","body","frameset"]);function wr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&gr.has(t.localName)}function br(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!cr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!St.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!St.test(r))return!1}return!0}function Er(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function Sr(t){return t===null||typeof t!="object"?!1:Er(t.__frame_patch,br)}function Ar(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function kr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Rr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Tr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&lr.includes(r)}var Lr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Or=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Mr(t){return typeof t=="string"&&Or.includes(t)?t:"other"}var Pr=Object.freeze({until:null,now:!1}),Nr="__claude_hot",Cr="__claude_hot_in",jr=/^__claude_hot(?:_in)?(?::|$)/,kt=/^[0-9a-z]{1,32}$/,Xe=t=>t===void 0?Nr:"__claude_hot:"+t,be=t=>t===void 0?Cr:"__claude_hot_in:"+t;function Fr(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&jr.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Ir(t){let e=null;try{e=q(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!kt.test(e.k)?null:le(e.g)?{k:e.k,g:e.g}:{k:e.k}}var zn=262144,Dr=3e3,xr=5e3,Rt=/^[a-z0-9._:-]{1,64}$/,Hr=["none","hot-restart","hard-reload"],qr=["asset","doc","added","removed"],Br=1500,Ur=/^[0-9a-f]{64}$/;function q(t){return t!==null&&typeof t=="object"?t:null}function le(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Tt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Kr(t){return t===void 0||typeof t=="string"&&Rt.test(t)}function Lt(t){const e=q(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function Ye(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Tt(e.seq)&&typeof e.handoff=="string"&&Lr.includes(e.handoff)&&Kr(e.note)}function Gr(t){const e=q(t);return e!==null&&le(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||Ye(e.from))}function zr(t){const e=q(t);return e!==null&&e.kv===1&&le(e.gen)&&Ye(e.from)&&Object.hasOwn(e,"data")}function $r(t){const e=q(t);return e!==null&&e.__frame_hot_snapshot===!0&&le(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Lt(e.deadline))&&Tt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Wr(t){const e=q(t);return e!==null&&e.__frame_hot_start===!0&&le(e.gen)&&Ye(e.from)}function Vr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Ot(t){return q(t)!==null&&!Array.isArray(t)}function Xr(t){const e=q(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Vr(e.ver)&&(e.grant===void 0||Ot(e.grant))&&(e.budgets===void 0||Ot(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||le(e.brokerGen))}function Yr(t){const e=q(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||le(e.brokerGen))}function Mt(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function Pt(t){if(t==null||typeof t=="string")return!0;const e=q(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Jr(t){const e=q(t);return e!==null&&typeof e.path=="string"&&qr.includes(e.kind)&&Pt(e.from)&&Pt(e.to)}function Zr(t){return t===null?null:Object.freeze(t.filter(Jr))}function Qr(t){const e=q(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&Mt(e.from)&&Mt(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Hr.includes(e.required)&&Lt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Ur.test(e.preflight))}var ce=/^[\w.-]+\.js$/;function en(t,e,r){return r?"inert":typeof e=="string"&&ce.test(e)?t?[e]:"inert":t?"inert":"framed"}var Nt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function Ct(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=Xe(e?.k),a=be(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{Fr(r,a)}catch{}let c=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const d=JSON.parse(s);zr(d)&&(e===null||d.gen===e.g)&&(c=d)}catch{}if(c===null)try{r.removeItem(a)}catch{}return c}function jt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var tn=/^[^/\\?#]{1,128}$/,Ft=t=>tn.test(t)&&t!=="."&&t!=="..";function It(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!Ft(r))return null;const s=n.search.slice(1).split("&").filter(c=>!/^__frame_t(?:=|$)/.test(c)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var Fe="{}";function Ee(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Dt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function xt(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function rn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,c=queueMicrotask,d=performance.now.bind(performance),O=new TextEncoder;let w=null,b=null;try{w=history,b=w.replaceState.bind(w)}catch{}const m=(...o)=>{try{console.warn(...o)}catch{}};let R=jt(),M=null;try{M=sessionStorage}catch{}const h={storage:M,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:R,key:n?.k};let p=n?.k;const D=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(d()),16);let _=e?.data??{},C=Ee(e?.from),P=e?.gen??0,x=e!==null,W=!1,J=!1,X=null,Te=!1;const Le=new AbortController;let Oe=null,H=null,me=null,qe=!1,oe=()=>{};const l=new Promise(o=>{oe=o});let v=!1,E=!1,I=!1,j,L=null,K=!1,Me=!1,Z=!1,Be=!1,ae=!1,de=!1;const Pe=o=>{for(const u of[Xe(o),be(o)])try{M?.removeItem(u)}catch{}},V=(o,u)=>{try{u!==null&&r.post(o,u)}catch{}},se=()=>ae||=Z&&(H===null||Be),B=()=>{const o={__frame_hot:!0,ready:H!==null,accept:me!==null,demand:!0};de=!ae,de&&(o.booting=!0),v&&(o.readData=!0),I&&(o.threw=!0),L?.assess&&(o.preflight=!0),V(o,X)};let ve=!1,Ne=!1,ie=!1,Ce=!1;const i=()=>{ve||!Te||ie||(ve=!0,V({__frame_reveal_hold:!0},"*"))},g=()=>new Promise(o=>{let u,f=0;const S=F=>{if(u===void 0)u=F;else if(F!==u||++f>=8){o();return}try{D(S)}catch{o()}};try{D(S)}catch{o()}}),y=()=>{ie=!0,V({__frame_reveal_ready:!0},"*")},k=o=>{Ne||(Ne=!0,o.then(u=>{if(u===!1)return;let f=null;try{f=L?.settle?.()??null}catch{}return(f===null?g():new Promise(S=>{a(S,50),Promise.resolve(f).then(S,S)}).then(g)).then(y)}))},Q=()=>{if(Ce||!ie)return;Ce=!0;const o=()=>{try{L?.afterReveal?.()}catch{}};o(),g().then(()=>{o(),y()})},G=(o=!1)=>{if(qe||H===null||!x||!J)return;qe=!0;const u=H,f=_;c(()=>{let S;try{S=u(f)}catch(U){throw oe(!1),U}let F=!1;try{F=typeof S?.then=="function"}catch{}if(!F){oe(!0);return}Promise.resolve(S).then(()=>oe(!0),U=>{oe(!1),c(()=>{throw U})})}),k(o?l:r.dcl.then(()=>l))},ee=o=>typeof o=="string"&&Rt.test(o)?o:void 0,dt=o=>{const u={__frame_hot_restart:!0},f=ee(o?.note);f!==void 0&&(u.note=f),o?.required==="hard-reload"&&(u.required="hard-reload"),V(u,X)},Zt=Object.freeze({get data(){return J||(E=!0),!x&&!v&&(v=!0,J&&B()),_},get from(){return C},get gen(){return P},signal:Le.signal,snapshot(o){typeof o=="function"&&(Oe=o)},ready(o){typeof o!="function"||H!==null||(H=o,i(),B(),W&&V({__frame_hot_ready:!0,gen:P},X),G())},accept(o){typeof o=="function"&&(me=o,B())},restart(o){const u={note:o?.note,required:o?.required};if(J){dt(u);return}const f=j;j={note:ee(f?.note)??u.note,required:f?.required==="hard-reload"||u.required==="hard-reload"?"hard-reload":void 0}}});let Ue=null,Qt=()=>{};const Fn=new Promise(o=>{Qt=o});let In=null;const er=()=>In??=r.dcl.then(()=>{let o=!1;try{o=Ue!==null&&Ue.expect()}catch{}if(!o)return;const u=Ue.maxMs;return new Promise(f=>{Fn.then(f),a(f,u)})}),tr=()=>{if(!K||Me||L===null)return;Me=!0;const o=L;er().then(()=>{try{ie||o.afterStart(xt(e),!1)}catch{}})},rr=o=>{e!==null&&E&&(v=!0),_={},C=null,P=0;try{M?.removeItem(be(n?.k))}catch{}e!==null&&!o&&k(r.dcl.then(()=>H!==null?l:void 0))},Dn=()=>{K=!0,k(er().then(()=>H!==null?l:void 0)),tr()};try{addEventListener("error",()=>{I||H!==null||(I=!0,B())})}catch{}const nr=()=>{a(()=>{!ae&&se()&&de&&B()},0)};try{Z=document.readyState==="complete",Z||addEventListener("load",()=>{Z=!0,nr()},{once:!0})}catch{Z=!0}se(),l.then(()=>{Be=!0,nr()});let he=-1,ht,pt,je=!0,mt=!1,vt,Ke=null;const _t=o=>{const u=Ke===null;Ke=je&&o[0]!=="withheld"?o:["withheld",o[1],Fe];let f=o[0];if(je&&f!=="withheld"){const F={ver:R,handoff:f};ht!==void 0&&(F.seq=ht),pt!==void 0&&(F.note=pt);try{if(M===null)throw new Error("no storage");M.setItem(Xe(p),'{"kv":1,"gen":'+he+',"from":'+JSON.stringify(F)+(vt!==void 0?',"k":'+JSON.stringify(vt):"")+',"data":'+(f==="ok"?o[2]:Fe)+"}")}catch{f="unavailable"}}else{f="withheld",Pe(p);try{L?.release?.()}catch{}}const S={__frame_hot_snapshotted:!0,gen:he,handoff:f,bytes:o[1]};o[3]!==void 0&&(S.errName=o[3]),V(S,X),u&&(f==="snapshot_error"||f==="unclonable"||f==="oversize")&&m("claude.hot: snapshot",f,o[3])},_e=o=>{try{return Mr(o?.name)}catch{return"other"}},ye=(o,u,f=0)=>_t(u===void 0?[o,f,Fe]:[o,f,Fe,_e(u)]),xn=o=>{if(o.gen<=he)return;const u=he>=0;if(he=o.gen,ht=o.seq,pt=ee(o.note),typeof o.key=="string"&&kt.test(o.key)&&o.key!==p&&(Pe(p),p=o.key),je&&=o.handoff!==!1,u){Ke!==null?_t(Ke):mt&&V({__frame_hot_held:!0,gen:he},X);return}Le.abort();const f=Object.freeze({handoff:je,timeoutMs:o.timeoutMs,deadline:o.deadline??Pr}),S=Oe,F=()=>{if(je)try{vt=L?.capture()}catch{}if(S===null){ye("empty");return}let T=!1;const z=a(()=>{T||(T=!0,ye("snapshot_timeout"))},Math.max(0,f.timeoutMs));Promise.resolve().then(()=>S(f)).then(ge=>{if(T)return;T=!0,s(z);let re;try{re=JSON.stringify(ge)}catch(yt){ye("unclonable",yt);return}if(typeof re!="string"){ye("unclonable");return}let ne=re.length;try{ne=O.encode(re).length}catch{}if(ne>262144){ye("oversize",void 0,ne);return}_t(["ok",ne,re])},ge=>{T||(T=!0,s(z),ye("snapshot_error",ge))})};let U=null;try{U=L?.holdForIme()??null}catch{}if(U===null)F();else{mt=!0,V({__frame_hot_held:!0,gen:he},X);const T=()=>{mt=!1,F()};U.then(T,T)}},Hn=o=>{if(!W||x||H===null||o.gen!==P)return;let u=null;try{u=Ct(M,n&&{k:n.k,g:o.gen})}catch{}if(u!==null&&u.gen!==o.gen){u=null;try{M?.removeItem(be(n?.k))}catch{}}_=u?.data??{},C=Dt(Ee(u?.from??o.from),Ee(o.from)),u!==null&&(P=u.gen),x=!0,W=!1;const f=xt(u);l.then(S=>{try{S&&L?.afterStart(f,!0)}catch{}}),G(!0)};let Ge=0;const qn=o=>{const u=me;if(u===null||o.id<=Ge)return;Ge=o.id;const f=L?.assess;if(o.preflight===void 0||f===void 0){or(o,u);return}let S=!1;const F=z=>{S||(S=!0,s(T),o.id===Ge&&or(o,u,z))},U=()=>F(f.timeout(o)),T=a(U,Br+100);f.run(o,window).then(F,U)},or=(o,u,f)=>{let S,F=!1,U=!1,T,z,ge=null;const re=A=>{if(U)return!1;if(T!==void 0&&T!==A)return m(`claude.hot: u.${A}() ignored - u.${T}() was called first`),!1;const te=T===void 0;return T=A,te},ne=A=>{T="restart",m(`claude.hot: ${A} - restarting`)},yt=()=>{if(!re("adopt")||o.id!==Ge)return;const A=o.to.ver;if(ze.required!=="none"){ne(`u.adopt() needs required 'none', it is '${ze.required}'`);return}if(!Ft(A)){ne("u.adopt() cannot address this version");return}if(!R||A===R)return;const te=R,Y=h.entry;let $e="",wt,we=null,We;try{$e=location.href,wt=w.state,we=It($e,te,A),we!==null&&(b(wt,"",we),location.pathname.startsWith("/_f/"+A+"/")?we=location.href:We="navigate event canceled")}catch(Et){We=_e(Et)}if(We!==void 0){z="adopt_failed",ne(`adopt_failed ${We}; URL not changed`);return}we===null?(z="adopt_skipped",m(`claude.hot: adopt_skipped - page already left /_f/${te}/; URL not changed, update still applied`)):z="adopted",R=h.ver=A;try{h.entry=It(Y,te,A)??Y}catch{}const bt=we;ge=()=>{if(R===A){if(bt!==null)try{if(location.href!==bt)m("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(b(wt,"",$e),location.href!==$e){m("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",m("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(Et){m(`claude.hot: adopt_revert_failed ${_e(Et)} - URL still at the new version`);return}R=h.ver=te,h.entry=Y,bt===null&&(z=void 0)}}},ze=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:Zr(o.changed),required:o.required,deadline:o.deadline,adopt:yt,defer(){return re("defer")&&ze.deadline.now&&ne("u.defer() past the deadline"),Nt},restart(A){return re("restart"),T==="restart"&&!U&&(S??=ee(A?.note),F||=A?.required==="hard-reload"),Nt},...f?.update}),Bn=(A,te)=>{U=!0,A==="threw"?(ge?.(),S??=_e(te).toLowerCase()):T===void 0&&m(A==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const Y={__frame_hot_verdict:!0,id:o.id};Y.verdict=A==="threw"||T===void 0||T==="restart"?"restart":T==="adopt"?"applied":"deferred",Y.verdict==="restart"&&(F&&(Y.required="hard-reload"),S!==void 0&&(Y.note=S)),z!==void 0&&(Y.verdict==="applied"||z!=="adopted")&&(Y.adopt=z),V(Object.assign(Y,f?.verdict),X)};let ar=!1;const gt=(A,te)=>ar?!1:(ar=!0,s(Un),Bn(A,te),!0),Un=a(()=>gt("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>u(ze)).then(()=>gt("settled"),A=>{!gt("threw",A)&&T==="adopt"&&dt({note:_e(A).toLowerCase()}),m("claude.hot: accept",_e(A))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:Zt,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:Zt,boot:h,afterConnect(){Te=!0,(e!==null||H!==null)&&i()},onInit(o,u){X=u,J=!0;const f=Gr(o)?o:null;f?.phase==="final"&&e!==null&&e.gen===f.gen?(x=!0,C=Dt(C,Ee(f.from)),Dn()):(W=f?.phase==="pending",rr(W),x=!W,P=f?.gen??0,C=Ee(f?.from)),B(),de&&a(()=>{ae||(ae=!0,B())},xr),W&&H!==null&&V({__frame_hot_ready:!0,gen:P},u),j!==void 0&&(dt(j),j=void 0),G()},onNoInit(){J=!0,rr(!1),x=!0,G()},onShell(o){return o?.__frame_revealed===!0?(Q(),!1):$r(o)?(xn(o),!0):Wr(o)?(Hn(o),!0):Qr(o)?(qn(o),!0):!1},attachExtras(o){L=o,tr(),o.assess&&B()},inSlot:()=>be(p),hydration(o,u){Ue??={expect:o,maxMs:u}},hydrated(){Qt()},carried(){return x?_:{}},presented:()=>ie}}var $n="frame_ldx_runtime",nn="frame_ldx_build",Wn="script#an-form",on=256;function Ht(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=on&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Je(t,e,r){try{const n=t[e];if(typeof n!="function")return;t[e]=function(...a){const s=n.apply(this,a);try{r(this)}catch{}return s}}catch{}}var Ze;function an(){if(Ze)return Ze;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};Ze=t;const e=window.HTMLMediaElement?.prototype;e&&(Je(e,"play",a=>{Ht(t.media,a,s=>s.paused),t.onStart?.(a)}),Je(e,"pause",a=>t.onPause?.(a)));const r=window.AudioContext,n=window.AudioNode?.prototype;return r&&n&&Je(n,"connect",a=>{const s=a.context;s instanceof r&&(Ht(t.contexts,s,c=>c.state==="closed"),t.onStart?.(s))}),t}function sn(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function ln(){let t=null;const e=()=>t??parent,r=n=>t?n===t:sn(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let c=0;c<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));c++)s=s.parent},on(n){const a=s=>{const c=s.source;r(c)&&n(s.data,s.origin,s.isTrusted,()=>{t??=c})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const c=d=>{r(d.source)&&d.origin===n&&a(d.data,d)};return addEventListener("message",c,s),()=>removeEventListener("message",c,s)}})}}function cn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var un=500,fn=2e4,dn="data-token-reads",hn="data-frame-refused-watch",pn="data-frame-unsupported",mn=/(?:^|\s)stylesheet(?:\s|$)/i;function vn(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&mn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function _n(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(hn,"");const a=location.href,s=fetch,c=setTimeout,d={method:"HEAD",cache:"no-store",credentials:"same-origin"},O=h=>h.ok||h.status===304;let w=!1,b=!1;const m=()=>removeEventListener("error",M,!0),R=async h=>{const p=await s(h,d);if(O(p))b=!0;else if(p.status===403){const D=await s(a,d);if(O(D)){const _=(await s(h,d)).status;_===403?(b=!0,document.documentElement.setAttribute(pn,""),r()):_<500&&(b=!0)}else D.status>=400&&D.status<500&&(b=!0)}},M=h=>{if(b||w)return;if(document.documentElement.hasAttribute(dn)){b=!0,m();return}const p=vn(h.target,n);p&&(w=!0,c(()=>{R(p).catch(()=>{}).finally(()=>{w=!1,b&&m()})},un))};addEventListener("error",M,!0),addEventListener("load",m,{once:!0}),c(m,fn)}var Qe="__frame_scroll",yn=150,gn=310,wn=160,bn=3e4;function En(){let t=0,e=!1,r=!1,n=!1,a=0,s=null;const c=_=>{try{sessionStorage.setItem(Qe,JSON.stringify({y:_}))}catch{}},d=()=>{if(clearTimeout(t),s===null)return;const _=s;s=null,c(_)},O=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(d,yn)};try{addEventListener("scroll",O,{passive:!0}),addEventListener("pagehide",d)}catch{}const w=()=>{let _;try{_=sessionStorage.getItem(Qe)}catch{return null}if(_===null)return null;let C;try{C=JSON.parse(_)}catch{C=null}const P=C?.y;if(!(typeof P=="number"&&Number.isFinite(P)&&P>=0)){try{sessionStorage.removeItem(Qe)}catch{}return null}return P};let b=!1;const m=_=>{try{const C=scrollY;scrollTo({top:_,left:0,behavior:"instant"}),a=_,n=!0,clearTimeout(t),s=null,c(_);const P=scrollY;P!==C&&(e=!0),P!==_&&!b&&(b=!0,addEventListener("load",()=>{try{if(scrollY===P){const x=w();m(x!==null?x:a)}}catch{}},{once:!0}))}catch{}},R=()=>{try{return!!location.hash}catch{return!0}};let M=!1;const h=()=>{try{if(M||innerWidth>gn||innerHeight>wn)return;M=!0;const _=Date.now(),C=()=>{try{removeEventListener("resize",C)}catch{}if(Date.now()-_>bn||r||R())return;const P=w();m(P!==null?P:a)};addEventListener("resize",C)}catch{}};let p=!1,D=!1;return{restore(){if(p||(p=!0,R()))return;const _=w();_!==null&&(m(_),h())},promoted(){if(D||(D=!0,R()))return;const _=w();_!==null?(m(_),h()):n&&m(a)}}}function Sn(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:O=>O})??null}catch{}const s=window.Worker,c=s?.prototype,d=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(O=>O?.bootTopLevel?O.bootTopLevel(d,n):n.settle()).catch(()=>n.settle())}var Vn="modulepreload",Xn=function(t){return"/"+t},Yn={},An=function(e,r,n){let a=Promise.resolve();function s(c){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=c,window.dispatchEvent(d),!d.defaultPrevented)throw c}return a.then(c=>{for(const d of c||[])d.status==="rejected"&&s(d.reason);return e().catch(s)})},kn=window===top,qt=Object.getOwnPropertyDescriptor(window,"claude"),Ie=en(kn,window.__FRAME_PREAMBLE?.topLevel,qt?.writable===!1),et=typeof Ie=="object"&&Ie[0],N=et?cn():ln();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&Ie==="framed")try{N.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Bt=1e4,Rn=2e3,tt=2e3,rt=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Ut(t){for(const e of rt)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Se=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ae=window.__FRAME_PREAMBLE?.transforms,nt=window.__FRAME_PREAMBLE?.comments,ot=window.__FRAME_PREAMBLE?.translate,ke=window.__FRAME_PREAMBLE?.ldx,at=sr(window.__FRAME_PREAMBLE?.cred);function Kt(t){return An(()=>import("/_runtime/"+t),void 0)}var Re=new Set,Gt=setTimeout,Tn=fetch,Ln=AbortController,On=800+800*Math.random(),Mn=3e3,De=null,zt=new Map;function Pn(t,e){let r=zt.get(t);return r||zt.set(t,r=Nn(t,e)),r}function Nn(t,e){if(De?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new Ln;let n=!1;return Gt(()=>{n=!0,r.abort()},Mn),Tn("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":De?.has(t)?"csp":"net")}function ue(t){if(!De){const e=De=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Kt(t).catch(()=>new Promise(e=>Gt(e,On)).then(()=>Kt(t+"?r=1")).then(e=>(e!==void 0&&Re.add(t),e)))}function $t(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:ft,hooks:xe,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(c){return Promise.reject(c)}}})}}var pe=null,$=null;function Wt(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var st=!1,xe={editBefore:null,edit:null};function Cn(t,e,r=!1){const n=[];let a;if(r)try{xe.editBefore?.(t)}catch{}for(const s of t.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(d=>!fr(d)||dr(c,d))){a=s.target;break}if(s.text!==void 0&&(!vr(c)||wr(c))){a=s.target;break}for(const[d,O]of Object.entries(s.attrsSet??{}))if(!Xt(c,d)){try{c.setAttribute(d,O)}catch{}Vt(c,d,O)}for(const d of s.attrsRemoved??[])Xt(c,d)||(c.removeAttribute(d),Vt(c,d,null));typeof s.text=="string"&&yr(c,s.text),n.push(s.target)}if(r)try{xe.edit?.(t.seq,n,a)}catch{}if(a!==void 0){N.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function Vt(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function Xt(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function Yt(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,st=!0):st&&(delete e.dataset.theme,e.style.colorScheme="",st=!1)}var fe=new Map,it=null;function lt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function He(t,e){t.nulled=!0,t.ver=e,t.r(null)}function ct(t,e){for(const[r,n]of fe)n.done||(e&&n.asked?e(r,n):He(n,t))}var jn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),ut=!1,ft=(t,e)=>{let r=fe.get(t);if(r?.nulled&&ut)r=lt(),fe.set(t,r);else if(!r||r.done){r?.nulled&&$&&N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},$);return}const n=typeof e=="function"?Object.setPrototypeOf(e,jn):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function Jt(){const t=qt?.value??{};Wt(window,"claude",t);for(const e of Object.keys(Se)){if(t[e]!==void 0){Wt(t,e,t[e]);continue}fe.set(e,lt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Se,r))return Promise.resolve(null);let n=fe.get(r);return n?(it&&(n.nulled||n.want!==void 0)&&(n=it(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(Ie==="framed"){let t;const e=Ae&&ce.test(Ae)?ue(Ae).catch(l=>{t={f:Ae,e:l}}):Promise.resolve(void 0),r=l=>{if(l.type==="auxclick"&&l.button!==1)return;const v=l.target,E=v&&v.closest?v.closest("a[href],area[href]"):null;if(!E)return;const I=E.getAttribute("href");if(!I)return;let j;try{j=new URL(I,document.baseURI)}catch{return}if((j.protocol==="http:"||j.protocol==="https:")&&j.origin!==location.origin){l.preventDefault();const L=(E.getAttribute("target")??"").toLowerCase(),K=l.type==="auxclick"||l.metaKey||l.ctrlKey||l.shiftKey||l.altKey||!["","_self","_top","_parent"].includes(L);N.post({__frame_nav:!0,url:j.href,newTab:K},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=l=>{l.isTrusted&&(n.pointer=!0)},s=l=>{l.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const c={cb:null};addEventListener("keydown",l=>c.cb?.(l),!0);const d={cb:null};addEventListener("keydown",l=>d.cb?.(l));const O=an();e.then(l=>l?.installEscapeForward?.(c,v=>{$&&N.post(v,$)})),e.then(l=>{try{l?.installFocusKeep?.()}catch{}}),e.then(l=>{if(!l?.wireNav)return;const v=N.port("*");l.wireNav(v),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),l.wireEngagement?.(n,v,O)});let w=null;try{w=En()}catch{}const b=document.readyState==="loading"?new Promise(l=>document.addEventListener("DOMContentLoaded",()=>l(),{once:!0})):Promise.resolve();let m=null,R=null;try{R=Ir(window.name),m=Ct(null,R)}catch{}const M=Jt();let h=null;try{h=rn(M,m,{post:(l,v)=>N.post(l,v),dcl:b},R)}catch{}e.then(l=>{try{h&&l?.installHotExtras?.(h)}catch{}});let p=null;const D=()=>Array.isArray(p?.flags)&&p.flags.includes("frame_ldx_runtime")&&!!ke&&ce.test(ke)&&document.querySelector("script#an-form")!==null;try{h?.hydration(D,Dr)}catch{}let _=null,C=0;const P=N.on((l,v,E,I)=>{Ut(v)&&Ar(l)&&(I(),p=l.__frame_init,$=v,P(),clearTimeout(C),_?.())});if(at)for(const l of rt)try{l.endsWith(":*")||N.post({__frame_cred:at},l)}catch{}N.post({__frame_connect:!0},"*");try{h?.afterConnect()}catch{}const x=setTimeout,W=clearTimeout;let J=()=>NaN,X=()=>[];try{J=performance.now.bind(performance),X=performance.getEntriesByType.bind(performance)}catch{}let Te=0;const Le=()=>{try{N.post({__frame_alive:!0},"*")}catch{}Te=x(Le,Rn)},Oe=()=>W(Te);Le(),addEventListener("load",Oe,{once:!0});const H=new Promise(l=>{_=l,C=setTimeout(()=>{P(),l()},Bt)}),me=new WeakSet;addEventListener("error",l=>{l.target&&me.add(l.target)},!0);try{_n(jt(),at,()=>{e.then(l=>{try{l?.drawRefusedNotice?.()}catch{}})})}catch{}const qe=()=>{let l=[];try{l=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(E=>!E.sheet&&!E.disabled&&!me.has(E)&&E.getAttribute("href")&&URL.canParse(E.href)&&(!E.media||matchMedia(E.media).matches))}catch{}let v=l.length;return v===0?Promise.resolve():new Promise(E=>{try{const I=tt-J(),j=x(E,I>0?I<tt?I:tt:0),L=()=>{--v===0&&(W(j),E())};for(const K of l)K.addEventListener("load",L,{once:!0}),K.addEventListener("error",L,{once:!0})}catch{E()}})};b.then(()=>{try{w?.restore()}catch{}}),Promise.all([H,b,e]).then(([,,l])=>{if(p?.hostOverlays!==!0||!$)return;let v=!1;try{v=l?.declaresCover?.()===!0}catch{}N.post({__frame_layout:{cover:v}},$)});const oe={cb:null};N.on((l,v)=>{if(Ut(v)&&kr(l)){try{w?.promoted()}catch{}oe.cb?.()}}),H.then(async()=>{if(!p||!$){ct();try{h?.onNoInit()}catch{}return}if(Yt(p.theme),p.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,O)),p.hostKeys!==void 0){const i=$,g=p.hostKeys;e.then(y=>y?.installHostKeyForward?.(d,g,k=>N.post(k,i)))}try{h?.onInit(p.hot,$)}catch{}const l=$,v=N.port(l),E=(i,g)=>N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:g}},l),I=(i,g,y)=>{new Promise(k=>k(Pn(g,y))).then(k=>E(i,k),()=>E(i))},j=i=>N.post({__frame_cap_recovered:{cap:i}},l);let L=p.brokerGen;const K=()=>h?.boot.ver??"",Me=K(),Z=(i,g)=>{const y=K();W(g.t),g.want=y,g.t=x(()=>{g.done||He(g,y)},Bt),N.post({__frame_cap_want:!0,cap:i,ver:y},l)},Be=(i,g)=>{const y=fe.get(i.cap),k=Se[i.cap];if(!g||!y||y.done||y.want!==i.ver||!ce.test(k))return;if(W(y.t),y.want=void 0,L=i.brokerGen??L,i.ver!==K()){Z(i.cap,y);return}if(!i.grant||i.cap==="network"){He(y,i.ver);return}const Q=pe,G=pe={...Q,capabilities:{...Q.capabilities,[i.cap]:i.grant},capBudgets:{...Q.capBudgets,[i.cap]:{...Q.capBudgets[i.cap],...i.budgets}}};ue(k).then(ee=>{Re.has(k)&&j(i.cap),G.brokerGen=L,ut=!0;try{ee?.install?.(G)}catch{E(i.cap,"install")}finally{ut=!1}},ee=>I(i.cap,k,ee)).then(()=>{y.done||He(y,i.ver)})};let ae=!1,de=!1;N.on((i,g,y)=>{if(g!==l)return;try{if(h?.onShell(i))return}catch{}if(Tr(i)&&Yt(i.__frame_theme.theme),Xr(i)&&Be(i,y),y&&Yr(i)&&(L=i.brokerGen??L),Rr(i)){const G=i.__frame_host_visible.visible;e.then(ee=>ee?.applyHostVisible?.(G,O))}Sr(i)&&Cn(i.__frame_patch,l,y);const k=i?.__fc_mode;k&&typeof k=="object"&&!ae&&nt&&ce.test(nt)&&(ae=!0,ue(nt).then(G=>G.install?.(l,k.on===!0,v)).catch(()=>{}));const Q=i?.__ft_cmd;Q&&typeof Q=="object"&&!de&&ot&&ce.test(ot)&&(de=!0,ue(ot).then(G=>G.install?.(l,Q,v)).catch(()=>{}))});const Pe=Object.keys(p.capabilities??{}).filter(i=>Object.hasOwn(Se,i)).map(i=>[i,Se[i]]).filter(i=>typeof i[1]=="string"&&ce.test(i[1])),V=await Promise.allSettled(Pe.map(([,i])=>ue(i))),se=await e,B=l;if(se?.buildBoot||(t?I("_transforms",t.f,t.e):E("_transforms")),se?.buildBoot)try{pe=se.buildBoot(p,se.TRANSFORMS??{},{shellOrigin:B,mount:ft,hooks:xe,shell:v},i=>N.post({__frame_cap_telemetry:i},B))}catch{E("_transforms","install"),pe=$t(p,B,v)}else pe=$t(p,B,v);se?.buildBoot&&Re.has(Ae??"")&&j("_transforms");const ve=pe;ve.brokerGen=L,V.forEach((i,g)=>{const[y,k]=Pe[g];if(i.status!=="fulfilled"){I(y,k,i.reason);return}Re.has(k)&&j(y);try{i.value?.install?.(ve)}catch{E(y,"install")}});const Ne=p.capWants===!0;Ne&&(it=(i,g)=>{const y=K();if(!y)return g;if(!g.nulled)return g.want!==y&&Z(i,g),g;if(y===g.ver)return g;const k=lt();return fe.set(i,k),Z(i,k),k}),ct(Me,Ne&&K()!==Me?Z:void 0),await b,await qe(),Oe();const ie=ir(X,J);N.post(ie?{__frame_ready:!0,nav:ie}:{__frame_ready:!0},$),e.then(i=>{i?.installSizeReporter?.(B,oe,v),i?.installPaintReporter?.(v)});let Ce=!1;try{Ce=D()}catch{}ke&&Ce?ue(ke).then(i=>i?.boot?.({shellOrigin:l,build:ve.flags.has(nn),hot:h?.hot??null,carried:h?.carried(),presented:()=>h?.presented()??!0})).catch(()=>!1).then(i=>{h?.hydrated(),i!==!0?E("_ldx"):Re.has(ke)&&j("_ldx")}):h?.hydrated()})}else et&&(Jt(),Sn(et,rt,ue,{settle:ct,mount:ft}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Uranus Werkbuch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="./css2">
+<style>
+:root{
+  color-scheme: dark;
+  --space:#05080D; --deep:#09101A; --panel:#0C1520; --line:#182634; --line-2:#243A4C;
+  --ice:#DCEEF0; --mist:#91A8B3; --dim:#627987;
+  --uranus:#8FDDE0; --uranus-soft:rgba(143,221,224,.13); --aurora:#B79DFF; --dust:#CDB892; --done:#88D9A9;
+  --serif:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+html{background:var(--space)}
+body{background:var(--space);color:var(--ice);font-family:var(--sans);font-size:15px;line-height:1.62;padding-inline:16px;padding-block:0 72px}
+.wrap{max-width:1120px;margin:0 auto}
+a{color:var(--uranus)}
+:focus-visible{outline:2px solid var(--uranus);outline-offset:2px}
+
+/* ---------- Kopf ---------- */
+header.top{padding-block:40px 22px;display:grid;grid-template-columns:1fr auto;gap:12px 32px;align-items:end}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
+h1{font-family:var(--serif);font-weight:400;font-style:italic;font-size:clamp(56px,9vw,104px);line-height:.9;margin:6px 0 10px;letter-spacing:-.01em;color:var(--ice)}
+h1 .glyph{font-style:normal;color:var(--uranus);font-size:.52em;vertical-align:.62em;margin-left:.12em}
+.lede{max-width:60ch;color:var(--mist);font-size:16px;margin:0;text-wrap:pretty}
+.status{justify-self:end;text-align:right;display:grid;gap:6px;font-size:13px;color:var(--mist)}
+.status strong{color:var(--ice);font-weight:500}
+.pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:3px 9px;border-radius:999px;border:1px solid var(--line-2);color:var(--mist);white-space:nowrap}
+.pill.now{border-color:var(--uranus);color:var(--uranus);background:var(--uranus-soft)}
+.pill.now::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--uranus);box-shadow:0 0 8px var(--uranus)}
+.pill.done{border-color:var(--done);color:var(--done)}
+@media (max-width:760px){header.top{grid-template-columns:1fr}.status{justify-self:start;text-align:left}}
+
+/* ---------- Bühne ---------- */
+.stage{position:relative;width:100%;aspect-ratio:16/9;max-height:640px;background:#02050A;border:1px solid var(--line);border-bottom:none;overflow:hidden}
+@media (max-width:640px){.stage{aspect-ratio:4/3}}
+.stage canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:pan-y}
+.stage canvas.drag{cursor:grabbing}
+.cap{position:absolute;pointer-events:none;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--mist)}
+.cap.tl{left:14px;top:12px;text-transform:uppercase}
+.cap.tr{right:14px;top:12px;text-align:right;font-variant-numeric:tabular-nums}
+.cap.bl{left:14px;bottom:12px;max-width:70%;text-transform:none;letter-spacing:.02em;color:var(--dim)}
+.toast{position:absolute;right:14px;bottom:12px;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--ice);opacity:0;transition:opacity .6s;pointer-events:none}
+.toast.on{opacity:.9}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:10px 12px;background:var(--panel);border:1px solid var(--line)}
+.tgroup{display:flex;align-items:center;gap:8px}
+.tlabel{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.seg{display:inline-flex;border:1px solid var(--line-2);border-radius:4px;overflow:hidden}
+.seg button,.tbtn{font:500 12.5px/1 var(--sans);color:var(--mist);background:transparent;border:0;padding:8px 11px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--line-2)}
+.tbtn{border:1px solid var(--line-2);border-radius:4px}
+.seg button[aria-pressed="true"],.tbtn[aria-pressed="true"]{background:var(--uranus-soft);color:var(--uranus)}
+.seg button:hover,.tbtn:hover{color:var(--ice)}
+.hint{margin-left:auto;font-size:12px;color:var(--dim)}
+@media (max-width:760px){.hint{margin-left:0;width:100%}}
+
+/* ---------- Kennzahlen ---------- */
+.facts{display:flex;flex-wrap:wrap;gap:4px 0;margin:18px 0 0;padding:0;list-style:none;font-size:13px;color:var(--mist)}
+.facts li{padding-inline:0 18px;margin-right:18px;border-right:1px solid var(--line)}
+.facts li:last-child{border-right:0}
+.facts b{font-family:var(--mono);font-weight:500;color:var(--ice);font-variant-numeric:tabular-nums;margin-right:6px}
+
+/* ---------- Abschnitte ---------- */
+.sec{display:grid;grid-template-columns:210px 1fr;gap:36px;padding-block:52px 8px;border-top:1px solid var(--line);margin-top:52px}
+.sec:first-of-type{margin-top:44px}
+.sec-label h2{font-family:var(--serif);font-weight:500;font-size:32px;line-height:1.05;margin:6px 0 0;text-wrap:balance}
+.sec-label p{color:var(--dim);font-size:13px;margin:10px 0 0}
+.sec-body>p{max-width:66ch;margin:0 0 14px;text-wrap:pretty}
+.sec-body>p.muted{color:var(--mist)}
+@media (max-width:760px){.sec{grid-template-columns:1fr;gap:14px;padding-block:36px 0;margin-top:36px}}
+
+/* Phasen */
+.phases{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px 22px}
+.phases li{border-top:2px solid var(--line-2);padding-top:10px;display:grid;gap:4px;align-content:start}
+.phases li.now{border-top-color:var(--uranus)}
+.phases li.done{border-top-color:var(--done)}
+.ph-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.ph-no{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.08em}
+.ph-name{font-weight:600;font-size:15px}
+.ph-text{font-size:13px;color:var(--mist);line-height:1.5}
+.next{margin-top:26px;padding:14px 16px;border:1px solid var(--line-2);border-left:3px solid var(--uranus);background:var(--deep);max-width:70ch;font-size:14px}
+
+/* Ideen-Dreiklang */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:8px}
+.trio h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:23px;margin:0 0 6px;color:var(--uranus)}
+.trio p{margin:0;font-size:14px;color:var(--mist);text-wrap:pretty}
+@media (max-width:860px){.trio{grid-template-columns:1fr;gap:18px}}
+
+/* Ebenen */
+.layers{list-style:none;margin:0;padding:0;counter-reset:ly;display:grid;gap:0;max-width:760px}
+.layers li{counter-increment:ly;display:grid;grid-template-columns:44px 170px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:baseline;font-size:14px}
+.layers li::before{content:counter(ly,decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--dim)}
+.layers b{font-weight:600}
+.layers span{color:var(--mist)}
+@media (max-width:640px){.layers li{grid-template-columns:34px 1fr}.layers li span{grid-column:2}}
+
+/* Effekte */
+.fx{display:grid;gap:34px}
+.fx h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:25px;margin:0 0 10px}
+.fx ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 30px}
+.fx li{display:grid;gap:3px;padding-top:10px;border-top:1px solid var(--line)}
+.fx .nm{display:flex;gap:10px;align-items:baseline;justify-content:space-between;font-weight:600;font-size:14.5px}
+.fx .tx{font-size:13.5px;color:var(--mist);line-height:1.5}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;font-weight:500}
+.tag.core{color:var(--uranus);background:var(--uranus-soft)}
+.tag.opt{color:var(--dust);background:rgba(205,184,146,.12)}
+.tag.mag{color:var(--aurora);background:rgba(183,157,255,.12)}
+@media (max-width:760px){.fx ul{grid-template-columns:1fr}}
+
+/* Tabelle */
+.table-wrap{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13.5px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:baseline}
+th{font-family:var(--mono);font-weight:500;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);background:var(--deep)}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+th.n{text-align:right}
+td.moon{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--ice);white-space:nowrap}
+td.src{color:var(--mist)}
+tr:last-child td{border-bottom:0}
+.small{font-size:13px;color:var(--mist);max-width:72ch;margin-top:14px}
+.rings{font-family:var(--mono);font-size:12.5px;color:var(--mist);margin-top:10px;letter-spacing:.02em}
+.rings b{color:var(--ice);font-weight:500}
+
+/* Architektur */
+.pk{display:grid;grid-template-columns:repeat(2,1fr);gap:0 30px}
+.pk div{padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.pk code{font-family:var(--mono);font-size:12.5px;color:var(--uranus);display:block;margin-bottom:2px}
+.pk span{color:var(--mist)}
+@media (max-width:760px){.pk{grid-template-columns:1fr}}
+.principles{margin:22px 0 0;padding:0 0 0 18px;max-width:70ch;font-size:14px;color:var(--mist)}
+.principles li{margin-bottom:6px}
+.principles b{color:var(--ice);font-weight:500}
+h3.sub{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:30px 0 8px}
+
+/* Entscheidungen */
+.dec{list-style:none;margin:0;padding:0;counter-reset:dc;display:grid;gap:0}
+.dec>li{counter-increment:dc;display:grid;grid-template-columns:42px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.dec>li::before{content:counter(dc);font-family:var(--serif);font-size:30px;line-height:1;color:var(--uranus)}
+.dec h4{margin:0 0 8px;font-size:15px;font-weight:600}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
+.opts li{font-size:13px;padding:5px 10px;border:1px solid var(--line-2);border-radius:4px;color:var(--mist)}
+.opts li b{font-family:var(--mono);color:var(--ice);margin-right:6px;font-weight:500}
+.opts li.rec{border-color:var(--uranus);color:var(--ice);background:var(--uranus-soft)}
+.rec-line{font-size:13px;color:var(--mist);max-width:72ch}
+.rec-line em{font-style:normal;color:var(--uranus);font-weight:500}
+
+/* Protokoll + Kontext */
+.log{display:grid;grid-template-columns:120px 1fr;gap:10px 20px;margin:0;font-size:14px}
+.log dt{font-family:var(--mono);font-size:12.5px;color:var(--dim);padding-top:2px}
+.log dd{margin:0;color:var(--mist)}
+.log dd ul{margin:4px 0 0;padding-left:18px}
+.ctx{position:relative;margin-top:6px}
+.ctx pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--mono);font-size:12.5px;line-height:1.6;background:var(--deep);border:1px solid var(--line);padding:16px 16px 16px;margin:0;color:var(--mist);max-width:100%;overflow-x:auto}
+.ctx button{position:absolute;right:10px;top:10px}
+footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--dim)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+
+/* ---------- v2: Galerie, Tasten, Prüfungen, Fallstricke ---------- */
+.gallery{margin:0}
+.g-main{border:1px solid var(--line);background:#02050A;aspect-ratio:16/9;overflow:hidden}
+.g-main img{display:block;width:100%;height:100%;object-fit:contain}
+.gallery figcaption{font-size:13.5px;color:var(--mist);padding:10px 2px 0;max-width:80ch;min-height:3em}
+.g-thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px;margin-top:10px}
+.g-thumbs button{all:unset;cursor:pointer;display:grid;gap:4px;border:1px solid var(--line);padding:4px;border-radius:3px;background:var(--deep)}
+.g-thumbs button img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;opacity:.72}
+.g-thumbs button span{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--dim);text-align:center}
+.g-thumbs button[aria-selected="true"]{border-color:var(--uranus)}
+.g-thumbs button[aria-selected="true"] img{opacity:1}
+.g-thumbs button[aria-selected="true"] span{color:var(--uranus)}
+.g-thumbs button:focus-visible{outline:2px solid var(--uranus);outline-offset:2px}
+@media (max-width:520px){.g-thumbs{grid-template-columns:repeat(3,1fr)}}
+code.c{font-family:var(--mono);font-size:12.5px;color:var(--uranus);background:var(--uranus-soft);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+.keys{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:4px 0 16px;font-size:14px;max-width:560px}
+.keys dt{font-family:var(--mono);font-size:12px;color:var(--ice);padding-top:2px}
+.keys dd{margin:0;color:var(--mist)}
+@media (max-width:520px){.keys{grid-template-columns:1fr}.keys dd{margin-bottom:6px}}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:0;max-width:78ch}
+.checks li{padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--mist);line-height:1.55}
+.checks b{display:inline-block;min-width:108px;font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--done);margin-right:8px}
+.lessons{margin:0;padding:0 0 0 20px;max-width:74ch;display:grid;gap:12px;font-size:14px;color:var(--mist)}
+.lessons b{color:var(--ice);font-weight:500}
+.pill.done::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--done)}
+
+/* ---------- v5: Planung Phase 5 ---------- */
+.found{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:0;max-width:78ch}
+.found li{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--mist);line-height:1.55}
+.found li>b{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dust);padding-top:2px}
+.found li>b.ok{color:var(--done)}
+@media (max-width:640px){.found li{grid-template-columns:1fr;gap:2px}}
+.tables{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 26px;margin-top:6px}
+.tables article{border-top:2px solid var(--line-2);padding-top:10px}
+.tables h4{margin:0 0 4px;font-family:var(--mono);font-weight:500;font-size:13px;color:var(--uranus)}
+.tables p{margin:0 0 8px;font-size:13.5px;color:var(--mist)}
+.tables .cols{font-family:var(--mono);font-size:11.5px;line-height:1.7;color:var(--dim);overflow-wrap:anywhere}
+.tables .cols i{font-style:normal;color:var(--ice)}
+@media (max-width:760px){.tables{grid-template-columns:1fr}}
+.api{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:4px 0 0;font-size:13.5px;max-width:78ch}
+.api dt{font-family:var(--mono);font-size:12px;color:var(--ice);padding-top:2px}
+.api dd{margin:0;color:var(--mist)}
+@media (max-width:640px){.api{grid-template-columns:1fr}.api dd{margin-bottom:6px}}
+.steps{margin:0;padding:0 0 0 20px;max-width:74ch;display:grid;gap:8px;font-size:14px;color:var(--mist)}
+.steps b{color:var(--ice);font-weight:500}
+.opts li.sug{border-style:dashed;border-color:var(--uranus);color:var(--ice)}
+.opts li.sug::after{content:"empfohlen";font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--uranus);margin-left:8px}
+
+.dec.open{counter-reset:dc 9}
+.sec-body{min-width:0}
+/* v6: Abweichungsdiagramm */
+.viz{margin:8px 0 6px;border:1px solid var(--line);background:var(--deep);padding:14px 14px 10px}
+.viz-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;align-items:baseline;margin-bottom:6px}
+.viz-title{font-weight:600;font-size:14.5px}
+.viz-sub{font-size:12.5px;color:var(--mist)}
+.legend{display:flex;gap:16px;font-size:12.5px;color:var(--mist);align-items:center}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.viz-scroll{overflow-x:auto}
+.viz svg{display:block;width:100%;min-width:620px;height:auto;overflow:visible}
+.viz .tick text,.viz .lbl{fill:var(--mist);font-family:var(--mono);font-size:10.5px}
+.viz .grp{fill:var(--dim);font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.viz .grid{stroke:#1b2a38;stroke-width:1}
+.viz .hit{fill:transparent;cursor:default}
+.viz .row:hover .lbl{fill:var(--ice)}
+.viz .row:hover .band{fill:rgba(143,221,224,.06)}
+.tip{position:fixed;pointer-events:none;z-index:10;background:#0e1822;border:1px solid var(--line-2);padding:8px 10px;font-size:12.5px;color:var(--ice);border-radius:4px;opacity:0;transition:opacity .12s;max-width:280px;line-height:1.45}
+.tip.on{opacity:1}
+.tip b{font-weight:600}
+.tip .k{color:var(--mist)}
+details.tv{margin-top:8px;font-size:13px;color:var(--mist)}
+details.tv summary{cursor:pointer;color:var(--mist)}
+details.tv table{min-width:560px;margin-top:8px}
+.found li>b.new{color:var(--uranus)}
+.log dd{min-width:0;overflow-wrap:anywhere}.found li>span,.tables .cols,.api dd{overflow-wrap:anywhere}
+@media (max-width:520px){.log{grid-template-columns:1fr;gap:2px 0}.log dd{margin-bottom:12px}}
+</style>
+<div class="wrap">
+<header class="top">
+  <div>
+    <div class="eyebrow">Werkbuch · NetBeans-Projekt Uranus · com.dan.uranus</div>
+    <h1>Uranus<span class="glyph">⛢</span></h1>
+    <p class="lede">Der Planet, der auf der Seite liegt — mit seinen Ringen und Monden, die sich durch gekrümmten Raum bewegen. Dieses Werkbuch hält Entscheidungen, Stand und Fallstricke fest und wird nach jeder Runde fortgeschrieben.</p>
+  </div>
+  <div class="status">
+    <span><span class="pill done">Phase 1–7 fertig</span></span>
+    <span><span class="pill now">Phase 8 gebaut · dein Lauf steht aus</span></span>
+    <span>Stand <strong>23.09.2026</strong></span>
+    <span>220 + 27 ohne DB · 15 + 107 mit DB grün</span>
+  </div>
+</header>
+
+<figure class="gallery" id="gallery">
+  <div class="g-main"><img id="gMain" src="./app-karte.jpg" alt="Die App mit einer Karte am Mauszeiger über Titania" width="1480" height="960"></div>
+  <figcaption id="gCap">Karte beim Überfahren: Die Maus steht 0,3 s auf Titania, am Zeiger erscheinen Abstand und Tempo dieses Augenblicks, die Zeit seit dem Perizentrum, die Masse und wie genau die Bahn Horizons trifft. Unten links die ausführliche Karte nach dem Klick.</figcaption>
+  <div class="g-thumbs" role="tablist" aria-label="Standbilder">
+    <button type="button" role="tab" aria-selected="true" data-src="img/app-karte.jpg" data-cap="Karte beim Überfahren: Die Maus steht 0,3 s auf Titania, am Zeiger erscheinen Abstand und Tempo dieses Augenblicks, die Zeit seit dem Perizentrum, die Masse und wie genau die Bahn Horizons trifft. Unten links die ausführliche Karte nach dem Klick."><img src="./app-karte.jpg" alt=""><span>Karte</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/karte-uranus.jpg" data-cap="Karte über Uranus: Sonnenstand und Jahreszeit, die nächste Sonnenwende aus der Ephemeride, Abstand zur Sonne und Lichtlaufzeit. Oben rechts die neuen Symbole für Standbild und Hilfe."><img src="./karte-uranus.jpg" alt=""><span>Uranus</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/karte-ring.jpg" data-cap="Karte über einem Ring: Der Sehstrahl schneidet die Ringebene vor Uranus, die Karte nennt Radius und Breite an genau dieser Stelle und die Entdeckung."><img src="./karte-ring.jpg" alt=""><span>Ring</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/app-hilfe.jpg" data-cap="Hilfetafel (F1 oder ?): Tasten und Griffe passend zum Modus, dazu der Knopf „Auf Standard zurück“."><img src="./app-hilfe.jpg" alt=""><span>Hilfe</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/truemmerring.jpg" data-cap="Spielwiese, Szenario „Miranda fällt“, zwölf Tage nach dem Zerbrechen: Aus 2 500 Trümmerteilchen ist ein Ring geworden. Die Trümmer laufen analytisch auf präzedierenden Ellipsen mit Halbachsen von 81 000 bis 95 000 km."><img src="./truemmerring.jpg" alt=""><span>Trümmerring</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/miranda-zerbricht.jpg" data-cap="„Miranda fällt“, 0,32 Tage nach dem Start: Miranda erreicht 63 034 km und liegt damit unter ihrer Roche-Grenze von 63 689 km. Sie zerbricht mit einem Aufblitzen; oben rechts steht die Meldung."><img src="./miranda-zerbricht.jpg" alt=""><span>Zerbrechen</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/spielwiese-heute.jpg" data-cap="„Heute, frei“ nach 40 Tagen, Titania gewählt: Die Karte nennt Masse, Abstand, die Bahn, wie sie gerade ist, die Umlaufverhältnisse zu den Nachbarn und den Abstand zur Ephemeride (0,05°). Der kleine Kreis zeigt, wo die Ephemeride den Mond sieht."><img src="./spielwiese-heute.jpg" alt=""><span>Heute, frei</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/schwere-titania.jpg" data-cap="„Schwere Titania“ nach 200 Tagen: Titania hat die hundertfache Masse. Umbriels Bahn ist jetzt deutlich elliptisch (e = 0,10), Oberons auch (0,045). Die Kreise zeigen, wo die Monde ohne Eingriff stünden."><img src="./schwere-titania.jpg" alt=""><span>Titania ×100</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/besucher.jpg" data-cap="„Besucher“: Ein Körper von Erdmasse fliegt auf einer Hyperbel mit 800 000 km Perizentrum vorbei. Im Probelauf läuft Titania 120 Tage später auf einer Bahn mit e = 0,139, vorher waren es 0,002."><img src="./besucher.jpg" alt=""><span>Besucher</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/gedraenge.jpg" data-cap="„Gedränge“ nach 400 Tagen: nur die inneren Monde, mit tausendfach überhöhten Massen. Oben rechts die Zusammenstöße dieses Laufs. Die Rechnung ist chaotisch; ein anderer Lauf kann ohne Zusammenstoß ausgehen."><img src="./gedraenge.jpg" alt=""><span>Gedränge</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/gast-wurf.jpg" data-cap="Umschalt und Ziehen setzt einen Gast: Der Pfeil zeigt Richtung und Tempo, die gestrichelte Linie die Vorausschau. Mit dem Mausrad lässt sich die Masse vor dem Loslassen wählen."><img src="./gast-wurf.jpg" alt=""><span>Gast</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/app-spielwiese.jpg" data-cap="Die App mit der Spielwiese: Reihe 3 zeigt Szenarien, „Eigene ▾“, das Tempo, Anhalten, Rückgängig und Zurück; alles passt in eine Zeile (1 443 von 1 460 px). Aufnahme unter einem virtuellen Bildschirm."><img src="./app-spielwiese.jpg" alt=""><span>App</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/uranusjahr.jpg" data-cap="„Ein Uranusjahr“: 1946 bis 2030 in 90 Sekunden. Die Kamera steht auf der Sonnenseite. Unten der Jahreszeitenstreifen mit der Breite des Sonnenstands (Nord warm, Süd kühl) und den berechneten Sonnenwenden und Tagundnachtgleichen."><img src="./uranusjahr.jpg" alt=""><span>Uranusjahr</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/voyager-annaeherung.jpg" data-cap="Geschichte „Voyager 2 · 1986“, größte Annäherung am 24. Januar 1986 um 17:58 UTC: Die Sonde als kleines Modell mit der Schüssel zur Sonne, die Hyperbel aus Horizons-Vektoren, oben Abstand, Geschwindigkeit und die Zeit bis zur Annäherung."><img src="./voyager-annaeherung.jpg" alt=""><span>Voyager</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/voyager-anflug.jpg" data-cap="Anflug, knapp vier Stunden vor der Annäherung: Die Kamera hängt an der Sonde und nimmt sie mit, statt hinterherzulaufen. Oben links Uranus mit den Ringen."><img src="./voyager-anflug.jpg" alt=""><span>Anflug</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/voyager-schatten.jpg" data-cap="Im Uranusschatten (20:25–21:41 UTC, aus der Hyperbel berechnet): Blick auf die Nachtseite, das Polarlicht-Oval leuchtet."><img src="./voyager-schatten.jpg" alt=""><span>Schatten</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/entdeckung-1851.jpg" data-cap="„Entdeckungen“, unterwegs von 1851 nach 1948: Zu sehen sind nur die vier Monde, die schon bekannt sind. Rechts die Karten der letzten Entdeckungsjahre, unten die Zeitleiste mit einem Punkt je Entdeckung."><img src="./entdeckung-1851.jpg" alt=""><span>1851</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/entdeckung-1986.jpg" data-cap="Nach Voyager 2: die neun Ringe von 1977, Puck von 1985, zehn Monde und zwei Ringe von 1986. Die Staubringe ν und μ fehlen noch, sie kommen 2003."><img src="./entdeckung-1986.jpg" alt=""><span>1986</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/rundflug-miranda.jpg" data-cap="„Rundflug“, Station Miranda: Die Kamera kommt an, verweilt, solange man die Karte liest, und fliegt dann weiter."><img src="./rundflug-miranda.jpg" alt=""><span>Rundflug</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/app-voyager.jpg" data-cap="Die App während der Geschichte „Voyager 2 · 1986“. In Reihe 3 ersetzen die vier GESCHICHTEN-Knöpfe die alten Sprungtasten (Aufnahme unter einem virtuellen Bildschirm, Auflösung dort auf 50 % gesenkt)."><img src="./app-voyager.jpg" alt=""><span>App</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/ringflug.jpg" data-cap="Im ε-Ring, jetzt als Ellipse: Die Bildzeile nennt den Abstand und die Breite an dieser Stelle. Titania und Oberon stehen an ihrem echten Ort."><img src="./ringflug.jpg" alt=""><span>ε-Ring</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/magnetosphaere.jpg" data-cap="Magnetosphäre: Dipol 59° gekippt und versetzt, Feldlinien mit pendelnden Plasmateilchen, Polarlicht-Oval am Südpol, Schweif nach unten, Bugstoßwelle oben."><img src="./magnetosphaere.jpg" alt=""><span>Magnetfeld</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/polarlicht.jpg" data-cap="Polarlicht auf der Nachtseite: Oval um den schrägen Magnetpol, Vorhänge treiben entlang des Ovals, Saum in Türkis."><img src="./polarlicht.jpg" alt=""><span>Polarlicht</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/lichtbahnen.jpg" data-cap="Lichtbahnen: Sonnenlicht wird an Uranus abgelenkt und kreuzt sich dahinter; nahe Strahlen enden auf dem Planeten. Stärke überhöht — echt sind es 2 Millibogensekunden."><img src="./lichtbahnen.jpg" alt=""><span>Lichtbahnen</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/ringflug-2.jpg" data-cap="Zweiter Ringflug einige Stunden später: unregelmäßige Brocken, Glitzern von Staub, die Nachbarringe als Linien zum Planeten hin."><img src="./ringflug-2.jpg" alt=""><span>ε-Ring 2</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/app-ringflug.jpg" data-cap="Die App im Ringflug, mit eingeschaltetem Magnetfeld: Polarlicht am Planetenrand, Feldlinien quer durchs Bild."><img src="./app-ringflug.jpg" alt=""><span>App ε-Ring</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/mulde.jpg" data-cap="Mulde am 22.09.2026, 23:30 MESZ: Die Hauptmonde stehen dort, wo Horizons sie sieht (Phase 5). Titania und Oberon decken sich fast."><img src="./mulde.jpg" alt=""><span>Mulde</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/gitterraum.jpg" data-cap="Gitterraum: ein räumliches Gitter, das zu den Massen hingezogen wird. Umschalten blendet weich über."><img src="./gitterraum.jpg" alt=""><span>Gitterraum</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/linse.jpg" data-cap="Gravitationslinse: Blick durch Uranus auf das galaktische Zentrum. Die Milchstraße legt sich als Einstein-Ring um den Planeten (Stärke überhöht)."><img src="./linse.jpg" alt=""><span>Linse</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/alle-monde.jpg" data-cap="Alle 29 Monde mit JPL-Bahnen: Die irregulären laufen steil und meist rückläufig (rot), Margaret rechtläufig (blau)."><img src="./alle-monde.jpg" alt=""><span>Alle 29</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/tagundnachtgleiche-2007.jpg" data-cap="7. Dezember 2007, Tagundnachtgleiche: die Sonne steht in der Ringebene, Tag-Nacht-Grenze senkrecht. Mit Drehachse, Bahnnormale und dem 97,77°-Bogen."><img src="./tagundnachtgleiche-2007.jpg" alt=""><span>2007</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/voyager-1986.jpg" data-cap="24. Januar 1986, Voyager-2-Vorbeiflug: der Südpol zeigt zur Sonne (82° Süd). Blick von unten, Milchstraße links."><img src="./voyager-1986.jpg" alt=""><span>1986</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/app-titania.jpg" data-cap="Die App: Klick auf Titania — die Kamera fliegt hin, folgt dem Mond und zeigt die Mondkarte."><img src="./app-titania.jpg" alt=""><span>Fokusflug</span></button>
+    <button type="button" role="tab" aria-selected="false" data-src="img/app-start.jpg" data-cap="Die App im FFrame mit der Bedienleiste aus FStyle-Elementen (Aufnahme unter einem virtuellen Bildschirm, Auflösung dort automatisch auf 70 % gesenkt)."><img src="./app-start.jpg" alt=""><span>App</span></button>
+  </div>
+</figure>
+
+<ul class="facts" aria-label="Uranus in Zahlen">
+  <li><b>97,77°</b>Achsneigung</li>
+  <li><b>17 h 14 min</b>Tag, rückläufig</li>
+  <li><b>84</b>Erdjahre Umlauf</li>
+  <li><b>73,2°</b>Sonne über dem Nordpol heute</li>
+  <li><b>10.04.2030</b>nächste Sonnenwende, 22:41 UTC</li>
+  <li><b>107 154 km</b>Voyager 2 vom Zentrum</li>
+  <li><b>59°</b>Magnetfeld gegen die Achse</li>
+  <li><b>2 mas</b>echte Lichtablenkung am Rand</li>
+  <li><b>29</b>Monde</li>
+  <li><b>63 689 km</b>Roche-Grenze für Miranda</li>
+</ul>
+
+<section class="sec" id="stand">
+  <div class="sec-label"><div class="eyebrow">Fortschritt</div><h2>Stand</h2><p>Wird nach jeder Runde fortgeschrieben.</p></div>
+  <div class="sec-body">
+    <ol class="phases">
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 0</span><span class="pill done">fertig</span></div><span class="ph-name">Vorschlag &amp; Entscheidungen</span><span class="ph-text">Neun Entscheidungen am 22.09. getroffen.</span></li>
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 1</span><span class="pill done">fertig</span></div><span class="ph-name">Gerüst</span><span class="ph-text">FFrame, eigener Render-Thread, Kamera mit Fokusflug, Milchstraße und Sterne, Simulationsuhr mit echtem Datum, eingebauter Datensatz.</span></li>
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 2</span><span class="pill done">fertig</span></div><span class="ph-name">Uranus &amp; Ringe</span><span class="ph-text">Atmosphäre pro Pixel, Achslage nach IAU, Sonnenstand aus der Uranusbahn, 13 Ringe, Schatten in beide Richtungen.</span></li>
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 3</span><span class="pill done">fertig</span></div><span class="ph-name">Gekrümmter Raum &amp; Monde</span><span class="ph-text">Mulde und Gitterraum, alle 29 Monde auf Kepler-Bahnen, Spuren, Maßstab gestaucht/echt mit Überblendung.</span></li>
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 4</span><span class="pill done">fertig</span></div><span class="ph-name">Effekte</span><span class="ph-text">Linse, Bloom, Wellen, Mondschatten; Magnetosphäre mit Polarlicht, Lichtbahnen, Flug durch den ε-Ring.</span></li>
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 5</span><span class="pill done">fertig</span></div><span class="ph-name">Datenbank</span><span class="ph-text">URA_SOURCE/BODY/ORBIT/RING und URA_API; Monde an ihrem echten Ort (JPL, an Horizons angeglichen); App lädt im Hintergrund, Rückfall auf den eingebauten Satz.</span></li>
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 6</span><span class="pill done">fertig</span></div><span class="ph-name">Geschichten</span><span class="ph-text">Voyager 2 als Hyperbel aus Horizons, ein Uranusjahr in 90 s, Entdeckungsgeschichte, Rundflug. 57 Ereignisse und 4 Fahrten in der DB, eingebaute Kopie als Rückfall.</span></li>
+      <li class="done"><div class="ph-head"><span class="ph-no">PHASE 7</span><span class="pill done">fertig</span></div><span class="ph-name">Spielwiese</span><span class="ph-text">IAS15 mit J2, J4 und Sonne ab dem echten Stand von heute. Ziehen, Werfen, Masse per Mausrad, Gäste; Verschmelzen, Roche-Zerbrechen, Entkommen. Fünf Szenarien in URA_SCENARIO, eigene speichert die App über URA_API.</span></li>
+      <li class="now"><div class="ph-head"><span class="ph-no">PHASE 8</span><span class="pill now">gebaut · Lauf steht aus</span></div><span class="ph-name">Politur &amp; Abnahme</span><span class="ph-text">Karten beim Überfahren, Standbild (S), Hilfe (F1) und README, Tastenkürzel, gemerkte Einstellungen, Gerätepixel, bildfüllend 36 % schneller bei gleichem Bild, Start aus dist mit Protokoll.</span></li>
+    </ol>
+    <div class="next"><b>Nächster Schritt:</b> NetBeans „Clean and Build“, dann <code class="c">tools\alles.bat</code> (<a href="https://16ad2b77-ba08-4c53-b579-89719d14f14d.frame.claudeusercontent.com/_f/1790147814-6b24/#politur">Dein Lauf</a>). Danach lese ich <code class="c">alles.log</code>; ist alles grün, ist das Projekt fertig.</div>
+  </div>
+</section>
+
+<section class="sec" id="starten">
+  <div class="sec-label"><div class="eyebrow">Bedienung</div><h2>Starten</h2></div>
+  <div class="sec-body">
+    <p>In NetBeans ausführen — die Hauptklasse <code class="c">com.dan.uranus.app.UranusApp</code> ist eingetragen. Die App startet mit dem heutigen Datum und dem eingebauten Datensatz.</p>
+    <dl class="keys">
+      <dt>Ziehen</dt><dd>Kamera drehen</dd>
+      <dt>Mausrad</dt><dd>zoomen</dd>
+      <dt>Klick auf einen Mond</dt><dd>hinfliegen, folgen, Mondkarte zeigen</dd>
+      <dt>Doppelklick ins Leere · Esc</dt><dd>zurück zur Übersicht</dd>
+      <dt>Leertaste</dt><dd>Zeit anhalten / weiter; während einer Geschichte hält sie die Fahrt an</dd>
+      <dt>GESCHICHTEN</dt><dd>Voyager 2 · 1986, Ein Uranusjahr, Entdeckungen, Rundflug. Derselbe Knopf, Esc, ein Klick, Ziehen oder das Mausrad beenden die Fahrt. Danach stehen Uhr, Tempo und Ebenen wieder wie vorher.</dd>
+      <dt>„Spielwiese“ (Reihe 2)</dt><dd>startet die N-Körper-Rechnung am aktuellen Datum; Reihe 3 zeigt dann Szenarien, „Eigene ▾“, Tempo, Anhalten, Rückgängig und Zurück</dd>
+      <dt>In der Spielwiese: Mond ziehen</dt><dd>die Zeit steht, die Vorausschau zeigt die Bahn; beim Loslassen Kreisbahn plus der Schwung der Maus</dd>
+      <dt>Mausrad über einem Mond</dt><dd>Masse in Stufen von ×√10, von ×1/1000 bis ×10 000</dd>
+      <dt>Umschalt + Ziehen ins Leere</dt><dd>setzt einen Gast; der Pfeil gibt Richtung und Tempo, das Mausrad vorher die Masse</dd>
+      <dt>Überfahren (0,3 s)</dt><dd>kurze Karte am Zeiger: Monde, Ringe, Uranus, Voyager 2, Punkte der Zeitleisten</dd>
+      <dt>0 · 1–5 · G · T · L · + / −</dt><dd>Übersicht · Miranda bis Oberon · Mulde/Gitterraum · Bahnen · Beschriftung · Tempo</dd>
+      <dt>S oder Kamerasymbol</dt><dd>Standbild in doppelter Größe nach <code class="c">Bilder\Uranus</code></dd>
+      <dt>F1, ? oder Symbol „?“</dt><dd>Hilfetafel mit „Auf Standard zurück“; Strg+Z = Rückgängig in der Spielwiese</dd>
+      <dt>„ε-Ring-Flug“</dt><dd>Einschwenken in den Ring (stellt auf Echtzeit); Esc, „Übersicht“ oder Klick auf einen Mond beendet ihn</dd>
+    </dl>
+    <p class="muted">Ohne NetBeans: nach „Clean and Build“ Doppelklick auf <code class="c">dist\Uranus.jar</code>. Die App merkt sich Fenster, Ebenen und Tempo; Fehler stehen in <code class="c">%USERPROFILE%\.uranus\uranus.log</code>. Alles Weitere im <code class="c">README.md</code> des Projekts.</p>
+    <p class="muted">Abnahme: <code class="c">tools\alles.bat</code> (alle Prüfungen in einem Zug, <code class="c">alles.log</code>). Prüfen ohne Datenbank: <code class="c">tools\pruefen.bat</code> übersetzt die Prüfprogramme gegen <code class="c">build\classes</code> und schreibt <code class="c">pruefen.log</code> sowie Standbilder nach <code class="c">shots\</code>. Braucht einmal „Build“ in NetBeans und javac im PATH.</p>
+  </div>
+</section>
+
+<section class="sec" id="umgesetzt">
+  <div class="sec-label"><div class="eyebrow">Phase 1–3</div><h2>Was läuft</h2><p><span class="tag core">echt</span> gerechnet, <span class="tag opt">Näherung</span> vorläufig.</p></div>
+  <div class="sec-body fx">
+    <div><h3>Himmel und Zeit</h3><ul>
+      <li><div class="nm">Sonnenstand zu jedem Datum<span class="tag core">echt</span></div><div class="tx">Uranusbahn nach Standish (JPL), Pol nach IAU. Tagundnachtgleiche 06.12.2007 (tatsächlich 07.12.), 1986 Südpol 82°, Sonnenwende 11.04.2030 mit 82,2°.</div></li>
+      <li><div class="nm">Rotation<span class="tag core">echt</span></div><div class="tx">Nullmeridian nach IAU, 17 h 14 min, rückläufig; die Wolkenflecken drehen mit.</div></li>
+      <li><div class="nm">Milchstraße in wahrer Lage<span class="tag core">echt</span></div><div class="tx">Galaktische Koordinaten in die Uranus-Welt gedreht; Sterne zur Milchstraße hin verdichtet (Sternpositionen erzeugt).</div></li>
+      <li><div class="nm">Zeitraffer und Sprünge<span class="tag core">echt</span></div><div class="tx">Echtzeit bis 1 s ≙ 4 Tage. Die Sprungtasten sind seit Phase 6 in den Geschichten aufgegangen.</div></li>
+    </ul></div>
+    <div><h3>Uranus und Ringe</h3><ul>
+      <li><div class="nm">Planet pro Pixel<span class="tag core">echt</span></div><div class="tx">Strahl-Kugel-Schnitt je Bildpunkt, perspektivisch exakt auch aus der Nähe; Bänder, Polarhut, Wolken, Randverdunklung, Dunstsaum, Atmosphärenschein.</div></li>
+      <li><div class="nm">13 Ringe<span class="tag core">echt</span></div><div class="tx">Radien und Breiten nach Voyager; ε hell, ν rötlich, μ blau; Staubringe leuchten im Gegenlicht auf, die unbeleuchtete Seite ist dunkler.</div></li>
+      <li><div class="nm">Schatten in beide Richtungen<span class="tag core">echt</span></div><div class="tx">Uranus verdunkelt die Ringe hinter sich, die Ringe werfen Streifen auf die Wolken (Breite überhöht).</div></li>
+      <li><div class="nm">Mondschatten auf Uranus<span class="tag core">echt</span></div><div class="tx">Geprüft: um die Tagundnachtgleiche 2007 werfen alle fünf Hauptmonde Schatten, 2026 keiner.</div></li>
+    </ul></div>
+    <div><h3>Monde und Raum</h3><ul>
+      <li><div class="nm">29 Monde auf präzedierenden Ellipsen<span class="tag core">echt</span></div><div class="tx">Mittlere Elemente von JPL mit Bezugsebene (Äquator, Laplace-Ebene, Ekliptik) und Präzession; die Bahn wird zu jedem Zeitpunkt neu berechnet, nie integriert. Uhr in UTC, Bahnen in TDB.</div></li>
+      <li><div class="nm">Wo die Monde stehen<span class="tag core">echt</span></div><div class="tx">Seit Phase 5 an Horizons angeglichen: Hauptmonde auf 0,3° genau (Miranda 2,3°), innere auf 5,5°, irreguläre auf 23° — über 1975–2030. S/2025 U1 nach JPL-Mittelwerten, ohne Abgleich.</div></li>
+      <li><div class="nm">Mulde und Gitterraum<span class="tag core">echt</span></div><div class="tx">Formel aus FCurvedField; Tiefe aus der Masse, Gitter wird zu den Massen gezogen, weiches Überblenden. Wellen bei Konjunktionen.</div></li>
+      <li><div class="nm">Maßstab gestaucht ↔ echt<span class="tag core">echt</span></div><div class="tx">Innen linear (Ringe unverzerrt), dann Wurzel, ab 30 R logarithmisch — Ferdinand liegt gestaucht bei 32 statt 1268 Welteinheiten.</div></li>
+    </ul></div>
+    <div><h3>Bild und Bedienung</h3><ul>
+      <li><div class="nm">HDR-Puffer mit Bloom<span class="tag core">echt</span></div><div class="tx">Alle Ebenen rechnen in Gleitkomma; Bloom in Viertelauflösung, Tonwertkurve als Tabelle.</div></li>
+      <li><div class="nm">Gravitationslinse<span class="tag core">echt</span></div><div class="tx">Punktmassen-Linse: Milchstraße rückwärts, Sterne vorwärts mit zwei Bildern je Stern. Stärke überhöht.</div></li>
+      <li><div class="nm">Eigener Render-Thread<span class="tag core">echt</span></div><div class="tx">Swing zeichnet nur das fertige Bild; die Auflösung sinkt automatisch, wenn der Rechner nicht mitkommt. Schrift bleibt scharf in Fenstergröße.</div></li>
+      <li><div class="nm">Fokusflug und Mondkarte<span class="tag core">echt</span></div><div class="tx">Klick auf einen Mond: Flug mit weichem Abbremsen, die Kamera folgt; Karte mit Radius, Abstand, Umlauf, Entdeckung, Namensherkunft.</div></li>
+    </ul></div>
+  </div>
+</section>
+
+<section class="sec" id="phase4">
+  <div class="sec-label"><div class="eyebrow">Phase 4</div><h2>Effekte</h2><p>Schalter „Magnetfeld“ und „Lichtbahnen“, Knopf „ε-Ring-Flug“.</p></div>
+  <div class="sec-body fx">
+    <div><h3>Magnetosphäre</h3><ul>
+      <li><div class="nm">Schräger, versetzter Dipol<span class="tag core">echt</span></div><div class="tx">59° gegen die Drehachse, 0,3 R zum Südpol versetzt, dreht mit 17 h 14 min. Feldlinien r = L·sin²θ, tagseitig gestaucht, nachtseitig gestreckt.</div></li>
+      <li><div class="nm">Plasma, Schweif, Stoßwelle<span class="tag opt">Näherung</span></div><div class="tx">Gefangene Teilchen pendeln zwischen den Spiegelpunkten; der Schweif windet sich als Korkenzieher; Bugstoßwelle bei 23 R; Sonnenwind weicht aus. Formen dargestellt, nicht aus Messdaten.</div></li>
+      <li><div class="nm">Polarlicht<span class="tag core">echt</span></div><div class="tx">Oval am Fußpunkt der Schale L = 6 (24° um den Magnetpol), Vorhänge treiben entlang des Ovals, auf der Nachtseite am hellsten.</div></li>
+      <li><div class="nm">Bewegungsunschärfe<span class="tag core">echt</span></div><div class="tx">Bei 1 d/s und 4 d/s dreht sich Uranus mehrfach pro Sekunde: Feldlinien werden über die Drehung eines Bildes gemittelt, Wolken und Polarlicht verwischen, statt zu flackern.</div></li>
+    </ul></div>
+    <div><h3>Licht und Ring</h3><ul>
+      <li><div class="nm">Lichtbahnen<span class="tag opt">überhöht</span></div><div class="tx">Strahlen aus der Sonnenrichtung, schrittweise integriert, knicken an Uranus ab und kreuzen sich dahinter. Echt: 2 Millibogensekunden am Rand — gezeigt: ein halber Radiant.</div></li>
+      <li><div class="nm">Flug durch den ε-Ring<span class="tag core">echt</span></div><div class="tx">Die Kamera schwenkt aus der Übersicht ein und reist mit dem Ring (Umlauf 8,4 h). Jede Spur läuft nach Kepler, innen schneller — bei Zeitraffer schert der Ring sichtbar.</div></li>
+      <li><div class="nm">Staub und Brocken<span class="tag opt">überhöht</span></div><div class="tx">Teilchen aus Zellen mit festem Zufall — nichts flackert. Viel Staub, wenige große, unregelmäßige Brocken; Breite ~7-fach, Größe überhöht.</div></li>
+      <li><div class="nm">Hirtenmonde<span class="tag core">echt</span></div><div class="tx">Cordelia innen, Ophelia außen erscheinen im Flug in wahrer Größe und schreiben Wellen in die Ränder.</div></li>
+    </ul></div>
+  </div>
+</section>
+
+<section class="sec" id="datenbank">
+  <div class="sec-label"><div class="eyebrow">Phase 5 · PDBORCL · DEMO</div><h2>Datenbank</h2><p>Gebaut am 23.09.2026 nach deinen Entscheidungen 10–16 (alle A). Dein Lauf: Einrichtung 138 Anweisungen ohne Fehler, Selbsttest 6/6, Durchstich 53/53.</p></div>
+  <div class="sec-body">
+    <h3 class="sub" style="margin-top:0">Quellen: unverändert und prüfbar</h3>
+    <ul class="found">
+      <li><b class="ok">JPL</b><span>Die Tabelle der mittleren Bahnelemente habe ich im eingebauten Browser auf deinem Rechner gelesen, mit allen 30 Uranus-Zeilen (Puck steht zweimal da). Die Datei wurde dort gebildet und mit SHA-256 geprüft; die Ablage im Projekt ist Byte für Byte gleich. <code class="c">db/quellen/jpl_uranus_sat_elem.csv</code></span></li>
+      <li><b class="ok">Horizons</b><span>Als Referenz 532 Positionen von 28 Monden zu je 19 Zeitpunkten von 1975 bis 2030, abgerufen über die Horizons-Schnittstelle (ICRF, relativ zur Uranusmitte). S/2025 U1 fehlt: Die Nummer 75052 bezeichnet dort einen Kleinplaneten.</span></li>
+      <li><b class="ok">Ringe</b><span>Ringtabelle aus Wikipedia (Revision 1372354849), ebenfalls mit Prüfsumme gesichert: Radien nach Esposito, Breiten nach Karkoschka und de Pater, e und i nach French.</span></li>
+      <li><b class="new">Neu</b><span>Beide Monde, für die ich Schätzwerte vorgesehen hatte (Entscheidung 12), stehen inzwischen in der JPL-Tabelle. S/2023 U1 ist sogar an Horizons angeglichen. Schätzwerte braucht es nicht mehr.</span></li>
+    </ul>
+
+    <h3 class="sub">Befund: veröffentlichte Mittelwerte taugen nicht als Ort</h3>
+    <p class="muted">JPL weist selbst darauf hin, dass die Mittelwerte nicht für Ortsrechnungen gedacht sind. Der Abgleich zeigt, wie stark das ins Gewicht fällt. Die inneren Monde treffen Horizons erst 0,01 Tage nach ihrer Epoche. Ihre Perioden haben nur vier Stellen, und Cordelias 0,3347 d ist deutlich zu kurz (Horizons: 0,335036 d). Nach einem Jahr steht ein innerer Mond deshalb irgendwo auf seiner Bahn. Bei den irregulären Monden liegt die mittlere Anomalie schon an der Epoche bis zu 180° daneben. <code class="c">tools/UraGen</code> übernimmt deshalb die Form von JPL und passt nur Phase und Periode an Horizons an. Beide Fassungen stehen in der Datenbank, die angeglichene ist die gültige.</p>
+    <figure class="viz" id="devViz">
+      <div class="viz-head">
+        <div><div class="viz-title">Größte Abweichung von Horizons, 1975–2030</div><div class="viz-sub">Winkel vom Uranusmittelpunkt aus, logarithmisch · je Mond</div></div>
+        <div class="legend" aria-hidden="true"><span><i style="background:#d95926"></i>JPL wie veröffentlicht</span><span><i style="background:#3987e5"></i>an Horizons angeglichen</span></div>
+      </div>
+      <div class="viz-scroll"><svg id="devSvg" role="img" aria-label="Größte Abweichung je Mond: veröffentlichte JPL-Werte gegen angeglichene Bahnen" viewBox="0 0 760 610"><g class="tick"><line x1="110" x2="110" y1="20" y2="602" class="grid"></line><text x="110" y="14" text-anchor="middle">0,1°</text></g><g class="tick"><line x1="299.63777997239436" x2="299.63777997239436" y1="20" y2="602" class="grid"></line><text x="299.63777997239436" y="14" text-anchor="middle">1°</text></g><g class="tick"><line x1="489.2755599447887" x2="489.2755599447887" y1="20" y2="602" class="grid"></line><text x="489.2755599447887" y="14" text-anchor="middle">10°</text></g><g class="tick"><line x1="678.9133399171831" x2="678.9133399171831" y1="20" y2="602" class="grid"></line><text x="678.9133399171831" y="14" text-anchor="middle">100°</text></g><text x="0" y="35" class="grp">Hauptmonde</text><text x="0" y="156" class="grp">innere Monde</text><text x="0" y="413" class="grp">irreguläre Monde</text><g class="row" tabindex="0"><rect x="0" y="41.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="53.5" text-anchor="end" class="lbl">Miranda</text><line x1="367.8761819986264" x2="348.95714062422314" y1="50" y2="50" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="348.95714062422314" cy="50" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="367.8761819986264" cy="50" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="41.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="58.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="70.5" text-anchor="end" class="lbl">Ariel</text><line x1="162.8622140440052" x2="226.20697019125242" y1="67" y2="67" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="226.20697019125242" cy="67" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="162.8622140440052" cy="67" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="58.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="75.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="87.5" text-anchor="end" class="lbl">Umbriel</text><line x1="167.0866600828169" x2="188.69462445689783" y1="84" y2="84" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="188.69462445689783" cy="84" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="167.0866600828169" cy="84" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="75.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="92.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="104.5" text-anchor="end" class="lbl">Titania</text><line x1="171.10495171761107" x2="174.936277003319" y1="101" y2="101" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="174.936277003319" cy="101" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="171.10495171761107" cy="101" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="92.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="109.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="121.5" text-anchor="end" class="lbl">Oberon</text><line x1="178.59726377659464" x2="171.10495171761107" y1="118" y2="118" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="171.10495171761107" cy="118" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="178.59726377659464" cy="118" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="109.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="162.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="174.5" text-anchor="end" class="lbl">Cordelia</text><line x1="205.79552044169014" x2="718.1864784444668" y1="171" y2="171" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="718.1864784444668" cy="171" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="205.79552044169014" cy="171" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="162.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="179.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="191.5" text-anchor="end" class="lbl">Ophelia</text><line x1="368.59234861050754" x2="717.83810845407" y1="188" y2="188" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="717.83810845407" cy="188" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="368.59234861050754" cy="188" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="179.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="196.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="208.5" text-anchor="end" class="lbl">Bianca</text><line x1="391.7489129753858" x2="705.8207694869052" y1="205" y2="205" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="705.8207694869052" cy="205" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="391.7489129753858" cy="205" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="196.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="213.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="225.5" text-anchor="end" class="lbl">Cressida</text><line x1="370.3559843407043" x2="725.223431200434" y1="222" y2="222" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="725.223431200434" cy="222" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="370.3559843407043" cy="222" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="213.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="230.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="242.5" text-anchor="end" class="lbl">Desdemona</text><line x1="439.2863778435731" x2="716.079050914073" y1="239" y2="239" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="716.079050914073" cy="239" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="439.2863778435731" cy="239" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="230.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="247.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="259.5" text-anchor="end" class="lbl">Juliet</text><line x1="413.19108234349653" x2="713.7491948946778" y1="256" y2="256" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="713.7491948946778" cy="256" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="413.19108234349653" cy="256" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="247.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="264.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="276.5" text-anchor="end" class="lbl">Portia</text><line x1="437.45271453772773" x2="726.0686215573755" y1="273" y2="273" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="726.0686215573755" cy="273" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="437.45271453772773" cy="273" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="264.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="281.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="293.5" text-anchor="end" class="lbl">Rosalind</text><line x1="318.015579696338" x2="726.5272645932508" y1="290" y2="290" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="726.5272645932508" cy="290" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="318.015579696338" cy="290" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="281.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="298.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="310.5" text-anchor="end" class="lbl">Cupid</text><line x1="374.77214458214195" x2="726.6011495582532" y1="307" y2="307" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="726.6011495582532" cy="307" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="374.77214458214195" cy="307" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="298.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="315.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="327.5" text-anchor="end" class="lbl">Belinda</text><line x1="354.215861108577" x2="716.8880044992288" y1="324" y2="324" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="716.8880044992288" cy="324" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="354.215861108577" cy="324" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="315.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="332.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="344.5" text-anchor="end" class="lbl">Perdita</text><line x1="339.87656620922155" x2="725.6541145560801" y1="341" y2="341" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="725.6541145560801" cy="341" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="339.87656620922155" cy="341" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="332.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="349.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="361.5" text-anchor="end" class="lbl">Puck</text><line x1="352.06538276297124" x2="726.7026332784341" y1="358" y2="358" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="726.7026332784341" cy="358" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="352.06538276297124" cy="358" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="349.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="366.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="378.5" text-anchor="end" class="lbl">Mab</text><line x1="293.6609563048869" x2="722.3385541002065" y1="375" y2="375" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="722.3385541002065" cy="375" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="293.6609563048869" cy="375" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="366.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="419.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="431.5" text-anchor="end" class="lbl">Francisco</text><line x1="444.6960766312571" x2="727.1119095937624" y1="428" y2="428" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="727.1119095937624" cy="428" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="444.6960766312571" cy="428" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="419.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="436.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="448.5" text-anchor="end" class="lbl">Caliban</text><line x1="557.1173995697175" x2="575.3867136910563" y1="445" y2="445" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="575.3867136910563" cy="445" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="557.1173995697175" cy="445" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="436.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="453.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="465.5" text-anchor="end" class="lbl">Stephano</text><line x1="532.1006996256871" x2="596.7605302773616" y1="462" y2="462" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="596.7605302773616" cy="462" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="532.1006996256871" cy="462" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="453.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="470.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="482.5" text-anchor="end" class="lbl">S/2023 U1</text><line x1="530.3188325919618" x2="724.5684226753776" y1="479" y2="479" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="724.5684226753776" cy="479" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="530.3188325919618" cy="479" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="470.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="487.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="499.5" text-anchor="end" class="lbl">Trinculo</text><line x1="394.39732900103087" x2="609.9967298639748" y1="496" y2="496" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="609.9967298639748" cy="496" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="394.39732900103087" cy="496" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="487.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="504.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="516.5" text-anchor="end" class="lbl">Sycorax</text><line x1="462.90388941889546" x2="726.1243508758902" y1="513" y2="513" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="726.1243508758902" cy="513" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="462.90388941889546" cy="513" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="504.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="521.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="533.5" text-anchor="end" class="lbl">Margaret</text><line x1="559.1166671905776" x2="589.6998910616492" y1="530" y2="530" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="589.6998910616492" cy="530" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="559.1166671905776" cy="530" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="521.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="538.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="550.5" text-anchor="end" class="lbl">Prospero</text><line x1="533.3640427904877" x2="705.7732320302305" y1="547" y2="547" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="705.7732320302305" cy="547" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="533.3640427904877" cy="547" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="538.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="555.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="567.5" text-anchor="end" class="lbl">Setebos</text><line x1="489.02811266379575" x2="712.1034930755133" y1="564" y2="564" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="712.1034930755133" cy="564" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="489.02811266379575" cy="564" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="555.5" width="760" height="17" class="hit"></rect></g><g class="row" tabindex="0"><rect x="0" y="572.5" width="760" height="17" class="band" fill="transparent"></rect><text x="100" y="584.5" text-anchor="end" class="lbl">Ferdinand</text><line x1="497.8705090236264" x2="707.7755619104283" y1="581" y2="581" stroke="#2a3e50" stroke-width="2" stroke-linecap="round"></line><circle cx="707.7755619104283" cy="581" r="4.5" fill="#d95926" stroke="#09101A" stroke-width="2"></circle><circle cx="497.8705090236264" cy="581" r="4.5" fill="#3987e5" stroke="#09101A" stroke-width="2"></circle><rect x="0" y="572.5" width="760" height="17" class="hit"></rect></g><text x="710.1864784444668" y="164" text-anchor="end" class="lbl">161° → 0,32°</text></svg></div>
+      <details class="tv"><summary>Als Tabelle</summary><div class="table-wrap"><table id="devTable"><thead><tr><th>Mond</th><th>Gruppe</th><th class="n">JPL max</th><th class="n">JPL mittel</th><th class="n">angeglichen max</th><th class="n">angeglichen mittel</th></tr></thead><tbody><tr><td>Miranda</td><td class="src">Hauptmonde</td><td class="n">1,82</td><td class="n">0,94</td><td class="n">2,29</td><td class="n">0,63</td></tr><tr><td>Ariel</td><td class="src">Hauptmonde</td><td class="n">0,41</td><td class="n">0,13</td><td class="n">0,19</td><td class="n">0,09</td></tr><tr><td>Umbriel</td><td class="src">Hauptmonde</td><td class="n">0,26</td><td class="n">0,10</td><td class="n">0,20</td><td class="n">0,08</td></tr><tr><td>Titania</td><td class="src">Hauptmonde</td><td class="n">0,22</td><td class="n">0,08</td><td class="n">0,21</td><td class="n">0,08</td></tr><tr><td>Oberon</td><td class="src">Hauptmonde</td><td class="n">0,21</td><td class="n">0,12</td><td class="n">0,23</td><td class="n">0,12</td></tr><tr><td>Cordelia</td><td class="src">innere Monde</td><td class="n">161,10</td><td class="n">50,79</td><td class="n">0,32</td><td class="n">0,10</td></tr><tr><td>Ophelia</td><td class="src">innere Monde</td><td class="n">160,42</td><td class="n">41,59</td><td class="n">2,31</td><td class="n">0,60</td></tr><tr><td>Bianca</td><td class="src">innere Monde</td><td class="n">138,64</td><td class="n">45,25</td><td class="n">3,06</td><td class="n">1,07</td></tr><tr><td>Cressida</td><td class="src">innere Monde</td><td class="n">175,47</td><td class="n">57,58</td><td class="n">2,36</td><td class="n">0,59</td></tr><tr><td>Desdemona</td><td class="src">innere Monde</td><td class="n">157,03</td><td class="n">48,74</td><td class="n">5,45</td><td class="n">1,13</td></tr><tr><td>Juliet</td><td class="src">innere Monde</td><td class="n">152,65</td><td class="n">40,21</td><td class="n">3,97</td><td class="n">0,69</td></tr><tr><td>Portia</td><td class="src">innere Monde</td><td class="n">177,28</td><td class="n">34,76</td><td class="n">5,33</td><td class="n">1,12</td></tr><tr><td>Rosalind</td><td class="src">innere Monde</td><td class="n">178,27</td><td class="n">65,30</td><td class="n">1,25</td><td class="n">0,30</td></tr><tr><td>Cupid</td><td class="src">innere Monde</td><td class="n">178,43</td><td class="n">62,38</td><td class="n">2,49</td><td class="n">0,58</td></tr><tr><td>Belinda</td><td class="src">innere Monde</td><td class="n">158,58</td><td class="n">56,27</td><td class="n">1,94</td><td class="n">0,31</td></tr><tr><td>Perdita</td><td class="src">innere Monde</td><td class="n">176,39</td><td class="n">57,35</td><td class="n">1,63</td><td class="n">0,24</td></tr><tr><td>Puck</td><td class="src">innere Monde</td><td class="n">178,65</td><td class="n">41,96</td><td class="n">1,89</td><td class="n">0,28</td></tr><tr><td>Mab</td><td class="src">innere Monde</td><td class="n">169,43</td><td class="n">40,67</td><td class="n">0,93</td><td class="n">0,19</td></tr><tr><td>Francisco</td><td class="src">irreguläre Monde</td><td class="n">179,54</td><td class="n">148,64</td><td class="n">5,82</td><td class="n">2,16</td></tr><tr><td>Caliban</td><td class="src">irreguläre Monde</td><td class="n">28,45</td><td class="n">10,51</td><td class="n">22,79</td><td class="n">6,97</td></tr><tr><td>Stephano</td><td class="src">irreguläre Monde</td><td class="n">36,88</td><td class="n">26,21</td><td class="n">16,82</td><td class="n">9,05</td></tr><tr><td>S/2023 U1</td><td class="src">irreguläre Monde</td><td class="n">174,08</td><td class="n">138,40</td><td class="n">16,46</td><td class="n">8,16</td></tr><tr><td>Trinculo</td><td class="src">irreguläre Monde</td><td class="n">43,31</td><td class="n">28,87</td><td class="n">3,16</td><td class="n">1,22</td></tr><tr><td>Sycorax</td><td class="src">irreguläre Monde</td><td class="n">177,40</td><td class="n">108,17</td><td class="n">7,26</td><td class="n">3,35</td></tr><tr><td>Margaret</td><td class="src">irreguläre Monde</td><td class="n">33,85</td><td class="n">18,30</td><td class="n">23,35</td><td class="n">13,88</td></tr><tr><td>Prospero</td><td class="src">irreguläre Monde</td><td class="n">138,56</td><td class="n">58,58</td><td class="n">17,08</td><td class="n">5,99</td></tr><tr><td>Setebos</td><td class="src">irreguläre Monde</td><td class="n">149,63</td><td class="n">69,25</td><td class="n">9,97</td><td class="n">6,46</td></tr><tr><td>Ferdinand</td><td class="src">irreguläre Monde</td><td class="n">141,97</td><td class="n">56,68</td><td class="n">11,10</td><td class="n">2,91</td></tr></tbody></table></div></details>
+    </figure>
+    <div class="tip" id="devTip" role="tooltip"></div>
+
+    <h3 class="sub">Schema: vier Tabellen und ein Package</h3>
+    <div class="tables">
+      <article><h4>URA_SOURCE · 6 Zeilen</h4><p>Herkunft je Messwert, mit URL, Abrufdatum und SHA-256 der gesicherten Datei.</p>
+        <div class="cols"><i>source_id</i>, code (JPL_URA182/184/117, HZ_FIT, WIKI_RINGS, IAU_2015), title, url, ephemeris, retrieved_on, sha256, note</div></article>
+      <article><h4>URA_BODY · 30 Zeilen</h4><p>Uranus mit Pol und Rotation nach IAU sowie 29 Monde. Nur Fakten, die virtuelle Spalte <code class="c">mass_kg</code> wird aus GM berechnet.</p>
+        <div class="cols"><i>body_id</i>, name ᵁ, naif_id ᵁ, body_group, parent_id, radius_km, gm_km3s2, albedo, discovered_year, discoverer, namesake, pole_ra/dec_deg, w0_deg, wdot_deg_day, sort_no, mass_kg ᵛ</div></article>
+      <article><h4>URA_ORBIT · 58 Zeilen, 29 gültig</h4><p>Die 30 JPL-Zeilen wie veröffentlicht und die 28 angeglichenen. Ein funktionsbasierter Unique-Index sorgt für genau eine gültige Bahn je Mond.</p>
+        <div class="cols"><i>orbit_id</i>, body_id, source_id, ephemeris, frame, epoch_jd, a_km, ecc, incl_deg, node_deg, argp_deg, mean_anom_deg, period_days, apsis/node_period_yr, pole_ra/dec_deg, quality (MEAN/FIT), is_current, fit_max_deg, fit_mean_deg, note</div></article>
+      <article><h4>URA_RING · 13 Zeilen</h4><p>Ringe als schmale Ellipsen. Der ε-Ring ist exzentrisch, e = 0,0079, und zwischen 19,7 und 96,4 km breit.</p>
+        <div class="cols"><i>ring_id</i>, name ᵁ, a_km, width_min/max_km, ecc, incl_deg, tau_min/max, dusty, source_id, note</div></article>
+    </div>
+    <dl class="api" style="margin-top:18px">
+      <dt>bodies() · orbits(quelle) · rings()</dt><dd>Cursor für die App. Ohne Quelle liefert <code class="c">orbits()</code> die gültige Bahn, mit Quelle etwa alle URA184-Bahnen.</dd>
+      <dt>position_at(mond, jd_tdb, quelle)</dt><dd>Ort in Weltkoordinaten, in PL/SQL gerechnet, mit derselben Formel wie Java. Der Durchstich vergleicht beide an 87 Stellen.</dd>
+      <dt>put_source · put_body · put_orbit · put_ring</dt><dd>Laden per MERGE, damit sich jedes Skript wiederholen lässt. <code class="c">put_orbit(…, 'J')</code> nimmt der bisherigen Bahn die Gültigkeit.</dd>
+      <dt>info()</dt><dd>Stand in einer Zeile, auch in der Statuszeile der App (als Tooltip)</dd>
+    </dl>
+
+    <h3 class="sub">In der App</h3>
+    <ul class="principles" style="margin-top:0">
+      <li><b>Start ohne Warten:</b> Die App startet mit dem eingebauten Satz, das sind dieselben Zahlen aus derselben Rechnung. Die Datenbank wird im Hintergrund geladen. Unterscheidet sich etwas, gleiten die Monde in 1,8 s auf die neue Lage.</li>
+      <li><b>Statuszeile:</b> In Reihe 1 steht „Daten: Datenbank DEMO“ (türkis) oder „Daten: eingebaut“. Der Tooltip nennt den Grund, etwa ORA-01017 oder eine fehlende <code class="c">uranus-db.properties</code>. Das Kennwort steht nur in dieser Datei im Projektordner.</li>
+      <li><b>Mondkarte:</b> Sie zeigt die Herkunft der Bahn, z. B. „JPL URA184 · an Horizons angeglichen“.</li>
+      <li><b>ε-Ring als Ellipse:</b> Ringlinie, Ringschatten und Ringflug folgen ihr. Das Perizentrum dreht sich durch J2 um 1,35° am Tag. Seine Lage zur Epoche ist nicht bekannt und als Darstellungswert gesetzt.</li>
+    </ul>
+
+    <h3 class="sub">Dein Lauf</h3>
+    <ol class="steps">
+      <li><b>NetBeans „Clean and Build“</b>. Die neuen Quellen und die Datendateien kommen so nach <code class="c">build\classes</code>.</li>
+      <li><b><code class="c">tools\phase5.bat</code></b> führt Bestandsaufnahme, Einrichtung (00–05) und Durchstich in zwei Läufen aus. Aufgeräumt wird nur <code class="c">URA_*</code>, FCurvedField bleibt unberührt.</li>
+      <li><b>App starten:</b> Nach wenigen Sekunden steht in Reihe 1 „Daten: Datenbank DEMO“.</li>
+      <li>Einzeln gehen auch <code class="c">db_inventur.bat</code> (nur lesen), <code class="c">db_setup.bat [skript]</code> und <code class="c">db_check.bat</code>. <code class="c">pruefen.bat</code> läuft ohne Datenbank.</li>
+    </ol>
+
+    <h3 class="sub">Entscheidungen 10–16 · 23.09.2026</h3>
+    <ol class="dec open">
+      <li><div><h4>Verhältnis zu SOLAR_BODY</h4><ul class="opts"><li class="rec"><b>A</b>eigenständig, SOLAR_BODY nur als Gegenprobe</li><li><b>B</b>Uranus-Zeile aus SOLAR_BODY</li><li><b>C</b>Fremdschlüssel</li></ul></div></li>
+      <li><div><h4>Herkunft der Bahnelemente</h4><ul class="opts"><li class="rec"><b>A</b>Abruf auf deinem Rechner, Ladeskript maschinell erzeugt</li><li><b>B</b>Seite von Hand speichern</li><li><b>C</b>abtippen</li></ul><div class="rec-line">Umgesetzt über den eingebauten Browser auf deinem Rechner, mit Prüfsumme statt eines eigenen Abrufprogramms.</div></div></li>
+      <li><div><h4>Monde ohne JPL-Werte</h4><ul class="opts"><li class="rec"><b>A</b>Schätzwerte, markiert</li><li><b>B</b>nur eingebaut</li></ul><div class="rec-line">Nicht mehr nötig: Beide stehen jetzt in der JPL-Tabelle.</div></div></li>
+      <li><div><h4>Darstellung</h4><ul class="opts"><li class="rec"><b>A</b>Farbe und Oberfläche im Code, DB nur Fakten</li><li><b>B</b>mit in URA_BODY</li></ul></div></li>
+      <li><div><h4>Genauigkeit der Bahnen</h4><ul class="opts"><li class="rec"><b>A</b>Bezugsebenen und Präzession</li><li><b>B</b>nur Epochenwerte</li></ul><div class="rec-line">Dazu der Angleich an Horizons, ohne ihn wäre A wirkungslos (siehe Befund).</div></div></li>
+      <li><div><h4>Ringe</h4><ul class="opts"><li class="rec"><b>A</b>Exzentrizität und wechselnde Breite</li><li><b>B</b>Kreise</li></ul></div></li>
+      <li><div><h4>Laden beim Start</h4><ul class="opts"><li class="rec"><b>A</b>im Hintergrund, Monde gleiten</li><li><b>B</b>vor dem ersten Bild</li></ul></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="geschichten">
+  <div class="sec-label"><div class="eyebrow">Phase 6 · PDBORCL · DEMO</div><h2>Geschichten</h2><p>Gebaut am 23.09.2026 nach deinen Entscheidungen 17–23 (alle A). Dein zweiter Lauf: Einrichtung 170 Anweisungen ohne Fehler, Selbsttest 13/13, Durchstich 77/77, ohne Datenbank 53/53.</p></div>
+  <div class="sec-body">
+    <h3 class="sub" style="margin-top:0">Die vier Geschichten</h3>
+    <div class="fx"><div><ul>
+      <li><div class="nm">Voyager 2 · 1986 · 82 s<span class="tag core">Horizons</span></div><div class="tx">Sieben Stationen vom Anflug bis „Weiter nach Neptun“. Die Uhr läuft mit, die Kamera hängt an der Sonde. Das Modell zeigt die Schüssel zur Sonne sowie Magnetometer-, RTG- und Instrumentenausleger und wird im Uranusschatten dunkel. Die Bahnlinie ist hinter der Sonde hell und vor ihr schwach, mit Stundenmarken (±24 h stündlich, sonst alle 6 h) und den vier berechneten Ereignissen. Oben stehen Abstand, Geschwindigkeit und die Zeit bis zur größten Annäherung. Außerhalb einer Fahrt erscheint die Sonde, sobald die Uhr zwischen dem 21. und 27. Januar 1986 steht.</div></li>
+      <li><div class="nm">Ein Uranusjahr · 90 s<span class="tag core">gerechnet</span></div><div class="tx">Von der Sonnenwende 1946 bis zur Sonnenwende 2030 läuft die Zeit gleichmäßig, etwa ein Jahr pro Sekunde. Die Kamera bleibt auf der Sonnenseite, die Monde sind ausgeblendet, Drehachse und Bahnnormale eingeschaltet. Unten liegt der Jahreszeitenstreifen: Balken von der Nulllinie für die Breite des Sonnenstands, warm für Nord und kühl für Süd, dazu die Ereignisse aus URA_EVENT und eine Marke für jetzt.</div></li>
+      <li><div class="nm">Entdeckungen · 92 s<span class="tag core">DB</span></div><div class="tx">Die Erzählzeit läuft von 1781 bis 2025, Himmel und Bahnen bleiben von heute. Jeder Mond und jeder Ring erscheint erst in seinem Entdeckungsjahr, auch der Ringschatten auf dem Planeten. Noch nicht entdeckte Monde lassen sich nicht anklicken. Unten liegt die Zeitleiste mit einem Punkt je Entdeckung (Monde hell, Ringe sandfarben), rechts stehen die Karten der letzten vier Entdeckungsjahre. Solange eine Karte zu lesen ist, steht die Erzählzeit still.</div></li>
+      <li><div class="nm">Rundflug · 92 s<span class="tag opt">Einführung</span></div><div class="tx">Die Stationen: Mulde, Gitterraum, Miranda, Magnetfeld, Gravitationslinse, 20 s im ε-Ring und „Und jetzt du“. Die Fahrt schaltet die Ebenen selbst und stellt am Ende alles zurück.</div></li>
+    </ul></div></div>
+
+    <h3 class="sub">Abspieler: Stationen als Schlüsselbilder</h3>
+    <ul class="principles" style="margin-top:0">
+      <li><b>Ankommen, verweilen, weiterfliegen:</b> Zur Zeit einer Station steht die Kamera in deren Lage, und ihre Karte erscheint. In den ersten 40 % der Strecke verweilt sie, dann fährt sie weich zur nächsten Station. Am Anfang und nach dem Ringflug fliegt sie zuerst aus der Lage ein, die sie tatsächlich hat. Deshalb springt nichts.</li>
+      <li><b>Bewegte Ziele:</b> Den Ort von Sonde und Monden fragt die Kamera in jedem Bild neu ab. So bleibt Voyager 2 mit 18 km/s in der Bildmitte.</li>
+      <li><b>Zwei Zeitarten:</b> Uhrfahrten (Voyager, Uranusjahr) stellen die Simulationsuhr und geben sie danach auf das Ausgangsdatum zurück. Erzählfahrten (Entdeckungen) lassen die Uhr laufen und führen eine eigene Erzählzeit. Ein Rundflug ohne Zeitpunkte lässt die Uhr einfach weiterlaufen.</li>
+      <li><b>Schalter je Station</b> in <code class="c">layers</code>: moons (0–2 oder off), trails, magneto, space, scale, axis, lens, flight, rate, time (lin/ease), cam=sun (Winkel ab der Sonnenrichtung).</li>
+    </ul>
+
+    <h3 class="sub">Voyager 2: Hyperbel aus 145 Horizons-Vektoren</h3>
+    <ul class="found">
+      <li><b class="ok">Quelle</b><span>Die 145 Vektoren relativ zu Uranus liegen stündlich vom 21. bis 27. Januar 1986 vor (ICRF, TDB). Abgerufen wurden sie im eingebauten Browser und mit SHA-256 auf beiden Seiten gesichert. Laut Horizons ist die Ephemeride <code class="c">Voyager_2_ST+refit2022_m</code> bis 1989 ein Missionsentwurf aus Kegelschnitten. <code class="c">db/quellen/voyager2_horizons.csv</code></span></li>
+      <li><b class="ok">Hyperbel</b><span>q = 107 154 km, e = 5,014192, i = 27,554°, Ω = 335,409°, ω = 215,654°, jeweils zum ICRF-Äquator. Die größte Abweichung von Horizons beträgt 165,4 km, und zwar am Rand bei 3,9 Mio. km Abstand. Gespeichert sind die Hyperbel in URA_CRAFT und alle Vektoren in URA_CRAFT_STATE. Die Prüfung rechnet beide gegeneinander.</span></li>
+      <li><b class="new">Berechnet</b><span>Größte Annäherung am 24.01.1986 um 17:58 UTC, 107 154 km vom Zentrum und 81 595 km über den Wolken, mit 18,03 km/s. Durch die Ringebene um 17:15 UTC bei 115 419 km, außerhalb der dichten Ringe. Miranda am nächsten um 17:02 UTC mit 29 099 km. Im Uranusschatten von 20:25 bis 21:41 UTC.</span></li>
+    </ul>
+
+    <h3 class="sub">Jahreszeiten 1900–2100, aus der Ephemeride</h3>
+    <div class="table-wrap"><table style="min-width:520px">
+      <thead><tr><th>Ereignis</th><th>Datum (UTC)</th><th class="n">Sonne über</th></tr></thead>
+      <tbody>
+        <tr><td>Sonnenwende</td><td>21.09.1901</td><td class="n">82,2° Süd</td></tr>
+        <tr><td>Tagundnachtgleiche</td><td>02.12.1923</td><td class="n">0°</td></tr>
+        <tr><td>Sonnenwende</td><td>04.04.1946</td><td class="n">82,2° Nord</td></tr>
+        <tr><td>Tagundnachtgleiche</td><td>25.01.1966</td><td class="n">0°</td></tr>
+        <tr><td>Sonnenwende</td><td>29.09.1985</td><td class="n">82,2° Süd</td></tr>
+        <tr><td>Tagundnachtgleiche</td><td>05.12.2007</td><td class="n">0°</td></tr>
+        <tr><td>Sonnenwende</td><td>10.04.2030</td><td class="n">82,2° Nord</td></tr>
+        <tr><td>Tagundnachtgleiche</td><td>03.02.2050</td><td class="n">0°</td></tr>
+        <tr><td>Sonnenwende</td><td>06.10.2069</td><td class="n">82,2° Süd</td></tr>
+        <tr><td>Tagundnachtgleiche</td><td>09.12.2091</td><td class="n">0°</td></tr>
+      </tbody></table></div>
+    <p class="small">Die Tagundnachtgleiche 2007 fällt hier auf den 5. Dezember. In Phase 2 stand der 6. Dezember, weil damals auf ganze Tage gesucht wurde. Die Literatur nennt den 7. Dezember. Die restlichen zwei Tage liegen in der Genauigkeit der Standish-Bahn: Um die Tagundnachtgleiche wandert der Sonnenstand nur rund 0,017° am Tag.</p>
+
+    <h3 class="sub">Datenbank: Schaukasten, Teil 1</h3>
+    <div class="tables">
+      <article><h4>URA_EVENT · 57 Zeilen</h4><p>43 Entdeckungen (29 Monde, 13 Ringe, Uranus), 4 Vorbeiflug-Ereignisse, 10 Jahreszeiten. Ein Ereignis hat einen Mond oder einen Ring, nie beides.</p>
+        <div class="cols"><i>event_id</i>, event_jd (UTC), kind, time_prec (YEAR/DAY/MINUTE), title ᵁ, event_text, body_id, ring_id, source_id</div></article>
+      <article><h4>URA_CRAFT · URA_CRAFT_STATE</h4><p>Die Hyperbel (e &gt; 1 als Regel) und 145 Vektoren, wie Horizons sie liefert. Löscht man die Sonde, gehen ihre Vektoren mit.</p>
+        <div class="cols"><i>craft_id</i>, name ᵁ, naif_id, tp_jd, q_km, ecc, incl/node/argp_deg, gm, valid_from/to_jd, fit_max_km · <i>state_id</i>, craft_id, jd_tdb, x/y/z_km, vx/vy/vz_kms</div></article>
+      <article><h4>URA_TOUR · URA_TOUR_STEP</h4><p>4 Fahrten, 33 Stationen; die Stationen fallen mit ihrer Fahrt.</p>
+        <div class="cols"><i>tour_id</i>, code ᵁ, title, overlay, time_mode, sort_no, description · <i>step_id</i>, tour_id, seq, at_s, jd_utc, yaw/pitch_deg, dist, target, layers, title, caption</div></article>
+      <article><h4>URA_RING + URA_API 1.1</h4><p>Die Ringe haben jetzt discovered_year und discoverer. Neu sind die Cursor <code class="c">events</code>, <code class="c">crafts</code>, <code class="c">craft_states</code>, <code class="c">tours</code> und <code class="c">tour_steps</code> sowie die Prozeduren put_event, put_craft, put_craft_state, put_tour und put_tour_step.</p>
+        <div class="cols">Skripte 06_events, 07_voyager, 08_tours, erzeugt von <i>tools/UraStoryGen</i>; 00_drop räumt die neuen Objekte mit ab</div></article>
+    </div>
+
+    <h3 class="sub">Dein Lauf</h3>
+    <ol class="steps">
+      <li><b>NetBeans „Clean and Build“</b>. Damit kommen die neuen Klassen und die drei neuen Datendateien nach <code class="c">build\classes</code>. <code class="c">phase6.bat</code> bricht mit einem Hinweis ab, wenn der Build veraltet ist.</li>
+      <li><b><code class="c">tools\phase6.bat</code></b> baut das Schema neu auf (00–08, nur <code class="c">URA_*</code>) und macht einen Selbsttest mit 13 Zählungen. Dann folgen der Durchstich in zwei Läufen, jetzt mit dem Abschnitt Geschichten und fünf neuen Schemaregeln, und die 51 Prüfungen ohne Datenbank.</li>
+      <li><b>App starten</b> und einen GESCHICHTEN-Knopf drücken. Die Fahrten kommen aus URA_TOUR, sobald „Daten: Datenbank DEMO“ in Reihe 1 steht.</li>
+    </ol>
+
+    <h3 class="sub">Entscheidungen 17–23 · 23.09.2026</h3>
+    <ol class="dec open" style="counter-reset:dc 16">
+      <li><div><h4>Voyager-Bahn: Datenform</h4><ul class="opts"><li class="rec"><b>A</b>Horizons-Vektoren speichern, Hyperbel anpassen, beide vergleichen</li><li><b>B</b>nur Vektoren</li><li><b>C</b>nur Hyperbel</li></ul><div class="rec-line">Ergebnis: 165 km größte Abweichung bei 3,9 Mio. km Abstand. Ein Kegelschnitt ist die Bahn also auch in der Ephemeride nur näherungsweise.</div></div></li>
+      <li><div><h4>Voyager-Darstellung</h4><ul class="opts"><li class="rec"><b>A</b>kleines Modell, Bahnlinie mit Zeitmarken, Kamera folgt</li><li><b>B</b>Leuchtpunkt</li></ul></div></li>
+      <li><div><h4>Jahreszeiten</h4><ul class="opts"><li class="rec"><b>A</b>eigene Geschichte mit Jahreszeitenstreifen</li><li><b>B</b>freie Tempostufen</li></ul></div></li>
+      <li><div><h4>Entdeckungsgeschichte</h4><ul class="opts"><li class="rec"><b>A</b>Monde und Ringe erscheinen im Takt, Zeitleiste und Karten</li><li><b>B</b>nur Zeitleiste</li></ul></div></li>
+      <li><div><h4>Kamerafahrten</h4><ul class="opts"><li class="rec"><b>A</b>URA_TOUR, Abspieler, eingebaute Kopie als Rückfall</li><li><b>B</b>fest im Code</li></ul></div></li>
+      <li><div><h4>Bedienung</h4><ul class="opts"><li class="rec"><b>A</b>GESCHICHTEN mit vier Knöpfen statt SPRINGEN</li><li><b>B</b>vierte Reihe</li><li><b>C</b>Auswahlliste</li></ul><div class="rec-line">Reihe 3 braucht damit 1 412 von 1 460 px.</div></div></li>
+      <li><div><h4>Jahreszeiten-Ereignisse</h4><ul class="opts"><li class="rec"><b>A</b>in Java berechnet, als URA_EVENT gespeichert</li><li><b>B</b>nur in der App</li></ul></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="spielwiese">
+  <div class="sec-label"><div class="eyebrow">Phase 7 · PDBORCL · DEMO</div><h2>Spielwiese</h2><p>Gebaut am 23.09.2026 nach deinen Entscheidungen 24–31 (alle A). Dein Lauf: Einrichtung 184 Anweisungen ohne Fehler, Selbsttest 15/15, Durchstich 107/107, ohne Datenbank 36/36.</p></div>
+  <div class="sec-body">
+    <p>Bisher stehen die Monde dort, wo die Ephemeride sie hinlegt: Jede Lage ist eine Formel der Zeit, und die Monde wissen nichts voneinander. Die Spielwiese dreht das um. Jeder Körper zieht an jedem, die Bahn entsteht Schritt für Schritt aus den Kräften. Erst dadurch kann man eingreifen, also Monde verschieben, werfen, schwerer machen und sehen, was daraus folgt.</p>
+
+    <h3 class="sub">Die Rechnung</h3>
+    <ul class="found">
+      <li><b class="ok">IAS15</b><span>Gauß-Radau-Verfahren 15. Ordnung nach Rein und Spiegel (2015). Die Schrittweite folgt aus dem geschätzten Fehler (ε = 10⁻⁹), Summen sind kompensiert. Die Stützstellen sind gegen die Nullstellen der Legendre-Polynome geprüft, alle weiteren Koeffizienten werden daraus berechnet statt abgeschrieben. Eine Keplerbahn mit e = 0,3 liegt nach 1 000 Umläufen 2,4·10⁻⁶ km neben dem Perizentrum, die Energie stimmt auf 2·10⁻¹⁵.</span></li>
+      <li><b class="ok">Kräfte</b><span>Uranus ist Körper 0 und bewegt sich mit. Er ist abgeplattet (J2 und J4), und die Monde ziehen über die Abplattung auch an ihm zurück. Die Sonne wirkt als Gezeitenkraft, ihr Stand wird alle 6 Stunden neu berechnet.</span></li>
+      <li><b class="ok">Wer mitrechnet</b><span>Die Hauptmonde rechnen mit Masse, die Irregulären als Testkörper; sie werden angezogen, ziehen aber nicht. Die inneren Monde kommen nur im „Gedränge“ vor. Trümmer laufen analytisch auf Ellipsen, die sich durch J2 drehen.</span></li>
+      <li><b class="ok">Massen</b><span>Für die 24 kleinen Monde wird die Masse aus dem Radius und 1,3 g/cm³ geschätzt. Die Dichte steht in <code class="c">URA_BODY.density_assumed</code>, und die Karte schreibt „geschätzt“ dazu.</span></li>
+    </ul>
+
+    <h3 class="sub">Befunde beim Bau</h3>
+    <ul class="found">
+      <li><b>Startwerte</b><span>Die Geschwindigkeiten aus der Ephemeride passen nicht ganz zu GM und J2 der Rechnung, deshalb lief Oberon in 1 000 Tagen 15° davon. Jetzt rechnet die Spielwiese beim Start 60 Tage voraus, misst die Phasendrift jedes Hauptmonds per Regression und korrigiert sein Tempo um −⅓ · δn/n, in zwei Runden. Danach liegen die Hauptmonde nach einem Jahr höchstens 0,26° neben der Ephemeride.</span></li>
+      <li><b class="ok">Horizons</b><span>Unabhängige Probe ab J2000: Nach 1 000 Tagen liegen alle Hauptmonde unter 1,11° neben Horizons (am weitesten Miranda). Nach 20 Jahren sind es bei Miranda 11°, bei den anderen höchstens 4,4°. Für eine Spielwiese reicht das, als Ephemeride taugt die Rechnung nicht.</span></li>
+      <li><b class="ok">J2 gemessen</b><span>Das Perizentrum eines Testkörpers am ε-Ring dreht in der Rechnung um 1,372° je Tag, die Formel erster Ordnung sagt 1,354°. Den Unterschied von 1,3 % erklären J4 und die Terme mit J2².</span></li>
+      <li><b>Tempo</b><span>Der Plan versprach etwa ein Jahr je Sekunde bei 3 % Rechenzeit, das hielt nicht. Gemessen: „Heute, frei“ schafft 754 Tage je Rechensekunde, „Gedränge“ 112. Die App gibt der Rechnung 10 ms je Bild. Die Tempostufen reichen deshalb von 2,4 Stunden bis 100 Tage je Sekunde. Kommt der Rechner nicht mit, steht das in der Bildzeile.</span></li>
+      <li><b class="ok">Roche-Grenze</b><span>Sie gilt nur für Körper, die in der Spielwiese erst von außen hineingeraten. Cordelia liegt von Anfang an innerhalb ihrer Grenze und bleibt ganz. Miranda zerbricht bei 63 034 km (Grenze 63 689 km) in 2 500 Teilchen mit Halbachsen von 81 444 bis 94 859 km.</span></li>
+      <li><b>Gedränge</b><span>Mit tausendfachen Massen ist das Gedränge chaotisch: Ein Lauf zeigt Zusammenstöße ab Tag 131, ein anderer 400 Tage lang keinen. Das bleibt so, geprüft wird nur der Aufbau des Szenarios.</span></li>
+    </ul>
+
+    <h3 class="sub">Was man tun kann</h3>
+    <div class="fx"><div><ul>
+      <li><div class="nm">Ziehen und werfen<span class="tag core">Maus</span></div><div class="tx">Ziehen an einem Mond hält die Zeit an und verschiebt ihn in seiner Bahnebene. Die gestrichelte Vorausschau zeigt die nächsten Umläufe. Beim Loslassen bekommt er die Kreisbahngeschwindigkeit, dazu den Schwung der Maus, umgerechnet auf das Tempo und höchstens dreimal so schnell wie die Kreisbahn.</div></li>
+      <li><div class="nm">Masse per Mausrad<span class="tag core">Maus</span></div><div class="tx">Über einem Mond ändert das Mausrad die Masse in Stufen von ×√10, von ×1/1000 bis ×10 000. Die Mulde wird tiefer, die Karte nennt die Masse in Monden und Erdmassen.</div></li>
+      <li><div class="nm">Gast<span class="tag core">Maus</span></div><div class="tx">Umschalt und Ziehen ins Leere setzt einen neuen Körper. Ein Pfeil von halbem Radius entspricht der Kreisbahngeschwindigkeit. Das Mausrad wählt vorher die Masse zwischen 10¹⁸ und 10²⁶ kg, der Radius folgt aus 2 g/cm³.</div></li>
+      <li><div class="nm">Was dabei passiert<span class="tag opt">sichtbar</span></div><div class="tx">Treffen sich zwei Körper, verschmelzen sie mit einem Aufblitzen, und der Impuls bleibt erhalten. Die Prüfung erfolgt über die Strecke eines ganzen Schritts, damit schnelle Körper nicht durcheinander hindurchfliegen. Wer in Uranus stürzt, macht ihn schwerer. Unter der Roche-Grenze wird ein Mond zum Trümmerring. Wer die Hill-Sphäre verlässt (70 Mio. km), wird gemeldet und entfernt.</div></li>
+      <li><div class="nm">Anzeigen<span class="tag core">gerechnet</span></div><div class="tx">Die Karte des gewählten Monds zeigt Masse, Abstand und die Bahn, wie sie gerade ist, dazu das Umlaufverhältnis zu den Nachbarn und den Abstand zur Ephemeride. Die Bildzeile nennt die Spielzeit, das Tempo und den Energiefehler.</div></li>
+      <li><div class="nm">Rückgängig und zurück<span class="tag core">Zeit</span></div><div class="tx">Alle 2 s wird ein Zwischenstand gespeichert, bis zu 60 Stück. „Rückgängig“ springt einen zurück. „Zurück“ verlässt die Spielwiese: Uhr, Tempo und Anhalten stehen wie vorher, und die Monde gleiten an ihren echten Ort.</div></li>
+      <li><div class="nm">Eigene Szenarien<span class="tag core">DB</span></div><div class="tx">„Eigene ▾“ enthält „Stand speichern“ (nur mit Datenbank), „Jetzt“ und die gespeicherten Szenarien. Gespeichert wird im Hintergrund als <code class="c">EIGEN_JJJJMMTT_hhmmss</code>, danach steht es sofort in der Liste.</div></li>
+    </ul></div></div>
+
+    <h3 class="sub">Fünf eingebaute Szenarien · Start 23.09.2026, 00:00 UTC</h3>
+    <ul class="found">
+      <li><b class="ok">Heute, frei</b><span>15 Körper, 10 Tage je Sekunde. Neben jedem Mond zeigt ein kleiner Kreis, wo die Ephemeride ihn sieht. Nach einem Jahr liegen Miranda 0,06°, Ariel 0,04°, Umbriel 0,13°, Titania 0,26° und Oberon 0,09° daneben.</span></li>
+      <li><b class="ok">Schwere Titania</b><span>Titania mit der hundertfachen Masse. Nach einem Jahr ist Umbriels Exzentrizität von 0,004 auf 0,100 gestiegen, Oberons von 0,002 auf 0,045.</span></li>
+      <li><b class="ok">Miranda fällt</b><span>Miranda wird bei 129 867 km von 6,68 auf 4,79 km/s abgebremst, ihr Perizentrum liegt damit bei 45 000 km. Nach 0,32 Tagen zerbricht sie, die Trümmer ziehen sich über die Umläufe zu einem Ring. Tempo: 2,4 Stunden je Sekunde.</span></li>
+      <li><b class="ok">Besucher</b><span>Ein Körper von Erdmasse auf einer Hyperbel (e = 4,23, 800 000 km Perizentrum, v∞ = 5 km/s, 30° gegen den Äquator), Perizentrum am Tag 30. Nach 120 Tagen läuft Titania mit e = 0,139, Oberon mit 0,049.</span></li>
+      <li><b>Gedränge</b><span>14 Körper: nur die inneren Monde, mit tausendfachen Massen, ohne Vergleich mit der Ephemeride, 30 Tage je Sekunde. Die Überhöhung steht in der Beschreibung.</span></li>
+    </ul>
+
+    <h3 class="sub">Datenbank: Schaukasten, Teil 2</h3>
+    <div class="tables">
+      <article><h4>URA_SCENARIO</h4><p>Ein Szenario mit Startdatum, Tempo, Beschreibung, Herkunft (eingebaut oder von dir gespeichert) und der Angabe, ob gegen die Ephemeride verglichen wird.</p>
+        <div class="cols"><i>scenario_id</i>, code ᵁ, title, description, start_jd, rate_days_s, origin (BUILTIN/USER), compare_eph (J/N), created_on, note</div></article>
+      <article><h4>URA_SCENARIO_BODY</h4><p>Vollständige Zustandsvektoren je Körper, relativ zu Uranus im ICRF wie bei Horizons. Die Zeilen werden mit ihrem Szenario gelöscht. Regeln: gültige Rolle, Masse nicht negativ, ein Gast ohne body_id, (Szenario, seq) und (Szenario, Name) eindeutig.</p>
+        <div class="cols"><i>sb_id</i>, scenario_id, seq, name, body_id?, role (MOON/TEST/GUEST), mass_kg, mass_estimated, radius_km, x/y/z_km, vx/vy/vz_kms</div></article>
+      <article><h4>URA_BODY</h4><p>Neue Spalte density_assumed. Die Regel <code class="c">ura_body_dens_ck</code> erlaubt sie nur dort, wo GM nicht gemessen ist.</p>
+        <div class="cols">density_assumed (g/cm³) · 24 Monde mit 1,3</div></article>
+      <article><h4>URA_API 1.2</h4><p>Die App schreibt zum ersten Mal: <code class="c">put_scenario</code> und <code class="c">put_scenario_body</code> in einer Transaktion. <code class="c">drop_scenario</code> löscht nur eigene; eingebaute sind mit ORA-20005 geschützt, auch gegen Überschreiben. Neu sind die Cursor <code class="c">scenarios</code> und <code class="c">scenario_bodies</code> sowie die Funktion <code class="c">energy</code>.</p>
+        <div class="cols">Skript 09_scenarios.sql (5 Szenarien, 75 Körper), erzeugt von <i>tools/UraPlayGen</i>, dazu eingebaut_szenarien.csv als Rückfall</div></article>
+    </div>
+
+    <h3 class="sub">Dein Lauf</h3>
+    <ol class="steps">
+      <li><b>NetBeans „Clean and Build“</b>. Damit kommen das neue Paket <code class="c">play</code> und <code class="c">eingebaut_szenarien.csv</code> nach <code class="c">build\classes</code>. <code class="c">phase7.bat</code> bricht mit einem Hinweis ab, wenn der Build veraltet ist.</li>
+      <li><b><code class="c">tools\phase7.bat</code></b> baut das Schema neu auf (00–09, nur <code class="c">URA_*</code>). Der Selbsttest zählt jetzt auch 5 Szenarien, 75 Szenario-Körper und 24 Dichten. Dann folgt der Durchstich mit dem neuen Abschnitt „6. Spielwiese“ und sieben neuen Regeln, danach die 36 Prüfungen ohne Datenbank. Protokolle: <code class="c">db_setup.log</code>, <code class="c">db_check.log</code>, <code class="c">phase7.log</code>.</li>
+      <li><b>App starten</b> und „Spielwiese“ in Reihe 2 drücken, dann ein Szenario wählen. „Stand speichern“ in „Eigene ▾“ legt ein eigenes Szenario an. Der Durchstich räumt seine Prüfszenarien (PRUEF_…) selbst wieder ab.</li>
+    </ol>
+
+    <h3 class="sub">Entscheidungen 24–31 · 23.09.2026</h3>
+    <ol class="dec open" style="counter-reset:dc 23">
+      <li><div><h4>Integrator</h4><ul class="opts"><li class="rec"><b>A</b>adaptiv, 15. Ordnung (IAS15 nach Rein und Spiegel 2015)</li><li><b>B</b>symplektischer Leapfrog mit festem Schritt</li><li><b>C</b>Runge-Kutta 4</li></ul><div class="rec-line">Energie über 1 000 Umläufe auf 2·10⁻¹⁵; nahe Begegnungen und Zusammenstöße laufen ohne Sonderfall.</div></div></li>
+      <li><div><h4>Kräfte</h4><ul class="opts"><li class="rec"><b>A</b>Uranus mit J2 und J4, alle Monde gegenseitig, die Sonne als Störer</li><li><b>B</b>nur Punktmassen</li></ul><div class="rec-line">Die Präzession am ε-Ring stimmt auf 1,3 % mit der Formel erster Ordnung, der Rest kommt von J4 und J2².</div></div></li>
+      <li><div><h4>Wer rechnet mit</h4><ul class="opts"><li class="rec"><b>A</b>Hauptmonde mit Masse, Irreguläre als Testkörper, innere Monde nur im „Gedränge“, Trümmer analytisch</li><li><b>B</b>immer alle 29 mit Masse</li></ul><div class="rec-line">Gemessen: 754 Tage je Rechensekunde, im Gedränge 112.</div></div></li>
+      <li><div><h4>Massen der kleinen Monde</h4><ul class="opts"><li class="rec"><b>A</b>aus Radius und angenommener Dichte (1,3 g/cm³), als „geschätzt“ gekennzeichnet</li><li><b>B</b>masselos</li></ul></div></li>
+      <li><div><h4>Eingreifen im Bild</h4><ul class="opts"><li class="rec"><b>A</b>Ziehen, Werfen, Mausrad für die Masse, Umschalt+Ziehen für einen Gast, jeweils mit Vorausschau</li><li><b>B</b>Eingabefelder in einer Karte</li></ul><div class="rec-line">Geworfen wird mit Kreisbahngeschwindigkeit plus dem Schwung der Maus. Ohne Schwung bliebe ein losgelassener Mond fast stehen und fiele.</div></div></li>
+      <li><div><h4>Zusammenstöße und Roche-Grenze</h4><ul class="opts"><li class="rec"><b>A</b>Verschmelzen, Zerbrechen an der Grenze für flüssige Körper, Entkommen melden</li><li><b>B</b>Körper laufen durcheinander hindurch</li></ul><div class="rec-line">Die Grenze gilt nur für Körper, die von außen hineingeraten; Cordelia bleibt ganz.</div></div></li>
+      <li><div><h4>Szenarien in der Datenbank</h4><ul class="opts"><li class="rec"><b>A</b>URA_SCENARIO mit vollständigen Zustandsvektoren, fünf eingebaute, eigene per „Speichern“ aus der App</li><li><b>B</b>nur eingebaut, ohne Speichern</li></ul><div class="rec-line">Die App schreibt nur über URA_API. Ohne Verbindung fehlt „Stand speichern“ im Menü.</div></div></li>
+      <li><div><h4>Bedienleiste</h4><ul class="opts"><li class="rec"><b>A</b>Knopf „Spielwiese“ in Reihe 2; im Modus wechselt Reihe 3</li><li><b>B</b>eine vierte Reihe</li></ul><div class="rec-line">Die erste Fassung der Reihe brauchte 1 768 px und brach um. „Speichern“ wanderte deshalb ins Menü „Eigene ▾“, und die Titel wurden kürzer. Jetzt sind es 1 443 von 1 460 px.</div></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="politur">
+  <div class="sec-label"><div class="eyebrow">Phase 8 · Abnahme</div><h2>Politur</h2><p>Gebaut am 23.09.2026 nach deinen Entscheidungen 32–39 (alle A). Ohne Datenbank 45/45, Oberfläche 27/27. Dein Lauf mit <code class="c">tools\alles.bat</code> steht aus.</p></div>
+  <div class="sec-body">
+    <p>Die App kann alles, was geplant war. Politur heißt jetzt: Was sie weiß, soll man ohne Umweg sehen. Was man sieht, soll man behalten und weitergeben können. Und sie soll sich außerhalb von NetBeans so benehmen wie darin.</p>
+
+    <h3 class="sub">Was dazugekommen ist</h3>
+    <div class="fx"><div><ul>
+      <li><div class="nm">Karten beim Überfahren<span class="tag core">Maus</span></div><div class="tx">Nach 0,3 s Verweilen erscheint am Zeiger eine Karte mit Werten dieses Augenblicks. Monde: Abstand und Tempo jetzt, Zeit seit dem Perizentrum, Masse gemessen oder geschätzt, wie genau die Bahn Horizons trifft. Ringe: Radius und Breite an genau dieser Stelle, Ellipse, optische Tiefe, Entdeckung. Uranus: Sonnenstand und Jahreszeit, nächste Sonnenwende, Abstand zur Sonne. Dazu Voyager 2, die Punkte der Zeitleisten und die beiden Symbole. In der Spielwiese zeigt die Karte Masse, Abstand und Bahn, wie sie gerade ist. Ein Ring wird nur getroffen, wenn der Sehstrahl die Ringebene vor Uranus schneidet.</div></li>
+      <li><div class="nm">Standbild<span class="tag core">Datei</span></div><div class="tx">Taste S oder das Kamerasymbol oben rechts. Der Render-Thread rechnet ein eigenes Bild in doppelter Fenstergröße (höchstens 3 840 px breit), ohne Zeitschritt, ohne Symbole, Hilfe, Karte am Zeiger und Bildzeit. Die Beschriftung wird mitvergrößert und bleibt scharf. Das PNG landet in <code class="c">Bilder\Uranus</code>, der Name trägt das Datum der Szene. Titel, Szene, Sonnenstand und Einstellungen stehen als Textfelder (iTXt, UTF-8) im PNG.</div></li>
+      <li><div class="nm">Hilfe und README<span class="tag core">Text</span></div><div class="tx">F1, ? oder das Symbol „?“ öffnen eine Tafel mit allen Tasten und Griffen, passend zu Übersicht, Geschichte oder Spielwiese. Darin der Knopf „Auf Standard zurück“. <code class="c">README.md</code> im Projektordner: Starten, Bedienung, Datenbank, Prüfen, Aufbau, Quellen (mit der CC-BY-SA-Angabe der Ringtabelle).</div></li>
+      <li><div class="nm">Tastenkürzel<span class="tag core">Tasten</span></div><div class="tx">0 Übersicht, 1–5 Miranda bis Oberon, G Mulde/Gitterraum, T Bahnen, L Beschriftung, + und − Tempo (in der Spielwiese deren Stufen), S Standbild, Strg+Z Rückgängig, F1 und ? Hilfe. Die Tasten stellen die Bedienelemente der Leiste mit, damit Leiste und Szene nie auseinanderlaufen.</div></li>
+      <li><div class="nm">Einstellungen merken<span class="tag opt">Start</span></div><div class="tx">Beim Beenden merkt sich die App Fenster, Raum, Maßstab, Mondstufe, Ebenen, Beschriftung und Tempo über java.util.prefs (Registry). Liegt die gemerkte Fensterlage auf keinem Bildschirm mehr, etwa weil ein zweiter Bildschirm abgesteckt ist, startet das Fenster zentriert. Kaputte Werte führen zum Standard.</div></li>
+      <li><div class="nm">Schärfe<span class="tag opt">Bild</span></div><div class="tx">Die Ansicht liest die Skalierung aus der Grafik des Fensters und meldet sie dem Render-Thread, der dann in Gerätepixeln rechnet. Unter einem virtuellen Bildschirm mit Skalierung 2 geprüft: erkannt, gerechnet in Gerätepixeln; auf den 2 Kernen hier regelte die App die Auflösung auf 70 % der Gerätepixel herunter.</div></li>
+      <li><div class="nm">Leistung<span class="tag opt">Bild</span></div><div class="tx">Tabellen für Bänder und Polarlicht, Vorauswahl der Schattenwerfer, das Innere der Planetenscheibe ohne Sehstrahl, Bloom nur, wo er nicht null ist, Himmel aus dem letzten Bild bei stehender Kamera und Zeit. Ein Referenzweg rechnet alles wie vorher, und die Prüfung vergleicht beide bei jedem Lauf Pixel für Pixel.</div></li>
+      <li><div class="nm">Auslieferung<span class="tag opt">dist</span></div><div class="tx"><code class="c">uranus-db.properties</code> wird im Arbeitsordner, neben <code class="c">Uranus.jar</code>, im Projektordner und unter <code class="c">%USERPROFILE%\.uranus</code> gesucht. Wo nichts gefunden wird, nennt der Tooltip der Statuszeile die gesuchten Orte. Fehler gehen nach <code class="c">.uranus\uranus.log</code> (Wechsel bei 1 MB) und als dezente Zeile ins Bild. Das erste Bild blendet in 0,6 s ein, und das Fenster hat ein eigenes Symbol: Uranus mit fast senkrechtem Ring.</div></li>
+    </ul></div></div>
+
+    <h3 class="sub">Befunde beim Bau</h3>
+    <ul class="found">
+      <li><b>Profil statt Annahme</b><span>Der Plan vermutete das Rauschen in der Planetenoberfläche. Das Profil zeigte etwas anderes: Das teure Rauschen (fbm, drei Oktaven je Pixel) gehört zum Vorhang des Polarlichts, und die Schleife der Mondschatten prüfte jeden Pixel gegen alle Monde, auch wenn keiner einen Schatten werfen konnte. Beides hängt je Bild nur von wenigen Größen ab und steht jetzt in Tabellen oder in einer Vorauswahl.</span></li>
+      <li><b class="ok">Bild gleich</b><span>Gegen den Referenzweg liegen die Bilder im Mittel 0,0004 Grauwerte auseinander, höchstens 1 von 255, in Übersicht, bildfüllend mit Polarlicht, Ringflug und 2007 mit Mondschatten. Der Referenzweg selbst liefert das Bild von Phase 7 Bit für Bit.</span></li>
+      <li><b>Ziel verfehlt</b><span>Uranus bildfüllend kam unter das Ziel von 100 ms nur knapp (93–110 ms je nach Lauf). Die Übersicht kam nicht unter 35 ms, sondern nur von 46 auf 42 ms, weil dort Himmel und Nachbearbeitung den Großteil kosten und die Kamera im Leerlauf ständig dreht. Der Himmel aus dem letzten Bild hilft deshalb nur bei stehender Kamera und angehaltener Zeit. Auf deinem Rechner mit mehr Kernen sind alle Zeiten kürzer, die Verhältnisse bleiben.</span></li>
+      <li><b>Regelung doppelt skaliert</b><span>Die erste Fassung ließ die Auflösungsregelung mit der schon skalierten Größe rechnen. Bei Skalierung 2 stand die Auflösung dann bei „190 %“ und wäre bei jeder Anpassung weiter gesprungen. Aufgefallen ist das beim Nachlesen des Messwerts für dieses Werkbuch. Die Regelung arbeitet jetzt mit dem Anteil an den Gerätepixeln, und eine neue Prüfung verlangt 50–100 % bei Skalierung 2.</span></li>
+      <li><b class="ok">Karte = Rechnung</b><span>Der Abstand auf Titanias Karte ist auf den Kilometer der Wert aus Kepler (437 133 km). Die nächste Sonnenwende auf der Uranus-Karte (10.04.2030) liegt innerhalb eines Tages an dem Maximum, das eine unabhängige Suche in der Ephemeride findet.</span></li>
+    </ul>
+    <figure class="viz">
+      <figcaption>Zeit je Bild vorher und jetzt, hier im Prüfcontainer (2 Kerne, 1 600 × 900, feste Auflösung)</figcaption>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Szene</th><th class="n">Phase 7</th><th class="n">Phase 8</th><th class="n">Änderung</th></tr></thead>
+        <tbody>
+          <tr><td>Übersicht</td><td class="n">45,7 ms</td><td class="n">42,5 ms</td><td class="n">−7 %</td></tr>
+          <tr><td>Titania im Fokus</td><td class="n">50,3 ms</td><td class="n">42,2 ms</td><td class="n">−16 %</td></tr>
+          <tr><td>Spielwiese „Heute“</td><td class="n">47,8 ms</td><td class="n">43,5 ms</td><td class="n">−9 %</td></tr>
+          <tr><td>Uranus bildfüllend</td><td class="n">168,7 ms</td><td class="n">107,9 ms</td><td class="n">−36 %</td></tr>
+          <tr><td>ε-Ring-Flug</td><td class="n">149,7 ms</td><td class="n">140,4 ms</td><td class="n">−6 %</td></tr>
+          <tr><td>Übersicht 2 560 × 1 440</td><td class="n">106,0 ms</td><td class="n">92,9 ms</td><td class="n">−12 %</td></tr>
+        </tbody>
+      </table></div>
+    </figure>
+
+    <h3 class="sub">Dein Lauf</h3>
+    <ol class="steps">
+      <li><b>NetBeans „Clean and Build“</b>. Damit kommen die drei neuen Klassen (AppLog, AppPrefs, Snapshot) in den Build, und <code class="c">dist\Uranus.jar</code> entsteht neu.</li>
+      <li><b><code class="c">tools\alles.bat</code></b> führt alles in einem Zug aus: ohne Datenbank (31 + 21 + 34 + 53 + 36 + 46, die letzte mit der Prüfung von <code class="c">dist</code>), Standbilder, die Oberfläche mit 27 Schritten und den Durchstich. Das Schema wird dabei <i>nicht</i> neu aufgebaut, deine gespeicherten Szenarien bleiben. Die Oberflächenprüfung drückt Tasten und klickt; bitte etwa 3 Minuten Maus und Tastatur nicht benutzen. Hat das Uranus-Fenster keinen Fokus, sendet sie keine Tasten und meldet das. Protokoll: <code class="c">alles.log</code>.</li>
+      <li><b>Einmal aus <code class="c">dist</code> starten</b>, per Doppelklick auf <code class="c">Uranus.jar</code>. In Reihe 1 sollte „Daten: Datenbank DEMO“ stehen, weil die App die Verbindungsdatei jetzt im Projektordner über <code class="c">dist</code> findet. Dann F1, S und das Überfahren von Monden und Ringen ausprobieren.</li>
+    </ol>
+
+    <h3 class="sub">Entscheidungen 32–39 · 23.09.2026</h3>
+    <ol class="dec open" style="counter-reset:dc 31">
+      <li><div><h4>Karten beim Überfahren</h4><ul class="opts"><li class="rec"><b>A</b>eigene kleine Karte am Zeiger mit Werten dieses Augenblicks, für Monde, Ringe, Uranus, Sonde und Zeitleisten</li><li><b>B</b>nur für Monde</li><li><b>C</b>Swing-Tooltips</li></ul><div class="rec-line">Ringe werden über den Sehstrahl gefunden, nicht über Bildpunkte, und nur, wenn die Ringebene vor Uranus liegt.</div></div></li>
+      <li><div><h4>Standbild</h4><ul class="opts"><li class="rec"><b>A</b>Taste S und Symbol im Bild, PNG in doppelter Größe mit Textfeldern, Ordner <code class="c">Bilder\Uranus</code></li><li><b>B</b>nur in Fenstergröße</li><li><b>C</b>dazu eine Bildfolge</li></ul></div></li>
+      <li><div><h4>Hilfe</h4><ul class="opts"><li class="rec"><b>A</b>Hilfetafel im Bild (F1 oder ?) und <code class="c">README.md</code></li><li><b>B</b>nur README</li></ul></div></li>
+      <li><div><h4>Tastenkürzel</h4><ul class="opts"><li class="rec"><b>A</b>der volle Satz (0–5, G, T, L, +/−, S, Strg+Z, F1)</li><li><b>B</b>nur S und F1</li></ul></div></li>
+      <li><div><h4>Einstellungen merken</h4><ul class="opts"><li class="rec"><b>A</b>über java.util.prefs (Registry)</li><li><b>B</b>als Datei</li><li><b>C</b>nichts merken</li></ul><div class="rec-line">Prüfungen benutzen eigene Knoten und löschen sie danach; deine Einstellungen bleiben unberührt, auch das wird geprüft.</div></div></li>
+      <li><div><h4>Schärfe auf skalierten Bildschirmen</h4><ul class="opts"><li class="rec"><b>A</b>in Gerätepixeln rechnen</li><li><b>B</b>wie bisher</li></ul></div></li>
+      <li><div><h4>Leistung</h4><ul class="opts"><li class="rec"><b>A</b>Tabellen, Vorauswahl, Himmel aus dem letzten Bild, per Pixelvergleich gleich</li><li><b>B</b>so lassen</li></ul><div class="rec-line">Bildfüllend −36 %, Übersicht nur −7 %; das Ziel „unter 35 ms“ ist verfehlt.</div></div></li>
+      <li><div><h4>Auslieferung</h4><ul class="opts"><li class="rec"><b>A</b>Suche der Verbindungsdatei an vier Orten, Protokolldatei, weiches Einblenden, eigenes Fenstersymbol</li><li><b>B</b>dazu <code class="c">Uranus.exe</code> per jpackage</li><li><b>C</b>nur aus NetBeans</li></ul></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="entscheidungen">
+  <div class="sec-label"><div class="eyebrow">Festgelegt 22.09.2026</div><h2>Entscheidungen</h2><p>Deine Wahl ist hervorgehoben.</p></div>
+  <div class="sec-body">
+    <ol class="dec">
+      <li><div><h4>Gekrümmter Raum</h4><ul class="opts"><li><b>A</b>Mulde</li><li><b>B</b>Gitterraum</li><li class="rec"><b>C</b>beides, umschaltbar mit Überblendung</li></ul></div></li>
+      <li><div><h4>Monde</h4><ul class="opts"><li><b>A</b>5 Hauptmonde</li><li><b>B</b>+ 14 innere</li><li class="rec"><b>C</b>alle 29, stufenweise zuschaltbar</li></ul></div></li>
+      <li><div><h4>Maßstab</h4><ul class="opts"><li><b>A</b>maßstabsgetreu</li><li><b>B</b>gestaucht</li><li class="rec"><b>C</b>umschaltbar, weich überblendet</li></ul></div></li>
+      <li><div><h4>Zeit</h4><ul class="opts"><li><b>A</b>freie Animation</li><li class="rec"><b>B</b>echtes Datum mit Zeitraffer</li></ul></div></li>
+      <li><div><h4>Kür-Stücke</h4><ul class="opts"><li class="rec"><b>·</b>Magnetfeld &amp; Polarlichter</li><li class="rec"><b>·</b>Voyager 2</li><li class="rec"><b>·</b>Jahreszeiten</li><li class="rec"><b>·</b>Entdeckungsgeschichte</li><li><b>·</b>Ton</li></ul></div></li>
+      <li><div><h4>Interaktion</h4><ul class="opts"><li><b>A</b>Schauen</li><li class="rec"><b>B</b>zusätzlich Spielwiese mit N-Körper-Rechnung</li></ul><div class="rec-line">Wird eigene Phase 7, weil die Spielwiese eine andere Physik braucht als die Ephemeriden-Zeit.</div></div></li>
+      <li><div><h4>Datenbank</h4><ul class="opts"><li class="rec"><b>A</b>schlank zum Start, auf den Schaukasten ausgelegt</li><li><b>B</b>voller Schaukasten</li></ul></div></li>
+      <li><div><h4>Bauweise</h4><ul class="opts"><li><b>A</b>FCurvedField weiterverwenden</li><li class="rec"><b>B</b>eigene Szene in com.dan.uranus</li></ul></div></li>
+      <li><div><h4>Java</h4><ul class="opts"><li class="rec"><b>A</b>JDK 21</li><li><b>B</b>--release 8</li></ul></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="bauplan">
+  <div class="sec-label"><div class="eyebrow">JDK 21 · Swing · FStyle</div><h2>Bauplan</h2><p>50 Klassen, wie gebaut.</p></div>
+  <div class="sec-body">
+    <div class="pk">
+      <div><code>app</code><span>UranusApp (FFrame, Tasten, Fenstersymbol), ControlBar (drei Reihen FStyle, stellt Tasten und gemerkte Werte), AppPrefs (java.util.prefs), Snapshot (PNG mit Textfeldern), AppLog (uranus.log), WrapLayout</span></div>
+      <div><code>model</code><span>Body, BodyGroup, OrbitElements (drei Bezugsebenen, Präzession), OrbitQuality, Ring (Ellipse, Entdeckung), SimClock, StoryEvent, Craft (Hyperbel), Tour (Stationen), Scenario (Zustandsvektoren, Energie), UranusSystem (eingebauter Satz aus eingebaut_*.csv, J4, geschätzte Massen)</span></div>
+      <div><code>play</code><span>Ias15 (Integrator), PlayForces (J2, J4, Sonne), PlayBody, PlayEvent, Debris (analytische Trümmer), Playground (Szenario ↔ Rechnung, Zusammenstöße, Roche, Hill, Vorausschau, Rückgängig, Angleich der Startwerte)</span></div>
+      <div><code>physics</code><span>Ephemeris (Sonnenstand, Pol, Rotation), Kepler, TimeScale (UTC → TDB), SpaceMap (Maßstab), CurvatureField (Mulde, Gitter, Wellen)</span></div>
+      <div><code>render</code><span>Renderer, TourPlayer (Kamerafahrten), PlayLayer (Spuren, Vorausschau, Trümmer, Blitze), RenderLoop, Camera, Hdr, SkyLayer, PlanetLayer, MoonLayer, MagnetoLayer, GeodesicLayer, RingFlight, PostFx, Overlay, SegmentList, PointList, Scene3D, SceneSettings</span></div>
+      <div><code>fx</code><span>Noise (Gitterrauschen für Oberflächen und Milchstraße)</span></div>
+      <div><code>ui</code><span>UranusView: Bild zeigen, Maus und Tasten</span></div>
+      <div><code>db</code><span>UranusDb (Verbindung aus uranus-db.properties), UranusDao (URA_API → UranusSystem, Rückfall)</span></div>
+      <div><code>tools/</code><span>UranusTests (31), Phase4Tests (21), Phase5Tests (34), Phase6Tests (53), Phase7Tests (36), Phase8Tests (45, mit dist 46), UiCheck (27), UranusShots; UraGen (Angleich, 03–05), UraStoryGen (Hyperbel, Ereignisse, Fahrten, 06–08), UraPlayGen (Szenarien, 09), UraDbInventur, UraDbSetup, UraDbCheck; *.bat, alles.bat für die Abnahme</span></div>
+      <div><code>README.md</code><span>Starten, Bedienung, Datenbank, Prüfen, Aufbau, Quellen</span></div>
+      <div><code>db/</code><span>00_drop … 09_scenarios.sql (03–09 erzeugt), quellen/ mit JPL, Horizons (Monde und Voyager 2), Ringtabelle, Berichte</span></div>
+      <div><code>lib/</code><span>FStyle.jar (FFrame, FSegmentedControl, FToggleButton, FButton, FTheme), ojdbc11.jar für Phase 5</span></div>
+    </div>
+    <h3 class="sub">Abweichung vom Vorschlag</h3>
+    <p class="muted">Der RayPhong-Kern aus FStyle.jar wird nicht benutzt. Für Kugeln ist der Strahl-Kugel-Schnitt pro Pixel genauer und schneller als ein Dreiecksnetz, und die leuchtenden Linien brauchen einen eigenen kantengeglätteten Zeichner im HDR-Puffer. Die Kamera ist deshalb eine schlanke eigene Klasse ohne Zwischenobjekte.</p>
+    <h3 class="sub">Weltkoordinaten</h3>
+    <p class="muted">y = Nordpol nach IAU (RA 257,311°, Dec −15,175°), x = Knoten des Uranusäquators auf dem ICRF-Äquator, z = x × y. Uranus dreht rückläufig um +y, die Monde laufen im selben Sinn.</p>
+  </div>
+</section>
+
+<section class="sec" id="pruefung">
+  <div class="sec-label"><div class="eyebrow">Stand 23.09.2026</div><h2>Prüfungen</h2><p>31 + 21 + 34 + 53 + 36 + 45 headless, Oberfläche 27, Datenbank 15 + 107, alle grün. Der Lauf von Phase 8 auf deinem Rechner steht aus.</p></div>
+  <div class="sec-body">
+    <ul class="checks">
+      <li><b>Ephemeride</b> Weltbasis rechtshändig · Tagundnachtgleiche 2007 auf 1 Tag · 1986 Südpol −82,1° · Sonnenwende 2030 mit 82,2° · Sonnenabstand 19,44 AE · Rotation nach 17 h 14 min deckungsgleich · Drehsinn</li>
+      <li><b>Kepler</b> Gleichung bis e = 0,9 auf 4·10⁻¹⁶ · Mirandas Abstandsschwankung = e · Sycorax nach einem Umlauf am selben Ort · Ariel im Drehsinn · Sycorax’ Neigung aus der Bahn zurückgerechnet 159,40°</li>
+      <li><b>Maßstab</b> streng monoton bei jeder Überblendung · stetig an beiden Nahtstellen · echt linear · Ringe unverzerrt</li>
+      <li><b>Datensatz</b> 5/14/10 Monde · 13 Ringe · Umlaufzeiten aus dem 3. Kepler-Gesetz · 9 rückläufige Irreguläre · gleiche Startwinkel bei jedem Aufruf</li>
+      <li><b>Schatten</b> 2007: fünf von fünf Hauptmonden werfen Schatten auf Uranus · 2026: keiner</li>
+      <li><b>Bild</b> Uranus cyan · Gitterraum ≠ Mulde · Linse verändert 4 553 Stichproben · Bloom wirkt · Hauptmonde anklickbar · 31,8 ms je Bild bei 1280 × 720 auf 2 Kernen</li>
+      <li><b>Magnetfeld</b> Achse 59° bei jeder Drehlage · Basis orthonormal · nach einer Umdrehung deckungsgleich · Feldlinie folgt r = L·sin²θ auf 10⁻¹⁵ · Versatz 0,3 R · Polarlicht-Oval = Fußpunkt L = 6 (24,09°)</li>
+      <li><b>Lichtbahnen</b> schwaches Feld: 0,0411 gegen 2K/b = 0,0400 rad · Ablenkung nimmt mit dem Abstand ab · nahe Strahlen enden auf Uranus · Ablenkung zur Masse hin · echte Ablenkung 1,01·10⁻⁸ rad = 2,08 mas</li>
+      <li><b>ε-Ring</b> Umlauf 8,39 h · innen schneller, Verhältnis exakt nach Kepler · Teilchen reproduzierbar · alle im Ringband · Kamera nach dem Einschwenken auf dem ε-Radius, 0,045 über dem Ziel</li>
+      <li><b>Bilder</b> Magnetosphäre sichtbar · 8 038 violette Stichproben Polarlicht · Lichtbahnen sichtbar · im Ringflug Uranus rechts und Brocken im Vordergrund</li>
+      <li><b>Quellen</b> JPL- und Ringtabelle mit SHA-256 wie im Browser berechnet · 30 JPL-Zeilen · 532 Horizons-Positionen</li>
+      <li><b>Bahnen</b> TDB − UTC 69,184 s · Basen orthonormal · Äquator-Bahnpol = −IAU-Pol · Präzessionsrichtung · Horizons: Haupt 2,29°, innere 5,45°, irreguläre 23,35° · URA184 genau 0,01 d versetzt · Cordelia 161° → 0,32°</li>
+      <li><b>Ringe &amp; App</b> ε-Ellipse 50 745–51 553 km, Breite 19,7–96,4 km · Perizentrum 1,354°/Tag · Ringflug folgt der Ellipse · Datensatzwechsel gleitet · Rückfall ohne Datei und ohne Listener</li>
+      <li><b>Skripte</b> 6 Quellen, 30 Körper, 58 Bahnen, genau eine gültige je Mond, 13 Ringe · jeder Block endet mit / · keine IDENTITY · kein Schlüssel auf SOLAR_BODY · kein SELECT *</li>
+      <li><b>Durchstich</b> 53/53 in zwei Läufen mit je Bestand · App-Weg · DB = eingebaut · falsches Kennwort · PL/SQL = Java an 87 Stellen · Horizons · 7 Schemaregeln · Wechsel der gültigen Bahn (zurückgerollt) · SOLAR_BODY-Gegenprobe</li>
+      <li><b>Voyager 2</b> SHA-256 wie im Browser · 145 Vektoren · Hyperbel trifft alle auf 165,4 km = fit_max · größte Annäherung 24.01.1986 17:58 UTC · 107 154 km · Horizons selbst um 18:00 TDB ebenso · 18,03 km/s</li>
+      <li><b>Jahreszeiten</b> 5 Tagundnachtgleichen, Sonne dort unter 0,02° · 5 Sonnenwenden, dort am weitesten vom Äquator (82,2°) · 2007 im Dezember, 2030 im April</li>
+      <li><b>Ereignisse</b> 57 = 43 + 4 + 10 · zeitlich geordnet · jeder Mond und Ring einmal · Ringe mit Entdeckungsjahr</li>
+      <li><b>Fahrten</b> 4 mit 33 Stationen · alle Ziele vorhanden · alle Schalter bekannt · Zeiten innerhalb der Hyperbel</li>
+      <li><b>Abspieler</b> Kamera auf der Sonde (0,0025) · Uhr bei 50 s auf 0,5 s genau an der größten Annäherung · Anhalten hält Fahrt und Uhr · Esc beendet · Ebenen, Uhr und Tempo wie vorher · 1900: genau vier Monde, keine Ringe, nur sie anklickbar · nach 1986: ε, λ, ζ, Puck ja, ν und Caliban nein · Uranusjahr: Monde aus, Achse an, bei 60 s Tagundnachtgleiche · Rundflug bei 70 s im Ring, bei 88 s draußen · Ringflug-Knopf während einer Fahrt</li>
+      <li><b>Skripte 06–08</b> 3 Quellen, 57 Ereignisse · 1 Sonde, 145 Zustände · 4 Fahrten, 33 Stationen · kein Kennwort · Package 1.1 · UraGen und UraStoryGen erzeugen Byte für Byte dieselben Dateien neu</li>
+      <li><b>Durchstich neu</b> 9 Quellen · Abschnitt Geschichten: Zählungen, Ereignisse, Sonde und Fahrten aus der DB = eingebaut, Hyperbel gegen URA_CRAFT_STATE, Entdeckungsjahre der Ringe · Regeln: e = 0,9, Abstand 0, Mond und Ring zugleich, doppelter Titel, unbekannte Fahrt · Kaskade beim Löschen</li>
+      <li><b>IAS15</b> Keplerbahn e = 0,3 nach 1 000 Umläufen wieder am Perizentrum (2,4·10⁻⁶ km) · Energie auf 10⁻¹² · rückwärts wieder am Start · J2-Präzession am ε-Ring 1,372°/Tag gegen 1,354 aus der Formel · Hauptmonde ohne Sonne: Energie über ein Jahr erhalten</li>
+      <li><b>Gegen die Ephemeride</b> „Heute, frei“ nach einem Jahr: Hauptmonde unter 1° (gemessen ≤ 0,26°) · gegen Horizons ab J2000 nach 1 000 Tagen alle unter 2° (gemessen ≤ 1,11°)</li>
+      <li><b>Zerbrechen und Stoß</b> Miranda zerbricht beim ersten Durchgang an der Roche-Grenze · über 2 000 gebundene Trümmer, Miranda ist weg · Cordelia zerbricht nicht · Verschmelzen erhält Masse und Gesamtimpuls · Sturz in Uranus macht ihn schwerer · Hill-Sphäre: gemeldet und entfernt · Rückgängig stellt Masse und Lage wieder her</li>
+      <li><b>Szenarien</b> 5 mit 15/15/15/16/14 Körpern · Schwere Titania: nur die Masse anders · Gedränge: nur innere Monde, Massen als geschätzt markiert · Szenario → Spielwiese → Szenario ohne Verlust · Vorausschau trifft Oberon nach 5 Tagen · über 100 Tage je Rechensekunde</li>
+      <li><b>Bedienung Spielwiese</b> Knopf startet am echten Stand, Uhr folgt · Titania anklickbar · Mausrad ×√10 · Ziehen hält die Zeit an · Loslassen legt Titania weiter nach außen · Umschalt+Ziehen setzt einen Gast, Rückgängig nimmt ihn weg · Speichern erzeugt ein eigenes Szenario · Szenario bringt sein Tempo mit · „Zurück“: Ephemeride, Uhr und Tempo wie vorher · keine Geschichte während der Spielwiese</li>
+      <li><b>Skript 09 und Schema</b> 5 Szenarien, 75 Körper · URA_SCENARIO und URA_SCENARIO_BODY, Dichte nur ohne gemessene Masse · URA_API 1.2 mit scenarios, scenario_bodies, energy, put_/drop_scenario · 00_drop räumt mit ab · 03_bodies: 24 Monde mit Dichte 1,3 · alle Texte passen in ihre Spalte (UTF-8-Bytes) · UraPlayGen erzeugt Byte für Byte dasselbe</li>
+      <li><b>Durchstich Spielwiese</b> Abschnitt „6. Spielwiese“: Zählungen, Dichten, Szenarien aus der DB = eingebaut, Energie PL/SQL = Java auf 10⁻¹², Speichern, Zurücklesen und Löschen eines PRUEF_-Szenarios, keine Reste · Regeln: ungültige Rolle, negative Masse, Gast mit body_id, Dichte neben GM, eingebautes löschen oder überschreiben (ORA-20005), Kaskade beim Löschen (75 → 61)</li>
+      <li><b>Bild gleich</b> schneller Weg gegen Referenzweg in vier Szenen: im Mittel ≤ 0,0004, höchstens 1 Grauwert · Referenzweg = Phase 7 Bit für Bit · bildfüllend 100 statt 184 ms · Himmel aus dem letzten Bild, identisch mit neu gerechnet, bei Drehung neu</li>
+      <li><b>Karten</b> erst nach 0,3 s · ganz im Bild · Abstand = Kepler auf 1 km · Mausbewegung oder gedrückte Taste: keine Karte · Ring ε auf dem Ring, daneben kein Ring · nächste Sonnenwende = Maximum aus der Ephemeride · Zeitleiste der Entdeckungen · Voyager 2 · Symbol „?“</li>
+      <li><b>Hilfe und Bild</b> Tafel mit Knopf, im Bild · passt sich der Spielwiese an · zu = kein Knopf · Fehlerzeile · Fenstersymbol in 9 Größen</li>
+      <li><b>Standbild</b> doppelte Größe · ohne Symbole, Hilfe, Karte, Bildzeit · mit Datum · Name nach der Szene, zweites Bild mit _2 · Textfelder lesbar · Bild unverändert · Ordner aus -Duranus.bilder</li>
+      <li><b>Gerätepixel</b> Skalierung 1,5: 1 200 × 675 für 800 × 450 · Klickziele und Karten treffen dieselben Monde · Regelung bei Skalierung 2 zwischen 50 und 100 %</li>
+      <li><b>Einstellungen</b> eigener Prüfknoten: gespeichert = gelesen · Standard löscht · kaputte Werte → Standard · deine Einstellungen unberührt</li>
+      <li><b>Auslieferung</b> Suche in vier Orten in der richtigen Reihenfolge · -Duranus.db allein · Protokoll wechselt bei 1 MB · dist ohne Verbindungsdatei, auch nicht in der jar · README vollständig und ohne Kennwort</li>
+      <li><b>Oberfläche Phase 8</b> echte Tasten G, T, L, +, −, 4, 0, F1, Esc, S, Strg+Z · Karte beim Überfahren von Titania · Kamerasymbol speichert · Einstellungen: ein zweiter Start liest Gitterraum, Bahnen aus und die Fensterlage · Symbol „?“ und „Auf Standard zurück“ · Tasten nur, wenn das Fenster den Fokus hat</li>
+      <li><b>Oberfläche</b> Fenster sichtbar · alle Elemente jeder Reihe sichtbar · schmales Fenster (980 px) bricht um, nichts abgeschnitten · Szene gezeichnet · Ringflug über den Knopf-Weg · vier GESCHICHTEN-Knöpfe · Voyager-Fahrt stellt die Uhr auf 1986 · Anhalten · derselbe Knopf beendet, Uhr wieder in der Gegenwart · Spielwiese: Reihe 3 wechselt, alle Elemente sichtbar, „Miranda fällt“ zerbricht, „Zurück“ bringt Zeit und Geschichten wieder</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="fallstricke">
+  <div class="sec-label"><div class="eyebrow">Gelernt</div><h2>Fallstricke</h2><p>Damit sie kein zweites Mal kosten.</p></div>
+  <div class="sec-body">
+    <ol class="lessons">
+      <li><b>FSegmentedControl ist 240 px breit, egal wie lang die Einträge sind.</b> Längere Beschriftungen werden abgeschnitten. Abhilfe: Segmentbreite aus der FTheme-Knopfschrift messen, <code class="c">setFixedSegmentWidth</code> und <code class="c">setPreferredSize</code> setzen.</li>
+      <li><b>Die FlowLayout-Falle schlug wieder zu.</b> Zwei Reihen brauchten 1567 und 1590 px bei 1460 px Breite — die zweite Zeile wäre unsichtbar abgeschnitten worden. Jetzt drei Reihen; UiCheck misst jede Reihe.</li>
+      <li><b>Ein Zwischenspeicher, zwei Bedeutungen.</b> Das Linien-Ablegen überschrieb den Puffer, in dem der nächste Bahnpunkt stand — jede zweite Bahnlinie fehlte und sah gestrichelt aus. Werte vorher in lokale Variablen kopieren.</li>
+      <li><b>Schrift nie ins verkleinerte Renderbild malen.</b> Sinkt die Auflösung automatisch, wird sie mit hochskaliert und unscharf. Die Beschriftung ist jetzt eine eigene Ebene in Fensterkoordinaten.</li>
+      <li><b>Nachrechnen statt erinnern: die Sonnenwende ist 2030.</b> Aus Pol und Bahn ergeben sich 82,2° am 11.04.2030. Die Stilprobe vom 22.09. ging im Quelltext noch von 2028 aus; das Werkbuch nennt jetzt nur gerechnete Werte.</li>
+      <li><b>Bahnlinien dürfen die Wellen nicht mitnehmen.</b> Sie zitterten sichtbar. Bahnen liegen jetzt auf der Mulde ohne Wellen, die Monde reiten mit.</li>
+      <li><b>Eine feste Punktgrenze bricht Bahnen still ab.</b> Die Lichtbahn hatte Platz für 2000 Punkte; bei langer Bahn endete sie genau am nächsten Punkt zu Uranus, und die Prüfung maß exakt die halbe Ablenkung. Der Puffer richtet sich jetzt nach der Weglänge.</li>
+      <li><b>Nicht jede Abweichung ist ein Fehler.</b> Nahe am Rand lenkt das Modell ~17 % stärker ab als 2K/b, weil Licht nicht schneller wird wie ein fallender Körper. Geprüft wird die Formel deshalb dort, wo sie gilt: im schwachen Feld (b = 25, 2,7 % Abstand).</li>
+      <li><b>Uranus stand genau neben dem Bild.</b> Beim Ringflug liegt der Planet 90° zur Flugrichtung, der halbe Bildwinkel ist 28,5°. Tangential geschaut war er unsichtbar; jetzt blickt die Kamera 57° nach innen.</li>
+      <li><b>Gleichmäßige Kugeln sehen aus wie Billardkugeln.</b> Brocken haben jetzt einen unregelmäßigen Umriss, und die Größen folgen einer steilen Verteilung: viel Staub, wenige große.</li>
+      <li><b>Verdeckte Monde bekamen Beschriftungen auf dem Planeten.</b> Monde hinter der Scheibe werden jetzt nicht mehr beschriftet.</li>
+      <li><b>Eine Web-Zusammenfassung ist keine Quelle.</b> Das Web-Werkzeug gab für die JPL-Seite Zahlen, Nummern und Bezugsebenen zurück, die dort nicht stehen. Übernommen wird nur, was als Rohtext kam und dessen Prüfsumme auf beiden Seiten gleich ist.</li>
+      <li><b>DataTables zeigt nur eine Seite.</b> Im DOM standen 10 von 460 Zeilen, die Abfrage auf die Tabelle fand deshalb 0 Uranus-Monde. Die Daten kommen über die Tabellen-Schnittstelle <code class="c">rows().data()</code>.</li>
+      <li><b>Mittlere Elemente sind keine Ephemeride.</b> Das gilt für die URA184-Epoche (0,01 Tage versetzt), vierstellige Perioden und die mittlere Anomalie der Irregulären. Erst der Vergleich mit Horizons zeigt das; geprüft wird deshalb gegen Horizons, nicht gegen die eigene Formel.</li>
+      <li><b>Horizons rechnet im ICRF, die App in Weltkoordinaten.</b> Der erste Angleich meldete für jeden Mond 75–100° Abweichung. Die Referenz war nicht umgerechnet.</li>
+      <li><b>Eine Nummer ist kein Name.</b> 75052 ist in der JPL-Tabelle S/2025 U1, in Horizons ein Kleinplanet, dessen Positionen Milliarden Kilometer entfernt lagen.</li>
+      <li><b>Die Äquatorebene hat zwei Seiten.</b> Die Monde laufen rückläufig, der Bahnpol ist die Gegenrichtung des IAU-Nordpols. Damit liegt auch der Knoten um 180° anders. Die alte Abbildung (X, −Z, Y) hätte jede JPL-Bahn gespiegelt.</li>
+      <li><b>UTC ist nicht TDB.</b> 69 Sekunden klingen nach nichts, sind bei Cordelia aber 0,86° Umlauf.</li>
+      <li><b>Ein grüner Vergleich mit sich selbst.</b> „Datenbank = eingebauter Satz“ wäre auch ohne Datenbank grün, weil der Rückfall den eingebauten Satz liefert. Die Prüfung verlangt deshalb ausdrücklich, dass der Satz aus der Datenbank kam.</li>
+      <li><b>Wer einem bewegten Ziel hinterhermischt, verliert es.</b> Zuerst mischte die Kamera zwischen einem festen Startpunkt und dem Ziel. Die Sonde fliegt 18 km/s und stand deshalb am Bildrand. Jetzt wird der Ort des Ziels in jedem Bild neu abgefragt, und nur der Versatz zur Startlage klingt ab.</li>
+      <li><b>Eine Station ohne Verweilen ist nur ein Durchgangspunkt.</b> Im ersten Entwurf fuhr die Kamera immer schon zur nächsten Station, und die Lage der ersten Station wurde nie erreicht. Stationen sind jetzt Schlüsselbilder: ankommen, 40 % verweilen, weiterfliegen.</li>
+      <li><b>Eine Fahrt darf nichts zurücklassen.</b> Uhrfahrten stellen das Datum zurück. Den Ringflug schaltet nur ab, wer ihn eingeschaltet hat; ein Ringflug, den du während einer Fahrt startest, bleibt.</li>
+      <li><b>Gleitkomma-Schritte treffen Grenzen nicht.</b> 0,1 s zwanzigmal addiert ergibt nicht genau 2 s, und die Prüfung „bei 60 s steht die Uhr auf 2007“ lag 20 Tage daneben. Der letzte Schritt einer Prüfung trifft die Zielzeit jetzt genau.</li>
+      <li><b>Reservierte Namen in PL/SQL:</b> <code class="c">by</code>, <code class="c">precision</code> und <code class="c">text</code> gehen als Spalten- oder Parameternamen schief. Private Package-Funktionen sind in SQL nicht erlaubt, ihr Wert muss zuerst in eine Variable.</li>
+      <li><b>VARCHAR2(20) zählt Bytes, nicht das, was man sich vorstellt.</b> Ein Name aus einer fremden Quelle war 24 Zeichen lang, und an der einen Quelle hingen Sonde und Vektoren. Seitdem misst eine Prüfung ohne Datenbank jeden Text der Ladeskripte gegen seine Spalte, in UTF-8-Bytes (Ä, ·, — belegen 2–3).</li>
+      <li><b>Gleiche Zeitpunkte brauchen eine feste Reihenfolge.</b> „ORDER BY Zeit, Titel“ ist eindeutig, aber nicht die Reihenfolge der Quelle. Wer zwei Listen vergleicht, sortiert beide nach demselben Schlüssel.</li>
+      <li><b>Eine Regelprüfung auf eine leere Tabelle beweist nichts.</b> Ein UPDATE ohne Zeilen verletzt keine Regel. Dass die Prüfung dann „lief durch“ meldet, ist richtig so.</li>
+      <li><b>„Ring α“ darf nicht umbrechen.</b> In den Jahreskarten stand „Ring“ am Zeilenende und „α“ am Anfang der nächsten Zeile. Zwischen den beiden steht jetzt ein geschütztes Leerzeichen.</li>
+      <li><b>Richtige Orte, falsche Geschwindigkeiten.</b> Startet eine N-Körper-Rechnung mit Geschwindigkeiten aus der Ephemeride, passen diese nicht genau zu GM und J2 der Rechnung, und die Monde laufen davon (Oberon 15° in 1 000 Tagen). Abhilfe: kurz vorausrechnen, die Drift messen und das Tempo nachstellen.</li>
+      <li><b>Ein Messwert aus zwei Punkten ist Rauschen.</b> Die Drehung des Perizentrums aus Anfang und Ende gemessen ergab 1,80°/Tag, weil die Exzentrizität kurzperiodisch schwankt. Eine Regression über 200 Stichproben ergibt 1,372°/Tag.</li>
+      <li><b>Nach einem Zusammenstoß ist der alte Zustand ungültig.</b> Die Prüfung auf weitere Treffer lief noch mit dem Feld von vor dem Verschmelzen und griff über das Ende hinaus. Sie arbeitet jetzt mit einer frischen Kopie des Zustands.</li>
+      <li><b>Spuren je Bild werden bei hohem Tempo eckig.</b> Bei 100 Tagen je Sekunde läuft Miranda in einem Bild mehrmals um. Die Spuren nehmen ihre Punkte jetzt bei jedem Rechenschritt auf, nicht bei jedem Bild.</li>
+      <li><b>Ein Plan ist keine Messung.</b> „Ein Jahr je Sekunde bei 3 %“ kam aus einer Kraftauswertung, nicht aus einem ganzen Schritt. IAS15 braucht je Schritt mehrere Auswertungen. Gemessen sind es 754 Tage je Rechensekunde, die Tempostufen richten sich danach.</li>
+      <li><b>Die Reihe der Spielwiese brach um.</b> Sie brauchte 1 768 px bei 1 460 px Breite. UiCheck übersprang dabei die unsichtbare Reihe 3 nicht und meldete sie als fehlend. Jetzt werden unsichtbare Reihen übersprungen, und die Reihe passt mit 1 443 px.</li>
+      <li><b>Erst messen, dann beschleunigen.</b> Der Plan vermutete das Rauschen in der Planetenoberfläche; das Profil fand es im Polarlicht und dazu eine Schattenschleife über alle Monde. Ohne Profil wäre an der falschen Stelle gebaut worden.</li>
+      <li><b>Schneller ist nur richtig, wenn das Bild gleich bleibt.</b> Jede Abkürzung hat einen Schalter zurück zum alten Weg, und die Prüfung vergleicht beide Bilder bei jedem Lauf. Ein einmaliger Vergleich beim Bau würde spätere Änderungen nicht mehr sehen.</li>
+      <li><b>Ein Zwischenspeicher kann mehr kosten, als er spart.</b> Den Himmel für das nächste Bild zu kopieren kostete 2,6 ms je Bild, auch wenn die Kamera sich weiterdrehte. Kopiert wird jetzt erst, wenn sie schon ein Bild lang stillstand.</li>
+      <li><b>Zwei Bilder hintereinander sind nicht dasselbe Bild.</b> Die Prüfung „Himmel aus dem Speicher = neu gerechnet“ fand zuerst 194 Grauwerte Abstand. Grund waren das Polarlicht und die Wellen, die in Echtzeit weiterlaufen. Verglichen wird jetzt ohne sie, und dann sind die Bilder identisch.</li>
+      <li><b>Eine Skalierung darf nur einmal wirken.</b> Die Auflösungsregelung rechnete mit der schon mit der Bildschirmskalierung multiplizierten Größe weiter und hätte sich hochgeschaukelt. Geregelt wird der Anteil, gerechnet wird die Pixelzahl.</li>
+      <li><b>\u in einem Kommentar ist kein Text.</b> Java liest <code class="c">\uranus</code> auch im Kommentar als Unicode-Escape und bricht ab. Pfade in Kommentaren stehen deshalb mit Schrägstrich.</li>
+      <li><b>Eine Oberflächenprüfung mit echten Tasten braucht eine Sperre.</b> Hat das Fenster den Fokus nicht, gingen Strg+Z oder S an das Programm, in dem du gerade arbeitest. Die Prüfung sendet nur, wenn das Uranus-Fenster aktiv ist.</li>
+      <li><b>Ein Zähler, der nachwächst, taugt nicht als Beweis.</b> „Rückgängig senkt die Zahl der Zwischenstände“ scheiterte, weil nach 2 s schon der nächste gespeichert war. Geprüft wird jetzt, dass die Spielzeit zurückspringt.</li>
+      <li><b>96 % Zeilenbreite ist auf Windows-Schrift ein Risiko.</b> Die Leiste nutzt jetzt ein umbrechendes Layout (WrapLayout), Beschriftung und Element bleiben zusammen; geprüft bei 980 px Fensterbreite.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="protokoll">
+  <div class="sec-label"><div class="eyebrow">Verlauf</div><h2>Protokoll</h2></div>
+  <div class="sec-body">
+    <dl class="log">
+      <dt>23.09.2026</dt>
+      <dd>Phase 8 gebaut nach den Entscheidungen 32–39 (alle A). Dein Lauf mit alles.bat steht aus.
+        <ul>
+          <li>Karten beim Überfahren (Monde, Ringe über den Sehstrahl, Uranus, Sonde, Zeitleisten, Symbole), Hilfetafel mit „Auf Standard zurück“, Symbole Standbild und Hilfe im Bild, Fehlerzeile.</li>
+          <li>Standbild in doppelter Größe mit Textfeldern im PNG, Tastenkürzel, gemerkte Einstellungen (java.util.prefs), Gerätepixel, Suche der Verbindungsdatei an vier Orten, uranus.log, weiches Einblenden, Fenstersymbol, README.md.</li>
+          <li>Leistung nach Profil: bildfüllend 169 → 108 ms, Übersicht 46 → 42 ms (Ziel 35 ms verfehlt), Bild gegen den Referenzweg im Mittel 0,0004 Grauwerte.</li>
+          <li>Beim Nachlesen gefunden und behoben: Auflösungsregelung bei Skalierung doppelt angewandt; neue Prüfung dafür.</li>
+          <li>247/247 ohne Datenbank (31 + 21 + 34 + 53 + 36 + 45, Oberfläche 27); UraDbCheck zählt beim Löschtest nur noch eingebaute Szenarien. 22 Dateien ins Projekt, alle 97 Quelldateien und das README am Ziel per Prüfsumme gleich.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Dein Lauf von phase7.bat: Phase 7 ist fertig. Planungsrunde für Phase 8.
+        <ul>
+          <li>Einrichtung 184 Anweisungen ohne Fehler, Selbsttest 15/15, Durchstich 107/107 in zwei Läufen, ohne Datenbank 36/36. Energie in PL/SQL gleich Java auf 2,2·10⁻¹⁶.</li>
+          <li>Auf deinem Rechner: „Heute, frei“ nach einem Jahr höchstens 0,14° neben der Ephemeride (Oberon), 610 Tage je Rechensekunde.</li>
+          <li>Für den Plan gesichtet und gemessen: Bildzeiten in neun Szenen mit Profil, Startzeit, Breite der Bedienleiste, Suche der Verbindungsdatei beim Start aus <code class="c">dist</code>.</li>
+          <li>Acht Entscheidungen (32–39) offen.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Phase 7 gebaut nach den Entscheidungen 24–31 (alle A). Der Lauf gegen die Datenbank steht aus.
+        <ul>
+          <li>Paket <code class="c">play</code>: IAS15, Kräfte mit J2, J4 und Sonne, Zusammenstöße über ganze Schritte, Roche-Zerbrechen in 2 500 analytische Trümmer, Hill-Sphäre, Vorausschau, 60 Zwischenstände.</li>
+          <li>Startgeschwindigkeiten an die Ephemeride angeglichen: nach einem Jahr ≤ 0,26° statt 15° Drift; gegen Horizons nach 1 000 Tagen ≤ 1,11°.</li>
+          <li>URA_SCENARIO, URA_SCENARIO_BODY, URA_BODY.density_assumed, URA_API 1.2; 09_scenarios von UraPlayGen erzeugt (5 Szenarien, 75 Körper). Die App speichert eigene Szenarien.</li>
+          <li>Bedienung: Knopf „Spielwiese“ in Reihe 2, Reihe 3 wechselt; Ziehen, Werfen, Mausrad, Umschalt+Ziehen; „Zurück“ stellt alles wieder her.</li>
+          <li>190/190 ohne Datenbank (31 + 21 + 34 + 53 + 36, Oberfläche 15). 34 Dateien ins Projekt, alle 92 Quelldateien am Ziel per Prüfsumme gleich.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Zweiter Lauf von phase6.bat: Phase 6 ist fertig. Planungsrunde für Phase 7.
+        <ul>
+          <li>Einrichtung 170 Anweisungen ohne Fehler, Selbsttest 13/13, Durchstich 77/77 in zwei Läufen, ohne Datenbank 53/53.</li>
+          <li>Rechenzeit einer Kraftauswertung gemessen (6, 30 und 330 Körper). Daraus folgt, welche Körper in der Spielwiese mit Masse rechnen können.</li>
+          <li>Forschungsstand zu den inneren Monden nachgesehen. Eine Arbeit von 2026 (arXiv 2608.16078) war nicht abrufbar, weil die Anfrage wegen zu vieler Zugriffe abgewiesen wurde.</li>
+          <li>Acht Entscheidungen (24–31) offen.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Erster Lauf von phase6.bat: 170 Anweisungen, 3 Fehler; Durchstich 65/75, ohne Datenbank 51/51.
+        <ul>
+          <li>Ursache: Die Ephemeride „Voyager_2_ST+refit2022_m“ hat 24 Zeichen, ura_source.ephemeris fasste 20. Deshalb fehlten die Quelle HZ_VOYAGER2, die Sonde und ihre 145 Vektoren.</li>
+          <li>Die Regel „e = 0,9 wird abgewiesen“ lief ohne Fehler durch, weil es keine Sonde gab, deren Wert man hätte ändern können. Die Prüfung meldete das richtig als Fehler.</li>
+          <li>Zweiter Befund: Titania und Oberon (1787) und Ariel und Umbriel (1851) haben denselben Zeitpunkt. Der Cursor sortierte sie danach nach dem Titel und damit anders als die eingebaute Kopie. Jetzt sortiert er nach der Ladereihenfolge.</li>
+          <li>Behoben: Die Spalte fasst jetzt 60 Zeichen, <code class="c">events</code> sortiert nach <code class="c">event_jd, event_id</code>. Neue Prüfung ohne Datenbank: Alle 801 Texte der Skripte 03–08 passen in ihre Spalte, gemessen in UTF-8-Bytes. Die Gegenprobe mit der alten Breite schlägt an. Der Selbsttest läuft jetzt auch nach Fehlern. 53/53 ohne Datenbank.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Phase 6 gebaut nach den Entscheidungen 17–23 (alle A). Der Lauf gegen die Datenbank steht aus.
+        <ul>
+          <li>Voyager 2: 145 Horizons-Vektoren verbatim gesichert, Hyperbel auf 165 km angepasst, Ereignisse des Vorbeiflugs daraus berechnet.</li>
+          <li>57 Ereignisse, 4 Fahrten mit 33 Stationen; URA_EVENT, URA_CRAFT, URA_CRAFT_STATE, URA_TOUR, URA_TOUR_STEP, URA_API 1.1; 06–08 von UraStoryGen erzeugt.</li>
+          <li>App: TourPlayer mit Schlüsselbildern, Sonde mit Modell und Bahn, Jahreszeitenstreifen, Entdeckungszeitleiste mit Jahreskarten, Entdeckungsfilter für Monde, Ringe und Ringschatten; GESCHICHTEN ersetzt SPRINGEN.</li>
+          <li>148/148 ohne Datenbank (31 + 21 + 34 + 51 + 11); 38 Dateien ins Projekt, alle 78 Quelldateien am Ziel per Prüfsumme gleich.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Dein Lauf von phase5.bat: Phase 5 ist fertig. Planungsrunde für Phase 6.
+        <ul>
+          <li>Bestandsaufnahme: AL32UTF8, Unicode-Rundreise unverändert, alle Rechte da. Vorher gab es kein URA_-Objekt. Das einzige ungültige Objekt im Schema ist die fremde Sicht LOG_BESTAND_V.</li>
+          <li>Einrichtung: 138 Anweisungen, 0 Fehler, Selbsttest 6/6. Titania stand am 23.09.2026 bei x = −424 877 km.</li>
+          <li>Durchstich 53/53 in zwei Läufen. Die SOLAR_BODY-Gegenprobe ist grün; beim Uranusradius stehen 25 362 km (mittlerer Radius) gegen 25 559 km (Äquator), beides richtig.</li>
+          <li>Für den Plan von Phase 6 die Voyager-2-Bahn in Horizons geprüft: vorhanden, aber bis 1989 nur als Missionsentwurf aus Kegelschnitten („rough accuracy“).</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Phase 5 gebaut nach den Entscheidungen 10–16 (alle A). Der Lauf gegen die Datenbank steht aus.
+        <ul>
+          <li>Quellen verbatim gesichert: JPL-Tabelle, 532 Horizons-Positionen, Ringtabelle, jeweils mit SHA-256.</li>
+          <li>Befund: Die veröffentlichten Mittelwerte weichen bis 180° ab. Angleich von Phase und Periode an Horizons: Hauptmonde ≤ 2,3°, innere ≤ 5,5°, irreguläre ≤ 23°.</li>
+          <li>Schema URA_SOURCE/BODY/ORBIT/RING mit Sequence und Trigger, Package URA_API mit position_at in PL/SQL; 03–05 von UraGen erzeugt.</li>
+          <li>App: drei Bezugsebenen, Präzession, TDB, ε-Ring als Ellipse, Laden im Hintergrund mit Gleiten, Statuszeile „Daten“.</li>
+          <li>93/93 ohne Datenbank (31 + 21 + 34 + 7); 40 Dateien ins Projekt, Prüfsummen am Ziel verglichen.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Planungsrunde Phase 5. Der Plan liegt zur Freigabe vor, noch ohne Skripte.
+        <ul>
+          <li>Ausgangspunkt aus den FCurvedField-Skripten: SOLAR_BODY mit Uranus, Titania und Oberon. Das Präfix URA_ ist vor deren Aufräumskript sicher. Ein Fremdschlüssel auf SOLAR_BODY wäre es nicht.</li>
+          <li>Datenquelle: die JPL-Tabelle der mittleren Bahnelemente (Epoche 2000). Sie wird über ein Abrufprogramm auf dem Rechner geholt, weil ein Abtippen über mich in der Probe fehlerhafte Zahlen ergab.</li>
+          <li>Sieben Entscheidungen (10–16) offen.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Phase 4 fertig: Magnetosphäre mit Polarlicht, Lichtbahnen, Flug durch den ε-Ring.
+        <ul>
+          <li>Neu: MagnetoLayer, GeodesicLayer, RingFlight, PointList, Scene3D, WrapLayout; Planet mit Polarlicht, Bewegungsunschärfe und halber Auflösung bei großer Scheibe.</li>
+          <li>Bedienleiste: Schalter „Magnetfeld“ und „Lichtbahnen“, Knopf „ε-Ring-Flug“; bricht bei schmalem Fenster um.</li>
+          <li>58/58 Prüfungen (31 + 20 headless, 7 Oberfläche); 12 Standbilder.</li>
+          <li>Leistung im Prüfcontainer (2 Kerne, 1600 × 900): Übersicht ~45 ms, Ringflug ~105 ms je Bild — die App senkt die Auflösung dann selbst.</li>
+        </ul>
+      </dd>
+      <dt>23.09.2026</dt>
+      <dd>Phasen 1–3 gebaut und ins Projekt geschrieben; aus Phase 4 schon Linse, Bloom und Wellen.
+        <ul>
+          <li>25 Klassen in com.dan.uranus, 3 Prüfprogramme und pruefen.bat in tools\; main.class eingetragen.</li>
+          <li>31/31 Prüfungen headless, Bedienleiste 5/5 unter virtuellem Bildschirm; 8 Standbilder oben in der Galerie.</li>
+          <li>Leistung im Prüfcontainer (2 Kerne): 32 ms je Bild bei 1280 × 720; auf mehr Kernen entsprechend schneller.</li>
+        </ul>
+      </dd>
+      <dt>22.09.2026</dt>
+      <dd>Vorschlag mit Stilprobe; neun Entscheidungen getroffen, „Los!“.
+        <ul>
+          <li>Projektordner gesichtet: leeres NetBeans-Projekt (JDK 21), lib/FStyle.jar, lib/ojdbc11.jar. FCurvedField ist nicht in FStyle.jar.</li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+</section>
+
+<section class="sec" id="kontext">
+  <div class="sec-label"><div class="eyebrow">Übergabe</div><h2>Kontext für neue Chats</h2><p>Kopieren und an den Anfang eines neuen Chats setzen.</p></div>
+  <div class="sec-body">
+    <div class="ctx">
+<pre id="ctxText">Projekt Uranus — NetBeans-Projekt C:\Users\Dan40810\Documents\NetBeansProjects\Uranus
+Java-Swing-App: Uranus mit Ringen und 29 Monden im gekrümmten Raum; Effekte auf hohem Niveau.
+Technik: JDK 21, lib/FStyle.jar (FFrame, FSegmentedControl, FToggleButton, FButton, FTheme), lib/ojdbc11.jar; Paket com.dan.uranus (app, model, physics, render, fx, ui), Hauptklasse com.dan.uranus.app.UranusApp.
+Renderer: eigener Render-Thread, HDR-Puffer, Planet und Monde pro Pixel (Strahl-Kugel), Linien nach Wu, Bloom, Gravitationslinse, Beschriftung als Overlay in Fensterkoordinaten.
+Welt: y = IAU-Nordpol, x = Knoten auf dem ICRF-Äquator; Sonnenstand aus Standish-Bahn; Bahnen analytisch aus der Zeit.
+Entscheidungen: Raum Mulde+Gitterraum; alle 29 Monde stufenweise; Maßstab umschaltbar; echtes Datum; Kür ohne Ton; Spielwiese als eigene Phase; DB schlank, auf Schaukasten ausgelegt; eigene Szene; JDK 21.
+Datenbank (Phase 5): Oracle 21c, Service PDBORCL, Schema DEMO; Präfix URA_, Package URA_API; Sequence+Trigger; erst planen, dann Skripte; Rückkanal über .bat + Protokoll.
+Stand 23.09.2026: Phase 1–4 fertig (u. a. Magnetosphäre, Polarlicht, Lichtbahnen, ε-Ring-Flug). 93/93 Prüfungen ohne DB.
+Phase 5 gebaut (Entscheidungen 10–16 alle A): URA_SOURCE/BODY/ORBIT/RING + URA_API (Cursor, position_at in PL/SQL); Quellen in db/quellen (JPL, Horizons, Ringe; SHA-256); UraGen gleicht JPL-Form an Horizons an und erzeugt 03–05 + eingebaut_*.csv; App lädt im Hintergrund (uranus-db.properties), Rückfall eingebaut. Dein Lauf: Selbsttest 6/6, Durchstich 53/53 — Phase 5 fertig.
+Phase 6 gebaut (Entscheidungen 17–23 alle A): URA_EVENT (57), URA_CRAFT + URA_CRAFT_STATE (Voyager 2, Hyperbel aus 145 Horizons-Vektoren, 165 km), URA_TOUR + URA_TOUR_STEP (4 Fahrten, 33 Stationen), URA_API 1.1; tools/UraStoryGen erzeugt 06–08 + eingebaut_ereignisse/sonden/touren.csv; TourPlayer (Stationen als Schlüsselbilder, Uhr- und Erzählzeit), GESCHICHTEN in Reihe 3. Dein Lauf: Selbsttest 13/13, Durchstich 77/77, Phase6Tests 53/53 — Phase 6 fertig.
+Phase 7 gebaut (Entscheidungen 24–31 alle A): Paket play (Ias15, PlayForces mit J2/J4/Sonne, Playground mit Zusammenstoß, Roche nur für von außen Kommende, Hill 7e7 km, Vorausschau, Rückgängig, Angleich der Startgeschwindigkeiten per Regression über 60 Tage), PlayLayer; Weltkoordinaten: Monde laufen um +y rückläufig, Bahnnormale −y. URA_SCENARIO + URA_SCENARIO_BODY (Zustandsvektoren ICRF relativ zu Uranus), URA_BODY.density_assumed (24 × 1,3), URA_API 1.2 (put_/drop_scenario, energy, ORA-20005 schützt eingebaute); tools/UraPlayGen erzeugt 09 + eingebaut_szenarien.csv; Knopf „Spielwiese“ in Reihe 2, Reihe 3 wechselt. Dein Lauf: Einrichtung 184/0, Selbsttest 15/15, Durchstich 107/107, Phase7Tests 36/36 — Phase 7 fertig.
+Phase 8 (Politur) gebaut (Entscheidungen 32–39 alle A): Karten beim Überfahren (Renderer.probe/hoverShown), Hilfetafel F1/? mit „Auf Standard zurück“, Symbole im Bild, Standbild S (renderStill, PNG 2× mit iTXt, app.Snapshot, Bilder\Uranus), Tasten 0–5 G T L +/− S Strg+Z F1, app.AppPrefs (java.util.prefs, Prüfknoten per -Duranus.prefs), Gerätepixel (SceneSettings.deviceScale, Regelung auf Anteil), Leistung mit Referenzweg Renderer.setExactReference (Pixelvergleich), UranusDb sucht an 4 Orten, app.AppLog (~/.uranus/uranus.log), README.md, tools\alles.bat. Ohne DB 220 + UiCheck 27 grün; dein Lauf alles.bat steht aus.
+Werkbuch-Artefakt "Uranus Werkbuch" nach jeder Runde fortschreiben.</pre>
+      <button type="button" class="tbtn" id="copyCtx">Kopieren</button>
+    </div>
+  </div>
+</section>
+
+<footer>Uranus Werkbuch · Daten: JPL Planetary Satellite Mean Elements (URA182, URA184, URA117), JPL Horizons, Ringtabelle nach Esposito/Karkoschka/de Pater/French, IAU-Rotationselemente, Standish-Bahnelemente. Der interaktive Browser-Entwurf vom 22.09. ist durch die Standbilder der echten App ersetzt.</footer>
+</div>
+
+
+<script>
+(() => {
+  const data = [{"n": "Miranda", "g": "Hauptmonde", "e": "URA182", "jm": 1.82, "ja": 0.94, "fm": 2.29, "fa": 0.63}, {"n": "Ariel", "g": "Hauptmonde", "e": "URA182", "jm": 0.41, "ja": 0.13, "fm": 0.19, "fa": 0.09}, {"n": "Umbriel", "g": "Hauptmonde", "e": "URA182", "jm": 0.26, "ja": 0.1, "fm": 0.2, "fa": 0.08}, {"n": "Titania", "g": "Hauptmonde", "e": "URA182", "jm": 0.22, "ja": 0.08, "fm": 0.21, "fa": 0.08}, {"n": "Oberon", "g": "Hauptmonde", "e": "URA182", "jm": 0.21, "ja": 0.12, "fm": 0.23, "fa": 0.12}, {"n": "Cordelia", "g": "innere Monde", "e": "URA184", "jm": 161.1, "ja": 50.79, "fm": 0.32, "fa": 0.1}, {"n": "Ophelia", "g": "innere Monde", "e": "URA184", "jm": 160.42, "ja": 41.59, "fm": 2.31, "fa": 0.6}, {"n": "Bianca", "g": "innere Monde", "e": "URA184", "jm": 138.64, "ja": 45.25, "fm": 3.06, "fa": 1.07}, {"n": "Cressida", "g": "innere Monde", "e": "URA184", "jm": 175.47, "ja": 57.58, "fm": 2.36, "fa": 0.59}, {"n": "Desdemona", "g": "innere Monde", "e": "URA184", "jm": 157.03, "ja": 48.74, "fm": 5.45, "fa": 1.13}, {"n": "Juliet", "g": "innere Monde", "e": "URA184", "jm": 152.65, "ja": 40.21, "fm": 3.97, "fa": 0.69}, {"n": "Portia", "g": "innere Monde", "e": "URA184", "jm": 177.28, "ja": 34.76, "fm": 5.33, "fa": 1.12}, {"n": "Rosalind", "g": "innere Monde", "e": "URA184", "jm": 178.27, "ja": 65.3, "fm": 1.25, "fa": 0.3}, {"n": "Cupid", "g": "innere Monde", "e": "URA184", "jm": 178.43, "ja": 62.38, "fm": 2.49, "fa": 0.58}, {"n": "Belinda", "g": "innere Monde", "e": "URA184", "jm": 158.58, "ja": 56.27, "fm": 1.94, "fa": 0.31}, {"n": "Perdita", "g": "innere Monde", "e": "URA184", "jm": 176.39, "ja": 57.35, "fm": 1.63, "fa": 0.24}, {"n": "Puck", "g": "innere Monde", "e": "URA184", "jm": 178.65, "ja": 41.96, "fm": 1.89, "fa": 0.28}, {"n": "Mab", "g": "innere Monde", "e": "URA184", "jm": 169.43, "ja": 40.67, "fm": 0.93, "fa": 0.19}, {"n": "Francisco", "g": "irreguläre Monde", "e": "URA117", "jm": 179.54, "ja": 148.64, "fm": 5.82, "fa": 2.16}, {"n": "Caliban", "g": "irreguläre Monde", "e": "URA117", "jm": 28.45, "ja": 10.51, "fm": 22.79, "fa": 6.97}, {"n": "Stephano", "g": "irreguläre Monde", "e": "URA117", "jm": 36.88, "ja": 26.21, "fm": 16.82, "fa": 9.05}, {"n": "S/2023 U1", "g": "irreguläre Monde", "e": "URA117", "jm": 174.08, "ja": 138.4, "fm": 16.46, "fa": 8.16}, {"n": "Trinculo", "g": "irreguläre Monde", "e": "URA117", "jm": 43.31, "ja": 28.87, "fm": 3.16, "fa": 1.22}, {"n": "Sycorax", "g": "irreguläre Monde", "e": "URA117", "jm": 177.4, "ja": 108.17, "fm": 7.26, "fa": 3.35}, {"n": "Margaret", "g": "irreguläre Monde", "e": "URA117", "jm": 33.85, "ja": 18.3, "fm": 23.35, "fa": 13.88}, {"n": "Prospero", "g": "irreguläre Monde", "e": "URA117", "jm": 138.56, "ja": 58.58, "fm": 17.08, "fa": 5.99}, {"n": "Setebos", "g": "irreguläre Monde", "e": "URA117", "jm": 149.63, "ja": 69.25, "fm": 9.97, "fa": 6.46}, {"n": "Ferdinand", "g": "irreguläre Monde", "e": "URA117", "jm": 141.97, "ja": 56.68, "fm": 11.1, "fa": 2.91}];
+  const svg = document.getElementById('devSvg'), tip = document.getElementById('devTip');
+  const ns = 'http://www.w3.org/2000/svg';
+  const W = 760, left = 110, right = 24, rowH = 17, top = 26, gap = 20;
+  const groups = ['Hauptmonde', 'innere Monde', 'irreguläre Monde'];
+  const lo = Math.log10(0.1), hi = Math.log10(200);
+  const x = v => left + (Math.log10(Math.max(v, 0.1)) - lo) / (hi - lo) * (W - left - right);
+  let y = top, rows = [];
+  groups.forEach(g => { const rs = data.filter(d => d.g === g); rows.push({g, y}); y += 24; rs.forEach(d => { d.y = y; y += rowH; }); y += gap - 8; });
+  const H = y;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const el = (t, a, p) => { const e = document.createElementNS(ns, t); for (const k in a) e.setAttribute(k, a[k]); (p || svg).appendChild(e); return e; };
+  [0.1, 1, 10, 100].forEach(v => {
+    const g = el('g', {class: 'tick'});
+    el('line', {x1: x(v), x2: x(v), y1: top - 6, y2: H - 8, class: 'grid'}, g);
+    const t = el('text', {x: x(v), y: top - 12, 'text-anchor': 'middle'}, g); t.textContent = (v < 1 ? '0,1' : v) + '°';
+  });
+  rows.forEach(r => { const t = el('text', {x: 0, y: r.y + 9, class: 'grp'}); t.textContent = r.g; });
+  data.forEach(d => {
+    const g = el('g', {class: 'row', tabindex: 0});
+    el('rect', {x: 0, y: d.y - rowH / 2, width: W, height: rowH, class: 'band', fill: 'transparent'}, g);
+    const t = el('text', {x: left - 10, y: d.y + 3.5, 'text-anchor': 'end', class: 'lbl'}, g); t.textContent = d.n;
+    el('line', {x1: x(d.fm), x2: x(d.jm), y1: d.y, y2: d.y, stroke: '#2a3e50', 'stroke-width': 2, 'stroke-linecap': 'round'}, g);
+    el('circle', {cx: x(d.jm), cy: d.y, r: 4.5, fill: '#d95926', stroke: '#09101A', 'stroke-width': 2}, g);
+    el('circle', {cx: x(d.fm), cy: d.y, r: 4.5, fill: '#3987e5', stroke: '#09101A', 'stroke-width': 2}, g);
+    el('rect', {x: 0, y: d.y - rowH / 2, width: W, height: rowH, class: 'hit'}, g);
+    const f = v => v.toLocaleString('de-DE', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '°';
+    const html = `<b>${d.n}</b> <span class="k">· ${d.g}, JPL ${d.e}</span><br>JPL wie veröffentlicht: <b>${f(d.jm)}</b> <span class="k">(mittel ${f(d.ja)})</span><br>angeglichen: <b>${f(d.fm)}</b> <span class="k">(mittel ${f(d.fa)})</span>`;
+    const show = e => { tip.innerHTML = html; tip.classList.add('on'); const r = e.currentTarget.getBoundingClientRect ? null : null;
+      const px = e.clientX !== undefined ? e.clientX : g.getBoundingClientRect().left + 120, py = e.clientY !== undefined ? e.clientY : g.getBoundingClientRect().top;
+      tip.style.left = Math.min(window.innerWidth - 290, px + 14) + 'px'; tip.style.top = (py + 14) + 'px'; };
+    g.addEventListener('mousemove', show); g.addEventListener('focus', show);
+    g.addEventListener('mouseleave', () => tip.classList.remove('on')); g.addEventListener('blur', () => tip.classList.remove('on'));
+  });
+  // direkte Beschriftung sparsam: nur der extremste Fall
+  const cord = data.find(d => d.n === 'Cordelia');
+  if (cord) { const t = el('text', {x: x(cord.jm) - 8, y: cord.y - 7, 'text-anchor': 'end', class: 'lbl'}); t.textContent = '161° → 0,32°'; }
+  const tb = document.querySelector('#devTable tbody');
+  const f2 = v => v.toLocaleString('de-DE', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  data.forEach(d => { const tr = document.createElement('tr'); tr.innerHTML = `<td>${d.n}</td><td class="src">${d.g}</td><td class="n">${f2(d.jm)}</td><td class="n">${f2(d.ja)}</td><td class="n">${f2(d.fm)}</td><td class="n">${f2(d.fa)}</td>`; tb.appendChild(tr); });
+})();
+</script>
+<script>
+(() => {
+  const main = document.getElementById('gMain'), cap = document.getElementById('gCap');
+  const tabs = Array.from(document.querySelectorAll('.g-thumbs button'));
+  const pick = (b) => {
+    tabs.forEach(t => t.setAttribute('aria-selected', t === b ? 'true' : 'false'));
+    main.src = b.dataset.src; cap.textContent = b.dataset.cap;
+  };
+  tabs.forEach((b, i) => {
+    b.addEventListener('click', () => pick(b));
+    b.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+        n.focus(); pick(n); e.preventDefault();
+      }
+    });
+  });
+  document.getElementById('copyCtx').addEventListener('click', ev => {
+    const pre = document.getElementById('ctxText'), btn = ev.currentTarget;
+    const done = () => { btn.textContent = 'Kopiert'; setTimeout(() => btn.textContent = 'Kopieren', 1800); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Markiert — Strg+C'; };
+    try { navigator.clipboard.writeText(pre.textContent).then(done, fallback); } catch (e) { fallback(); }
+  });
+})();
+</script>
+
+</body></html>

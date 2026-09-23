@@ -1,0 +1,35 @@
+Angleich der JPL-Mittelelemente an Horizons-Positionen
+Quelle Form: db/quellen/jpl_uranus_sat_elem.csv, Referenz: db/quellen/horizons_referenz.csv
+Abweichung = Winkel zwischen gerechneter und Horizons-Richtung vom Uranusmittelpunkt aus,
+über alle Stützstellen 1975–2030. Angeglichen werden nur mittlere Anomalie und Periode.
+
+Mond       Ephem.    JPL max JPL mittel |   neu max neu mittel  Präzession        ΔM0 [°]      P neu [d]
+Miranda    URA182       1.82      0.94 |      2.29      0.63  wie JPL            -0.607      1.4134790
+Ariel      URA182       0.41      0.13 |      0.19      0.09  ohne                0.107      2.5203792
+Umbriel    URA182       0.26      0.10 |      0.20      0.08  wie JPL             0.060      4.1441769
+Titania    URA182       0.22      0.08 |      0.21      0.08  wie JPL            -0.021      8.7058685
+Oberon     URA182       0.21      0.12 |      0.23      0.12  wie JPL            -0.019     13.4632365
+Cordelia   URA184     161.10     50.79 |      0.32      0.10  wie JPL           -10.700      0.3350362
+Ophelia    URA184     160.42     41.59 |      2.31      0.60  ohne               -9.693      0.3763802
+S/2025 U1  URA184          –         – | kein Horizons-Abgleich (keine Referenz)
+Bianca     URA184     138.64     45.25 |      3.06      1.07  wie JPL            -8.422      0.4345795
+Cressida   URA184     175.47     57.58 |      2.36      0.59  wie JPL            -7.787      0.4635698
+Desdemona  URA184     157.03     48.74 |      5.45      1.13  wie JPL            -7.641      0.4736486
+Juliet     URA184     152.65     40.21 |      3.97      0.69  wie JPL            -7.292      0.4930670
+Portia     URA184     177.28     34.76 |      5.33      1.12  wie JPL            -6.960      0.5131913
+Rosalind   URA184     178.27     65.30 |      1.25      0.30  wie JPL            -6.385      0.5584635
+Cupid      URA184     178.43     62.38 |      2.49      0.58  wie JPL            -5.796      0.6128322
+Belinda    URA184     158.58     56.27 |      1.94      0.31  wie JPL            -5.766      0.6235297
+Perdita    URA184     176.39     57.35 |      1.63      0.24  wie JPL            -5.659      0.6380060
+Puck       URA184     178.65     41.96 |      1.89      0.28  wie JPL            -4.776      0.7618334
+Mab        URA184     169.43     40.67 |      0.93      0.19  wie JPL            -3.873      0.9229508
+Francisco  URA117     179.54    148.64 |      5.82      2.16  ohne             -158.927    267.2015126
+Caliban    URA117      28.45     10.51 |     22.79      6.97  ohne               -5.167    578.6105702
+Stephano   URA117      36.88     26.21 |     16.82      9.05  wie JPL            28.036    676.5459026
+S/2023 U1  URA117     174.08    138.40 |     16.46      8.16  ohne              158.966    680.2611670
+Trinculo   URA117      43.31     28.87 |      3.16      1.22  wie JPL            32.523    748.7129483
+Sycorax    URA117     177.40    108.17 |      7.26      3.35  ohne              174.254   1289.7316439
+Margaret   URA117      33.85     18.30 |     23.35     13.88  wie JPL           -10.778   1628.7051195
+Prospero   URA117     138.56     58.58 |     17.08      5.99  ohne              -66.883   1984.6314189
+Setebos    URA117     149.63     69.25 |      9.97      6.46  ohne              142.206   2207.8153940
+Ferdinand  URA117     141.97     56.68 |     11.10      2.91  wie JPL            67.613   2761.7240100

@@ -1,0 +1,134 @@
+Uranus - Datenbank einrichten
+Zeit        : 23.09.2026 08:15:33
+Verzeichnis : C:\Users\Dan40810\Documents\NetBeansProjects\Uranus
+Verbindung  : DEMO @ jdbc:oracle:thin:@//localhost:1521/PDBORCL
+
+---------------------------------------------------------
+Skript: 00_drop.sql
+  BEGIN FOR o IN (SELECT object_name, object_type FROM user_objects WHERE object_type IN ('P …   ok
+  BEGIN FOR t IN (SELECT table_name FROM user_tables WHERE table_name IN ('URA_SCENARIO_BODY …   ok
+  BEGIN FOR t IN (SELECT type_name FROM user_types WHERE type_name LIKE 'T\_URA\_%' ESCAPE ' …   ok
+  BEGIN FOR q IN (SELECT sequence_name FROM user_sequences WHERE sequence_name IN ('URA_SOUR …   ok
+  4 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 01_schema.sql
+  CREATE SEQUENCE ura_source_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_body_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_orbit_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_ring_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_event_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_craft_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_state_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_tour_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_step_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_scen_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE SEQUENCE ura_sb_seq START WITH 1 INCREMENT BY 1 NOCACHE   ok
+  CREATE TABLE ura_source ( source_id NUMBER, code VARCHAR2(20) NOT NULL, title VARCHAR2(200 …   ok
+  COMMENT ON TABLE ura_source IS 'Herkunft der Messwerte. sha256 = Prüfsumme der gesicherten …   ok
+  CREATE OR REPLACE TRIGGER ura_source_bi BEFORE INSERT ON ura_source FOR EACH ROW BEGIN IF  …   ok
+  CREATE TABLE ura_body ( body_id NUMBER, name VARCHAR2(40) NOT NULL, naif_id NUMBER(8), bod …   ok
+  COMMENT ON TABLE ura_body IS 'Uranus und seine Monde. naif_id = JPL-Satellitennummer.'   ok
+  COMMENT ON COLUMN ura_body.mass_kg IS 'Virtuell: gm_km3s2 / G'   ok
+  CREATE OR REPLACE TRIGGER ura_body_bi BEFORE INSERT ON ura_body FOR EACH ROW BEGIN IF :NEW …   ok
+  CREATE TABLE ura_orbit ( orbit_id NUMBER, body_id NUMBER NOT NULL, source_id NUMBER NOT NU …   ok
+  CREATE UNIQUE INDEX ura_orbit_cur_ux ON ura_orbit (CASE WHEN is_current = 'J' THEN body_id …   ok
+  COMMENT ON TABLE ura_orbit IS 'Bahnelemente als präzedierende Ellipse. Winkel in Grad, Epo …   ok
+  COMMENT ON COLUMN ura_orbit.frame IS 'EQUATORIAL: Uranusäquator, Bahnpol gegen IAU-Nordpol …   ok
+  COMMENT ON COLUMN ura_orbit.period_days IS 'Siderische Periode (mittlere Länge)'   ok
+  COMMENT ON COLUMN ura_orbit.fit_max_deg IS 'Größte Abweichung von Horizons 1975-2030 in Gr …   ok
+  CREATE OR REPLACE TRIGGER ura_orbit_bi BEFORE INSERT ON ura_orbit FOR EACH ROW BEGIN IF :N …   ok
+  CREATE TABLE ura_ring ( ring_id NUMBER, name VARCHAR2(10) NOT NULL, a_km NUMBER NOT NULL,  …   ok
+  COMMENT ON TABLE ura_ring IS 'Ringe: große Halbachse, kleinste/größte Breite, Exzentrizitä …   ok
+  CREATE OR REPLACE TRIGGER ura_ring_bi BEFORE INSERT ON ura_ring FOR EACH ROW BEGIN IF :NEW …   ok
+  CREATE TABLE ura_event ( event_id NUMBER, event_jd NUMBER NOT NULL, kind VARCHAR2(12) NOT  …   ok
+  COMMENT ON TABLE ura_event IS 'Zeitachse der Geschichten. event_jd = Julianisches Datum in …   ok
+  CREATE OR REPLACE TRIGGER ura_event_bi BEFORE INSERT ON ura_event FOR EACH ROW BEGIN IF :N …   ok
+  CREATE TABLE ura_craft ( craft_id NUMBER, name VARCHAR2(40) NOT NULL, naif_id NUMBER(8), t …   ok
+  COMMENT ON TABLE ura_craft IS 'Vorbeiflug als Hyperbel: Periapsiszeit (JD, TDB), Periapsis …   ok
+  CREATE OR REPLACE TRIGGER ura_craft_bi BEFORE INSERT ON ura_craft FOR EACH ROW BEGIN IF :N …   ok
+  CREATE TABLE ura_craft_state ( state_id NUMBER, craft_id NUMBER NOT NULL, jd_tdb NUMBER NO …   ok
+  COMMENT ON TABLE ura_craft_state IS 'Horizons-Vektoren relativ zu Uranus, ICRF, km und km/ …   ok
+  CREATE OR REPLACE TRIGGER ura_state_bi BEFORE INSERT ON ura_craft_state FOR EACH ROW BEGIN …   ok
+  CREATE TABLE ura_tour ( tour_id NUMBER, code VARCHAR2(20) NOT NULL, title VARCHAR2(120) NO …   ok
+  CREATE OR REPLACE TRIGGER ura_tour_bi BEFORE INSERT ON ura_tour FOR EACH ROW BEGIN IF :NEW …   ok
+  CREATE TABLE ura_tour_step ( step_id NUMBER, tour_id NUMBER NOT NULL, seq NUMBER(4) NOT NU …   ok
+  COMMENT ON TABLE ura_tour_step IS 'Station einer Kamerafahrt: Zeitpunkt in der Fahrt (s),  …   ok
+  CREATE OR REPLACE TRIGGER ura_step_bi BEFORE INSERT ON ura_tour_step FOR EACH ROW BEGIN IF …   ok
+  CREATE TABLE ura_scenario ( scenario_id NUMBER, code VARCHAR2(30) NOT NULL, title VARCHAR2 …   ok
+  COMMENT ON TABLE ura_scenario IS 'Szenario der Spielwiese: Start (JD, UTC), Tempo (Tage je …   ok
+  CREATE OR REPLACE TRIGGER ura_scen_bi BEFORE INSERT ON ura_scenario FOR EACH ROW BEGIN IF  …   ok
+  CREATE TABLE ura_scenario_body ( sb_id NUMBER, scenario_id NUMBER NOT NULL, seq NUMBER(4)  …   ok
+  COMMENT ON TABLE ura_scenario_body IS 'Körper eines Szenarios: Zustand relativ zur Uranusm …   ok
+  CREATE OR REPLACE TRIGGER ura_sb_bi BEFORE INSERT ON ura_scenario_body FOR EACH ROW BEGIN  …   ok
+  48 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 02_package.sql
+  CREATE OR REPLACE TYPE t_ura_vec AS OBJECT (x NUMBER, y NUMBER, z NUMBER);   ok
+  CREATE OR REPLACE PACKAGE ura_api AS c_version CONSTANT VARCHAR2(10) := '1.2'; -- Lesen -- …   ok
+  CREATE OR REPLACE PACKAGE BODY ura_api AS TYPE t_v IS RECORD (x BINARY_DOUBLE, y BINARY_DO …   ok
+  3 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 03_bodies.sql
+  37 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 04_orbits.sql
+  59 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 05_rings.sql
+  14 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 06_events.sql
+  BEGIN ura_api.put_source(p_code => 'HZ_VOYAGER2', p_title => 'JPL Horizons: Voyager 2 (-32 …   ok
+  BEGIN ura_api.put_source(p_code => 'CALC', p_title => 'Berechnet in der App (Ephemeride, H …   ok
+  BEGIN ura_api.put_source(p_code => 'HIST', p_title => 'Entdeckungsgeschichte (Standardlite …   ok
+  BEGIN ura_api.put_event(2371629.416667, 'DISCOVERY', 'DAY', 'Uranus entdeckt', 'William He …   ok
+  COMMIT   ok
+  5 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 07_voyager.sql
+  BEGIN ura_api.put_craft(p_name => 'Voyager 2', p_naif => -32, p_tp_jd => 2446455.249844111 …   ok
+  BEGIN ura_api.put_craft_state('Voyager 2', 2446452.25, -266005.1, 3539832.5, 1621717.9, 0. …   ok
+  COMMIT   ok
+  3 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 08_tours.sql
+  BEGIN ura_api.put_tour('VOYAGER', 'Voyager 2 · 1986', 'VOYAGER', 'CLOCK', 1, 'Der einzige  …   ok
+  BEGIN ura_api.put_tour('JAHR', 'Ein Uranusjahr', 'SEASONS', 'CLOCK', 2, '84 Erdjahre in 90 …   ok
+  BEGIN ura_api.put_tour('ENTDECKUNG', 'Entdeckungen', 'DISCOVERY', 'STORY', 3, 'Von Hersche …   ok
+  BEGIN ura_api.put_tour('RUNDFLUG', 'Rundflug', 'NONE', 'STORY', 4, 'Einführung: was die Ap …   ok
+  COMMIT   ok
+  5 Anweisungen, ohne Fehler
+---------------------------------------------------------
+Skript: 09_scenarios.sql
+  BEGIN ura_api.put_scenario(p_code => 'HEUTE', p_title => 'Heute, frei', p_description => ' …   ok
+  BEGIN ura_api.put_scenario(p_code => 'TITANIA', p_title => 'Schwere Titania', p_descriptio …   ok
+  BEGIN ura_api.put_scenario(p_code => 'MIRANDA', p_title => 'Miranda fällt', p_description  …   ok
+  BEGIN ura_api.put_scenario(p_code => 'BESUCHER', p_title => 'Besucher', p_description => ' …   ok
+  BEGIN ura_api.put_scenario(p_code => 'GEDRAENGE', p_title => 'Gedränge', p_description =>  …   ok
+  COMMIT   ok
+  6 Anweisungen, ohne Fehler
+
+=========================================================
+Fertig. 184 Anweisungen, 0 Fehler.
+
+Selbsttest
+---------------------------------------------------------
+   Quellen                       9     [ok]
+   Körper (Uranus + 29 Monde)    30    [ok]
+   Bahnen insgesamt              58    [ok]
+   davon gültig                  29    [ok]
+   Ringe                         13    [ok]
+   Ringe mit Entdeckungsjahr     13    [ok]
+   Ereignisse                    57    [ok]
+   Sonden                        1     [ok]
+   Sondenzustände (Horizons)     145   [ok]
+   Fahrten                       4     [ok]
+   Stationen                     33    [ok]
+   Szenarien (eingebaut)         5     [ok]
+   Körper in Szenarien           75    [ok]
+   Monde mit angenommener Dichte 24    [ok]
+   Ungültige Uranus-Objekte      0     [ok]
+   URA_API 1.2 · 30 Körper · 29 gültige Bahnen (28 angeglichen) aus 58 · 13 Ringe · 57 Ereignisse · 4 Fahrten · 5 Szenarien
+   Durchstich: Titania am 23.09.2026 bei x=-424877 y=134 z=-102422 km
+
+Einrichtung in Ordnung. Weiter mit db_check.bat.

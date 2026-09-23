@@ -1,0 +1,82 @@
+Uranus - Bestandsaufnahme im Schema (nur lesen)
+Zeit        : 23.09.2026 02:55:00
+Verzeichnis : C:\Users\Dan40810\Documents\NetBeansProjects\Uranus
+Verbindung  : DEMO @ jdbc:oracle:thin:@//localhost:1521/PDBORCL
+
+Datenbank   : Oracle Database 21c Enterprise Edition Release 21.0.0.0.0 - Production Version 21.3.0.0.0
+Treiber     : 23.26.2.0.0
+
+--- Sitzung
+   pdb                schema_name        db_zeitzone        sitzungszone       
+   PDBORCL            DEMO               Europe/Berlin      Europe/Berlin      
+
+--- Zeichensatz
+   parameter          value              
+   NLS_NCHAR_CHARACTERSET AL16UTF16          
+   NLS_CHARACTERSET   AL32UTF8           
+Unicode-Rundreise: unverändert
+
+--- Rechte (Auszug)
+   privilege          
+   CREATE PROCEDURE   
+   CREATE SEQUENCE    
+   CREATE TABLE       
+   CREATE TRIGGER     
+   CREATE TYPE        
+   CREATE VIEW        
+
+--- Kontingente
+   tablespace_name    bytes              max_bytes          
+   USERS              33161216           -1                 
+   SYSAUX             0                  -1                 
+   SYSTEM             0                  -1                 
+
+--- Objekte nach Präfix
+   praefix            object_type        anzahl             
+   andere             INDEX              127                
+   andere             INDEX PARTITION    2                  
+   andere             JOB                2                  
+   andere             LOB                22                 
+   andere             MATERIALIZED VIEW  1                  
+   andere             PACKAGE            4                  
+   andere             PACKAGE BODY       4                  
+   andere             PROCEDURE          1                  
+   andere             PROGRAM            1                  
+   andere             SEQUENCE           47                 
+   andere             TABLE              52                 
+   andere             TABLE PARTITION    2                  
+   andere             TRIGGER            31                 
+   andere             TYPE               11                 
+   andere             TYPE BODY          4                  
+   andere             VIEW               23                 
+   FCF_ (FCurvedField) FUNCTION           9                  
+   FCF_ (FCurvedField) INDEX              16                 
+   FCF_ (FCurvedField) JOB                3                  
+   FCF_ (FCurvedField) PACKAGE            3                  
+   FCF_ (FCurvedField) PACKAGE BODY       3                  
+   FCF_ (FCurvedField) PROCEDURE          1                  
+   FCF_ (FCurvedField) PROGRAM            1                  
+   FCF_ (FCurvedField) SEQUENCE           5                  
+   FCF_ (FCurvedField) TABLE              7                  
+   FCF_ (FCurvedField) TRIGGER            7                  
+   FCF_ (FCurvedField) VIEW               1                  
+   SOLAR_ (FCurvedField) INDEX              5                  
+   SOLAR_ (FCurvedField) SEQUENCE           1                  
+   SOLAR_ (FCurvedField) TABLE              1                  
+   SOLAR_ (FCurvedField) TRIGGER            1                  
+
+--- Uranus-Objekte
+   object_name        object_type        status             geaendert          
+   (keine Zeilen)
+
+--- Ungültige Objekte (alle)
+   object_name        object_type        
+   LOG_BESTAND_V      VIEW               
+
+--- SOLAR_BODY: Uranus und seine Monde
+   name               body_type          radius_km          semi_major_au      a_km               orbit_years        eccentricity       inclination_deg    discovered_year    
+   Titania            MOON               788.4              0.00291            435330             0.0238             0.0011             0.34               1787               
+   Oberon             MOON               761.4              0.0039             583432             0.0368             0.0014             0.058              1787               
+   Uranus             PLANET             25362              19.191             2870932737         84.011             0.0457             0.77               1781               
+
+Ende der Bestandsaufnahme. Geändert wurde nichts.

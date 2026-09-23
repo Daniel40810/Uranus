@@ -1,0 +1,135 @@
+Uranus - Durchstich gegen die Datenbank
+Zeit        : 23.09.2026 09:29:38
+Verzeichnis : C:\Users\Dan40810\Documents\NetBeansProjects\Uranus
+Verbindung  : DEMO @ jdbc:oracle:thin:@//localhost:1521/PDBORCL
+
+================================================= Lauf 1 von 2
+--- 1. Bestand
+[ok]     Quellen (6 Bahnen/Ringe + 3 Geschichten)
+[ok]     Keine eigenen Szenarien übrig (von früheren Prüfläufen)
+[ok]     Uranus und 29 Monde
+[ok]     58 Bahnen, 29 davon gültig — 58 / 29
+[ok]     Gültig: 28 angeglichen, S/2025 U1 als JPL-Mittelwert — 28 angeglichen
+[ok]     13 Ringe
+[ok]     Keine ungültigen Uranus-Objekte
+[ok]     Griechische Ringnamen unverändert gespeichert
+[ok]     Virtuelle Spalte mass_kg: Titania 3,4·10²¹ kg, Cupid ohne GM → NULL
+--- 2. Was die App lädt
+[ok]     App-Weg: Datensatz kommt aus der Datenbank — Datenbank DEMO · URA_API 1.2 · 30 Körper · 29 gültige Bahnen (28 angeglichen) aus 58 · 13 Ringe · 57 Ereignisse · 4 Fahrten · 5 Szenarien
+[ok]     Datenbank = eingebauter Satz (29 Monde, alle Bahnelemente) — 29 gleich
+[ok]     Ringe = eingebauter Satz, gleiche Reihenfolge — 13 gleich
+[ok]     Falsches Kennwort: eingebauter Satz, Grund ORA-01017 — ORA-01017: Benutzername/Kennwort ungültig; Anmeldung abgelehnt
+--- 3. PL/SQL rechnet wie Java
+[ok]     position_at = OrbitElements.position (29 Monde × 3 Zeitpunkte) — 87 Vergleiche, größter Abstand 1,69e-06 km (Cordelia)
+[ok]     position_at mit Quelle: veröffentlichte URA184-Bahn abrufbar
+--- 4. Gegen Horizons
+[ok]     Bahnen aus der Datenbank folgen Horizons 1975–2030 — größte Abweichung Haupt 2,29°, innere 5,45°, irreguläre 23,35°
+[ok]     Abweichung je Bahn in fit_max_deg hinterlegt — 28 Bahnen
+[ok]     Quellen nebeneinander abrufbar: 14 Bahnen aus URA184 — 14
+--- 5. Geschichten
+[ok]     57 Ereignisse, 1 Sonde mit 145 Zuständen, 4 Fahrten mit 33 Stationen — 57 / 145 / 4 / 33
+[ok]     Ereignisse aus der DB = eingebauter Satz (Zeit, Art, Text, Mond/Ring) — 57 gleich
+[ok]     Voyager 2 aus der DB = eingebaute Hyperbel — q = 107.154,158 km, e = 5,014191689
+[ok]     Hyperbel trifft die 145 Vektoren aus URA_CRAFT_STATE wie gespeichert (fit_max_km) — 145 Vektoren, größte Abweichung 165,4 km
+[ok]     Fahrten aus der DB = eingebaute Kopie (alle Stationen, Schalter, Texte) — 4 gleich
+[ok]     Ringe mit Entdeckungsjahr und Entdecker aus der DB — 13 von 13
+--- 6. Spielwiese
+[ok]     5 eingebaute Szenarien mit 75 Körpern — 5 / 75
+[ok]     Masse: 24 Monde mit angenommener Dichte 1,3 g/cm³, Uranus und 5 gemessen — 24 / 6
+[ok]     Szenarien aus der DB = eingebaute Kopie (alle Zustandsvektoren exakt) — 5 gleich
+[ok]     Energie in PL/SQL = Java (alle 5 Szenarien) — größte relative Abweichung 2,2e-16
+[ok]     Eigenes Szenario speichern und zurücklesen: derselbe Zustand — 15 Körper
+[ok]     … Energie in PL/SQL wie gespeichert
+[ok]     … und wieder löschen (mit Körpern)
+--- 7. Regeln des Schemas (Transaktion wird zurückgerollt)
+[ok]     Zweite gültige Bahn für Ariel wird abgewiesen — ORA-00001 Unique Constraint (DEMO.URA_ORBIT_CUR_UX) verletzt https://docs.oracle.com/error-help/db/ora-00001/
+[ok]     Exzentrizität 1,2 wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_ORBIT_E_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Laplace-Bahn ohne Pol wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_ORBIT_POLE_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Ring mit größter Breite unter der kleinsten wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_RING_W_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Mond ohne Planet wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_BODY_PARENT_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Unbekannter Körper: ORA-20002 aus position_at — ORA-20002 Keine Bahn für Vulkan (gültige Bahn) ORA-06512: in "DEMO.URA_API", Zeile 231 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20002/
+[ok]     Unbekannte Quelle: ORA-20001 aus put_orbit — ORA-20001 Unbekannte Quelle: NIRGENDS ORA-06512: in "DEMO.URA_API", Zeile 337 ORA-06512: in "DEMO.URA_API", Zeile 388 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20001/
+[ok]     put_orbit wechselt die gültige Bahn: weiterhin genau eine
+[ok]     Sonde mit e = 0,9 (Ellipse statt Vorbeiflug) wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_CRAFT_E_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Szenario-Körper mit unbekannter Rolle wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_SB_ROLE_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Negative Masse wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_SB_MASS_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Gast mit Verweis auf einen echten Mond wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_SB_GUEST_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Dichte neben gemessener Masse wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_BODY_DENS_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Eingebautes Szenario löschen: ORA-20005 — ORA-20005 Eingebautes Szenario kann nicht gelöscht werden: HEUTE ORA-06512: in "DEMO.URA_API", Zeile 660 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20005/
+[ok]     Eingebautes als eigenes überschreiben: ORA-20005 — ORA-20005 Eingebautes Szenario kann nicht überschrieben werden: HEUTE ORA-06512: in "DEMO.URA_API", Zeile 622 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20005/
+[ok]     Szenario löschen nimmt seine Körper mit (ON DELETE CASCADE) — 61 Körper übrig
+[ok]     Station mit Abstand 0 wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_STEP_CAM_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Ereignis mit Mond UND Ring wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_EVENT_ONE_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Doppelter Ereignistitel wird abgewiesen — ORA-00001 Unique Constraint (DEMO.URA_EVENT_TITLE_UQ) verletzt https://docs.oracle.com/error-help/db/ora-00001/
+[ok]     Unbekannte Fahrt: ORA-20001 aus put_tour_step — ORA-20001 Unbekannte Fahrt: NIRGENDS ORA-06512: in "DEMO.URA_API", Zeile 465 ORA-06512: in "DEMO.URA_API", Zeile 547 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20001/
+[ok]     Fahrt löschen nimmt ihre Stationen mit (ON DELETE CASCADE) — 25 Stationen übrig
+[ok]     Nach dem Zurückrollen ist Ariels angeglichene Bahn wieder gültig
+--- 8. Gegenprobe mit SOLAR_BODY (FCurvedField)
+[ok]     Monde in beiden Schemata: große Halbachse stimmt auf 1 % — 2 Monde · Oberon 0,01 %  Titania 0,22 %
+[info]   Uranus-Radius — 25362 km (SOLAR_BODY, mittlerer) gegen 25559 km (URA_BODY, Äquator) — beides richtig, verschiedene Definition
+
+================================================= Lauf 2 von 2
+--- 1. Bestand
+[ok]     Quellen (6 Bahnen/Ringe + 3 Geschichten)
+[ok]     Keine eigenen Szenarien übrig (von früheren Prüfläufen)
+[ok]     Uranus und 29 Monde
+[ok]     58 Bahnen, 29 davon gültig — 58 / 29
+[ok]     Gültig: 28 angeglichen, S/2025 U1 als JPL-Mittelwert — 28 angeglichen
+[ok]     13 Ringe
+[ok]     Keine ungültigen Uranus-Objekte
+[ok]     Griechische Ringnamen unverändert gespeichert
+[ok]     Virtuelle Spalte mass_kg: Titania 3,4·10²¹ kg, Cupid ohne GM → NULL
+--- 2. Was die App lädt
+[ok]     App-Weg: Datensatz kommt aus der Datenbank — Datenbank DEMO · URA_API 1.2 · 30 Körper · 29 gültige Bahnen (28 angeglichen) aus 58 · 13 Ringe · 57 Ereignisse · 4 Fahrten · 5 Szenarien
+[ok]     Datenbank = eingebauter Satz (29 Monde, alle Bahnelemente) — 29 gleich
+[ok]     Ringe = eingebauter Satz, gleiche Reihenfolge — 13 gleich
+--- 3. PL/SQL rechnet wie Java
+[ok]     position_at = OrbitElements.position (29 Monde × 3 Zeitpunkte) — 87 Vergleiche, größter Abstand 1,69e-06 km (Cordelia)
+[ok]     position_at mit Quelle: veröffentlichte URA184-Bahn abrufbar
+--- 4. Gegen Horizons
+[ok]     Bahnen aus der Datenbank folgen Horizons 1975–2030 — größte Abweichung Haupt 2,29°, innere 5,45°, irreguläre 23,35°
+[ok]     Abweichung je Bahn in fit_max_deg hinterlegt — 28 Bahnen
+[ok]     Quellen nebeneinander abrufbar: 14 Bahnen aus URA184 — 14
+--- 5. Geschichten
+[ok]     57 Ereignisse, 1 Sonde mit 145 Zuständen, 4 Fahrten mit 33 Stationen — 57 / 145 / 4 / 33
+[ok]     Ereignisse aus der DB = eingebauter Satz (Zeit, Art, Text, Mond/Ring) — 57 gleich
+[ok]     Voyager 2 aus der DB = eingebaute Hyperbel — q = 107.154,158 km, e = 5,014191689
+[ok]     Hyperbel trifft die 145 Vektoren aus URA_CRAFT_STATE wie gespeichert (fit_max_km) — 145 Vektoren, größte Abweichung 165,4 km
+[ok]     Fahrten aus der DB = eingebaute Kopie (alle Stationen, Schalter, Texte) — 4 gleich
+[ok]     Ringe mit Entdeckungsjahr und Entdecker aus der DB — 13 von 13
+--- 6. Spielwiese
+[ok]     5 eingebaute Szenarien mit 75 Körpern — 5 / 75
+[ok]     Masse: 24 Monde mit angenommener Dichte 1,3 g/cm³, Uranus und 5 gemessen — 24 / 6
+[ok]     Szenarien aus der DB = eingebaute Kopie (alle Zustandsvektoren exakt) — 5 gleich
+[ok]     Energie in PL/SQL = Java (alle 5 Szenarien) — größte relative Abweichung 2,2e-16
+[ok]     Eigenes Szenario speichern und zurücklesen: derselbe Zustand — 15 Körper
+[ok]     … Energie in PL/SQL wie gespeichert
+[ok]     … und wieder löschen (mit Körpern)
+--- 7. Regeln des Schemas (Transaktion wird zurückgerollt)
+[ok]     Zweite gültige Bahn für Ariel wird abgewiesen — ORA-00001 Unique Constraint (DEMO.URA_ORBIT_CUR_UX) verletzt https://docs.oracle.com/error-help/db/ora-00001/
+[ok]     Exzentrizität 1,2 wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_ORBIT_E_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Laplace-Bahn ohne Pol wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_ORBIT_POLE_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Ring mit größter Breite unter der kleinsten wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_RING_W_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Mond ohne Planet wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_BODY_PARENT_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Unbekannter Körper: ORA-20002 aus position_at — ORA-20002 Keine Bahn für Vulkan (gültige Bahn) ORA-06512: in "DEMO.URA_API", Zeile 231 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20002/
+[ok]     Unbekannte Quelle: ORA-20001 aus put_orbit — ORA-20001 Unbekannte Quelle: NIRGENDS ORA-06512: in "DEMO.URA_API", Zeile 337 ORA-06512: in "DEMO.URA_API", Zeile 388 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20001/
+[ok]     put_orbit wechselt die gültige Bahn: weiterhin genau eine
+[ok]     Sonde mit e = 0,9 (Ellipse statt Vorbeiflug) wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_CRAFT_E_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Szenario-Körper mit unbekannter Rolle wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_SB_ROLE_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Negative Masse wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_SB_MASS_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Gast mit Verweis auf einen echten Mond wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_SB_GUEST_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Dichte neben gemessener Masse wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_BODY_DENS_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Eingebautes Szenario löschen: ORA-20005 — ORA-20005 Eingebautes Szenario kann nicht gelöscht werden: HEUTE ORA-06512: in "DEMO.URA_API", Zeile 660 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20005/
+[ok]     Eingebautes als eigenes überschreiben: ORA-20005 — ORA-20005 Eingebautes Szenario kann nicht überschrieben werden: HEUTE ORA-06512: in "DEMO.URA_API", Zeile 622 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20005/
+[ok]     Szenario löschen nimmt seine Körper mit (ON DELETE CASCADE) — 61 Körper übrig
+[ok]     Station mit Abstand 0 wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_STEP_CAM_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Ereignis mit Mond UND Ring wird abgewiesen — ORA-02290 CHECK-Constraint (DEMO.URA_EVENT_ONE_CK) verletzt https://docs.oracle.com/error-help/db/ora-02290/
+[ok]     Doppelter Ereignistitel wird abgewiesen — ORA-00001 Unique Constraint (DEMO.URA_EVENT_TITLE_UQ) verletzt https://docs.oracle.com/error-help/db/ora-00001/
+[ok]     Unbekannte Fahrt: ORA-20001 aus put_tour_step — ORA-20001 Unbekannte Fahrt: NIRGENDS ORA-06512: in "DEMO.URA_API", Zeile 465 ORA-06512: in "DEMO.URA_API", Zeile 547 ORA-06512: in Zeile 1 https://docs.oracle.com/error-help/db/ora-20001/
+[ok]     Fahrt löschen nimmt ihre Stationen mit (ON DELETE CASCADE) — 25 Stationen übrig
+[ok]     Nach dem Zurückrollen ist Ariels angeglichene Bahn wieder gültig
+--- 8. Gegenprobe mit SOLAR_BODY (FCurvedField)
+[ok]     Monde in beiden Schemata: große Halbachse stimmt auf 1 % — 2 Monde · Oberon 0,01 %  Titania 0,22 %
+[info]   Uranus-Radius — 25362 km (SOLAR_BODY, mittlerer) gegen 25559 km (URA_BODY, Äquator) — beides richtig, verschiedene Definition
+
+Ergebnis: 107 ok, 0 Fehler

@@ -1,0 +1,2 @@
+name;naif;tp_jd;q_km;ecc;incl_deg;node_deg;argp_deg;gm;valid_from_jd;valid_to_jd;fit_max_km;source
+Voyager 2;-32;2446455.249844111;107154.158;5.014191689;27.5541349;335.4088943;215.6536236;5793939;2446452.25;2446458.25;165.4;Horizons −32 · Hyperbel aus 145 Vektoren · Missionsentwurf, Näherung

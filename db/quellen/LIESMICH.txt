@@ -1,0 +1,53 @@
+Uranus - gesicherte Quellen (Stand 23.09.2026)
+==============================================
+
+Die Dateien hier sind die einzige Quelle für Bahnen und Ringe. tools/UraGen erzeugt daraus
+db/03_bodies.sql, db/04_orbits.sql, db/05_rings.sql und den eingebauten Datensatz der App
+(src/com/dan/uranus/model/eingebaut_*.csv). Kein Wert ist von Hand übertragen.
+
+Abgerufen wurde im eingebauten Browser der Claude-App auf diesem Rechner. Jede Datei wurde
+dort gebildet und mit SHA-256 geprüft, dann hier Byte für Byte gleich abgelegt
+(Phase5Tests prüft die Prüfsummen bei jedem Lauf).
+
+jpl_uranus_sat_elem.csv
+  JPL SSD, Planetary Satellite Mean Elements, https://ssd.jpl.nasa.gov/sats/elem/
+  Alle 30 Uranus-Zeilen (Puck steht zweimal: URA182 und URA184), Spalten wie auf der Seite.
+  SHA-256 117586215e999efbe00794669d8a7aca826f441e4d42c4e56fd01a8cc74a5a31
+  Hinweis der Seite: mittlere Elemente sind nicht für Ortsrechnungen gedacht - dafür Horizons.
+
+horizons_referenz.csv
+  JPL Horizons API (https://ssd.jpl.nasa.gov/api/horizons.api), Zentrum 500@799 (Uranus),
+  ICRF, geometrisch, km, Zeitpunkte als JD (TDB); 28 Monde, je 19 Zeitpunkte 1975-2030,
+  auf ganze km gerundet. Ephemeride laut Horizons: ura184_merged.
+  S/2025 U1 fehlt: die Nummer 75052 ist in Horizons ein Kleinplanet.
+  Gesamtdatei vor dem Entfernen der 75052-Zeilen: SHA-256 35a1bb07213ed52c02339bb9a72ca2fc562bffb34c9abfc4b6447c6259562441
+  Diese Datei:                                   SHA-256 5407970e29670cc01486c8e7ee27bde6be3553b6593296a0d13cce9afc332ddc
+
+wikipedia_uranus_ringe.csv
+  Wikipedia "Rings of Uranus", Ringtabelle, Revision 1372354849 (Stand 31.08.2026).
+  Radien Esposito 2002, Breiten Karkoschka 2001 / de Pater 2006, e und i Stone 1986 / French 1988.
+  SHA-256 943f9b598014bd8a4c9331df48a180504fc26d495938ff7b56eebda516a15d60
+
+voyager2_horizons.csv
+  JPL Horizons API, Voyager 2 (-32), Zentrum 500@799 (Uranus), ICRF, geometrisch, km und km/s,
+  145 Vektoren, stündlich vom 21.01.1986 06:00 bis 27.01.1986 06:00 (TDB). Ephemeride laut Horizons:
+  Voyager_2_ST+refit2022_m - bis 1989 ein Missionsentwurf aus Kegelschnitten, also grob.
+  tools/UraStoryGen passt daraus eine Hyperbel an (db/07_voyager.sql, eingebaut_sonden.csv).
+  SHA-256 1fd6487f8da11a2ce823acdfb8f112be47cb64f29766936bfa5b71b006dbf25d
+
+geschichten.txt
+  Bericht von tools/UraStoryGen: Hyperbel, berechnete Ereignisse des Vorbeiflugs, Jahreszeiten
+  1900-2100, Fahrten.
+
+angleich.txt
+  Bericht von tools/UraGen: Abweichung der veröffentlichten und der angeglichenen Bahnen
+  von Horizons, je Mond.
+
+Befunde beim Abgleich
+  - Die URA184-Elemente (innere Monde) treffen Horizons genau 0,01 Tage nach ihrer Epoche.
+  - Die veröffentlichten Perioden haben nur 4 Stellen; Cordelias 0,3347 d ist deutlich zu kurz
+    (Horizons: 0,335036 d). Ohne Angleich liegen die inneren Monde nach einem Jahr beliebig.
+  - Bei den irregulären Monden taugt die mittlere Anomalie nicht als Ort (bis 180° daneben).
+  - Bei mehreren Monden passt die Bahn ohne die veröffentlichte Präzession besser (auffällig: Setebos,
+    48 Jahre für Knoten und Perizentrum). UraGen rechnet beide Varianten und nimmt je Mond die bessere.
+  Der Angleich übernimmt die Form von JPL und passt nur mittlere Anomalie und Periode an.

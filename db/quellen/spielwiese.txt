@@ -1,0 +1,34 @@
+Spielwiese: eingebaute Szenarien (tools/UraPlayGen), Start 23.09.2026, 00:00 UTC
+
+Miranda fällt: bei 129.867 km von 6,680 auf 4,792 km/s abgebremst, Perizentrum 45.000 km, Roche-Grenze 63.689 km
+Besucher: Erdmasse, Hyperbel e = 4,230, q = 800.000 km, v∞ = 5 km/s, Start in 13.562.203 km mit 5,09 km/s
+
+HEUTE      Heute, frei      15 Körper · 10,00 d/s · Energie -7,214239e+28 J
+TITANIA    Schwere Titania  15 Körper · 10,00 d/s · Energie -2,307009e+30 J
+MIRANDA    Miranda fällt    15 Körper ·  0,10 d/s · Energie -7,283532e+28 J
+BESUCHER   Besucher         16 Körper · 10,00 d/s · Energie 7,475309e+31 J
+GEDRAENGE  Gedränge         14 Körper · 30,00 d/s · Energie -2,631478e+29 J
+
+Probeläufe (ohne Zeitbudget)
+  HEUTE        365 Tage in    484 ms ( 754 Tage je Rechensekunde), Energiefehler -6,0e-09
+             Miranda  nach einem Jahr 0,06° neben der Ephemeride
+             Ariel    nach einem Jahr 0,04° neben der Ephemeride
+             Umbriel  nach einem Jahr 0,13° neben der Ephemeride
+             Titania  nach einem Jahr 0,26° neben der Ephemeride
+             Oberon   nach einem Jahr 0,09° neben der Ephemeride
+  TITANIA      365 Tage in    485 ms ( 752 Tage je Rechensekunde), Energiefehler 1,0e-09
+             Miranda  danach e = 0,001, i = 4,4° (vorher e = 0,001)
+             Ariel    danach e = 0,004, i = 0,0° (vorher e = 0,001)
+             Umbriel  danach e = 0,100, i = 0,2° (vorher e = 0,004)
+             Titania  danach e = 0,006, i = 0,1° (vorher e = 0,002)
+             Oberon   danach e = 0,045, i = 0,1° (vorher e = 0,002)
+  MIRANDA        2 Tage in      9 ms ( 212 Tage je Rechensekunde), Energiefehler -7,1e-09
+                0,32 d  Miranda zerbricht bei 63.034 km (Roche-Grenze 63.689 km)
+             Trümmer von Miranda: 2500 Teilchen, Halbachsen 81.444–94.859 km
+  BESUCHER     120 Tage in    179 ms ( 669 Tage je Rechensekunde), Energiefehler 4,9e-05
+             Miranda  danach e = 0,001, i = 4,3° (vorher e = 0,001)
+             Ariel    danach e = 0,007, i = 0,1° (vorher e = 0,001)
+             Umbriel  danach e = 0,028, i = 0,3° (vorher e = 0,004)
+             Titania  danach e = 0,139, i = 1,9° (vorher e = 0,002)
+             Oberon   danach e = 0,049, i = 0,3° (vorher e = 0,002)
+  GEDRAENGE    400 Tage in   3581 ms ( 112 Tage je Rechensekunde), Energiefehler -3,5e-11

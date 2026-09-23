@@ -1,0 +1,30 @@
+Geschichten: erzeugte Daten (tools/UraStoryGen)
+
+Voyager 2: Periapsis 24. Januar 1986, 17:58 UTC (TDB-JD 2446455,249844), q = 107.154 km, e = 5,014192, i = 27,554°, Ω = 335,409°, ω = 215,654°
+  größte Abweichung von Horizons: 165,4 km (bei 21. Januar 1986, 17:59 UTC, 3.902.805 km vom Zentrum)
+
+Größte Annäherung: 24. Januar 1986, 17:58 UTC, 107.154 km vom Zentrum, 18,03 km/s
+Ringebene: 24. Januar 1986, 17:15 UTC bei 115.419 km
+  nächster Punkt zu Miranda: 24. Januar 1986, 17:02 UTC bei 29.099 km
+  nächster Punkt zu Ariel:   24. Januar 1986, 16:19 UTC bei 127.063 km
+  nächster Punkt zu Umbriel: 24. Januar 1986, 20:52 UTC bei 324.652 km
+  nächster Punkt zu Titania: 24. Januar 1986, 15:09 UTC bei 364.761 km
+  nächster Punkt zu Oberon:  24. Januar 1986, 16:10 UTC bei 470.074 km
+Uranusschatten: 24. Januar 1986, 20:25 UTC bis 24. Januar 1986, 21:41 UTC
+
+Sonnenwende: 21. September 1901, 82,2° Süd
+Tagundnachtgleiche: 2. Dezember 1923
+Sonnenwende: 4. April 1946, 82,2° Nord
+Tagundnachtgleiche: 25. Januar 1966
+Sonnenwende: 29. September 1985, 82,2° Süd
+Tagundnachtgleiche: 5. Dezember 2007
+Sonnenwende: 10. April 2030, 82,2° Nord
+Tagundnachtgleiche: 3. Februar 2050
+Sonnenwende: 6. Oktober 2069, 82,2° Süd
+Tagundnachtgleiche: 9. Dezember 2091
+
+57 Ereignisse
+Fahrt VOYAGER     8 Stationen, 82 s
+Fahrt JAHR        6 Stationen, 90 s
+Fahrt ENTDECKUNG 11 Stationen, 92 s
+Fahrt RUNDFLUG    8 Stationen, 92 s

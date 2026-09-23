@@ -1,0 +1,56 @@
+Phase 6 — Geschichten (ohne Verbindung)
+[ok]     Voyager-Vektoren unverändert (SHA-256 wie im Browser berechnet) — 1fd6487f8da11a2c…
+[ok]     Horizons: 145 Vektoren, stündlich 21.–27.01.1986 — 145 Zeilen
+[ok]     Eingebaute Sonde Voyager 2 (NAIF −32, Hyperbel e > 1) — e = 5,014192
+[ok]     Hyperbel trifft alle 145 Vektoren besser als 200 km — größte Abweichung 165,4 km am 21.01.1986 17:59 UTC
+[ok]     Angegebene Abweichung (fit_max) stimmt — 165,4 km gerechnet, 165,4 km gespeichert
+[ok]     Größte Annäherung am 24.01.1986 um 17:58/17:59 UTC — 24.01.1986 17:58 UTC
+[ok]     Abstand dabei ≈ 107.000 km (Literatur 107.000 km vom Zentrum) — 107.154 km
+[ok]     Horizons selbst: um 18:00 TDB auch ≈ q (Daten, nicht nur Anpassung) — 107.154 km
+[ok]     Geschwindigkeit dabei ≈ 18 km/s (Vis-viva) — 18,03 km/s
+[ok]     Zeitraum der Hyperbel: 21.–27. Januar 1986
+[ok]     1900–2100: 5 Tagundnachtgleichen, Sonne dort über dem Äquator (< 0,02°) — 5 gefunden 
+[ok]     1900–2100: 5 Sonnenwenden, Sonne dort am weitesten vom Äquator (82,2°) — 5 gefunden 
+[ok]     Tagundnachtgleiche 2007 im Dezember 2007 — 05.12.2007 21:29 UTC
+[ok]     Sonnenwende 2030 im April 2030, Sonne über Nord — 10.04.2030 22:41 UTC
+[ok]     57 Ereignisse: 43 Entdeckungen, 4 Vorbeiflug, 10 Jahreszeiten — 57 {DISCOVERY=43, FLYBY=4, SEASON=10}
+[ok]     Ereignisse zeitlich geordnet, Monde und Ringe existieren
+[ok]     Jede Entdeckung einmal: 29 Monde, 13 Ringe (+ Uranus) — 29 Monde, 13 Ringe
+[ok]     Ringe haben Entdeckungsjahr und Entdecker — ε 1977 · λ 1986 · ν 2003
+[ok]     4 Fahrten, 33 Stationen — [VOYAGER, JAHR, ENTDECKUNG, RUNDFLUG], 33
+[ok]     Alle Ziele existieren (Uranus, Monde, Sonde)
+[ok]     Alle Schalter bekannt und lesbar
+[ok]     Uhr- und Erzählfahrten haben an jeder Station eine Zeit
+[ok]     Voyager-Fahrt: Zeiten innerhalb der Hyperbel
+[ok]     Fahrt startet und meldet sich (tourRunning) — VOYAGER
+[ok]     Station 1 setzt die Ebenen (moons=1) — moonLevel 1
+[ok]     Kamera folgt der Sonde (Ziel am Streckenende auf Voyager 2) — 0,0000 Welteinheiten
+[ok]     Uhr erreicht bei 50 s die größte Annäherung — 24.01.1986 17:58 UTC (Abweichung 0,00 s)
+[ok]     Sonde im Bild vorhanden (Hyperbel gilt)
+[ok]     Leertaste hält die Fahrt an: Fahrtzeit und Uhr stehen — t = 50,00 s
+[ok]     … und läuft weiter — t = 51,00 s
+[ok]     Esc beendet die Fahrt
+[ok]     Nach der Fahrt: Ebenen wie vorher — moonLevel 0
+[ok]     Nach der Fahrt: Uhr zurück auf das Ausgangsdatum, Tempo wie vorher — 23.09.2026 00:36 UTC
+[ok]     Erzählzeit 1900: genau vier Monde sichtbar (Titania, Oberon, Ariel, Umbriel) — 1901,3: [Ariel, Umbriel, Titania, Oberon]
+[ok]     Erzählzeit 1900: keine Ringe — 0 sichtbar
+[ok]     Verborgene Monde sind nicht anklickbar — 4 anklickbar
+[ok]     Nach Voyager (Erzählzeit 1986): ε, λ, ζ und Puck da, ν und Caliban noch nicht — ε 1,00 λ 1,00 ν 0,00 Caliban 0,00
+[ok]     Nach der Fahrt ist wieder alles sichtbar
+[ok]     Ein Uranusjahr: Monde ausgeblendet, keine anklickbar — 0 anklickbar
+[ok]     Ein Uranusjahr: Achse an
+[ok]     Bei 60 s steht die Uhr auf der Tagundnachtgleiche 2007 — 05.12.2007 21:29 UTC, Sonne über -0,000°
+[ok]     Danach: Monde wieder da, Achse aus — 5 anklickbar
+[ok]     Rundflug: bei 70 s im ε-Ring
+[ok]     Rundflug: bei 88 s wieder draußen
+[ok]     Rundflug endet von selbst
+[ok]     Ringflug-Knopf während einer Fahrt: Fahrt endet, Ringflug bleibt
+[ok]     06_events.sql: 3 Quellen, 57 Ereignisse — 3 / 57
+[ok]     07_voyager.sql: 1 Sonde, 145 Zustände — 1 / 145
+[ok]     08_tours.sql: 4 Fahrten, 33 Stationen — 4 / 33
+[ok]     Keine Kennwörter in den Skripten
+[ok]     Alle Texte der Skripte 03–08 passen in ihre Spalten (UTF-8-Bytes) — 801 Texte, am knappsten ura_source.sha256 64/64
+[ok]     Ereignisse mit gleichem Zeitpunkt kommen in Ladereihenfolge (nicht nach Titel)
+[ok]     Package 1.1 mit Geschichten-Schnittstelle
+
+Ergebnis: 53 ok, 0 Fehler

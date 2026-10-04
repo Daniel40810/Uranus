@@ -8,6 +8,7 @@ Java 21 · Swing · FStyle · Oracle 21c (optional). Paket `com.dan.uranus`, Hau
 
 - **Aus NetBeans:** Projekt öffnen und „Run“. Die Hauptklasse ist eingetragen.
 - **Aus `dist`:** Nach „Clean and Build“ liegt `dist\Uranus.jar` mit `dist\lib\` bereit. Doppelklick auf die jar oder `java -jar dist\Uranus.jar`.
+- **Verknüpfung:** `Verknuepfung.bat` (Doppelklick) legt auf dem Desktop die Verknüpfung „Uranus“ mit dem Programmsymbol an. Sie startet `javaw -Xmx2g -jar dist\Uranus.jar` im Projektordner, also ohne Konsolenfenster und mit Zugriff auf `uranus-db.properties`. Gesucht wird `javaw.exe` über `JAVA_HOME`, sonst über den Pfad.
 - Die App startet sofort mit dem eingebauten Datensatz. Ist eine Datenbank eingerichtet, lädt sie im Hintergrund, und die Monde gleiten auf ihre Lage aus der Datenbank. Reihe 1 zeigt „Daten: Datenbank DEMO“ oder „Daten: eingebaut“; der Tooltip nennt den Grund.
 
 ## Bedienung
@@ -41,6 +42,8 @@ Java 21 · Swing · FStyle · Oracle 21c (optional). Paket `com.dan.uranus`, Hau
 **Standbilder** landen als PNG in doppelter Fenstergröße (höchstens 3 840 px breit) in `Bilder\Uranus` (`%USERPROFILE%\Pictures\Uranus`, anderer Ordner mit `-Duranus.bilder=...`). Datum der Szene, Sonnenstand und Einstellungen stehen als Textfelder im PNG.
 
 **Einstellungen** (Fenster, Raum, Maßstab, Monde, Ebenen, Tempo) werden beim Beenden gemerkt, unter Windows in der Registry unter `HKCU\Software\JavaSoft\Prefs\com\dan\uranus`. Datum, Geschichte und Spielwiese nicht: jeder Start beginnt in der Gegenwart.
+
+**Programmsymbol:** gemalt wie alles andere (`UranusApp.icons()`): eine Kachel mit Nachthimmel und Goldkante, darin Uranus mit fast senkrechtem Ring; bis 32 px eine grobe Fassung ohne Kante. Fenster und Taskleiste bekommen es von allein. `icon\uranus.ico` (9 Größen von 16 bis 256 px) und `icon\uranus-256.png` erzeugt `tools\IconExport` (`java -cp build\classes;build\tools;lib\FStyle.jar IconExport .` im Projektordner; die Dateien liegen schon bei).
 
 **Protokoll:** `%USERPROFILE%\.uranus\uranus.log` (bei 1 MB wird eine Vorgängerdatei `uranus.log.1` angelegt). Fehler beim Zeichnen erscheinen zusätzlich als Zeile im Bild.
 
@@ -94,7 +97,8 @@ Die Oberflächenprüfung benutzt einen eigenen Einstellungsknoten und einen eige
 | `render` | Renderer, eigener Render-Thread (RenderLoop), Himmel, Planet, Monde, Magnetosphäre, Lichtbahnen, Ringflug, Nachbearbeitung, Karten, Hilfe |
 | `db` | UranusDb (Verbindungsdatei), UranusDao (URA_API → UranusSystem) |
 | `ui` | UranusView: Bild zeigen, Maus und Tasten |
-| `tools/` | Prüfprogramme, Erzeuger der Skripte (UraGen, UraStoryGen, UraPlayGen), Einrichtung und Durchstich |
+| `tools/` | Prüfprogramme, Erzeuger der Skripte (UraGen, UraStoryGen, UraPlayGen), Einrichtung und Durchstich, IconExport |
+| `icon/` | `uranus.ico` und `uranus-256.png` (Programmsymbol) |
 | `db/` | Skripte 00–09, `quellen/` mit den gesicherten Rohdaten und Berichten |
 
 Weltkoordinaten: y = Nordpol nach IAU, x = Knoten des Uranusäquators auf dem ICRF-Äquator, z = x × y. Die Monde laufen rückläufig um +y.

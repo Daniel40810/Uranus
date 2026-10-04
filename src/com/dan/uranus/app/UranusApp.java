@@ -190,32 +190,135 @@ public final class UranusApp {
 
     public UranusView view() { return view; }
 
-    /** Fenstersymbol: Uranus mit fast senkrechtem Ring, in mehreren Größen für Titel und Taskleiste. */
+    /** Größen des Fenstersymbols (und von uranus.ico). */
+    public static final int[] ICON_SIZES = {16, 20, 24, 32, 40, 48, 64, 128, 256};
+
+    /**
+     * Fenstersymbol und uranus.ico: Kachel mit Goldkante (wie Heidelberg), darin Uranus mit fast senkrechtem Ring.
+     * Einmal groß gezeichnet (1 024 px) und schrittweise verkleinert; bis 32 px die grobe Fassung ohne Kante.
+     */
     public static java.util.List<java.awt.Image> icons() {
+        java.awt.image.BufferedImage full = iconTile(1024, false), coarse = iconTile(1024, true);
         java.util.List<java.awt.Image> l = new java.util.ArrayList<>();
-        for (int n : new int[]{16, 20, 24, 32, 40, 48, 64, 128, 256}) {
-            java.awt.image.BufferedImage im = new java.awt.image.BufferedImage(n, n, java.awt.image.BufferedImage.TYPE_INT_ARGB);
-            java.awt.Graphics2D g = im.createGraphics();
-            g.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
-            g.setRenderingHint(java.awt.RenderingHints.KEY_STROKE_CONTROL, java.awt.RenderingHints.VALUE_STROKE_PURE);
-            double c = n / 2.0, r = n * 0.30;
-            java.awt.geom.AffineTransform tilt = java.awt.geom.AffineTransform.getRotateInstance(Math.toRadians(-8), c, c);
-            java.awt.Shape ring = tilt.createTransformedShape(new java.awt.geom.Ellipse2D.Double(c - n * 0.15, c - n * 0.47, n * 0.30, n * 0.94));
-            g.setStroke(new java.awt.BasicStroke((float) Math.max(1.2, n / 22.0)));
-            g.setColor(new Color(170, 226, 232, 150));
-            g.setClip(new java.awt.Rectangle(0, 0, n, (int) Math.round(c)));
-            g.draw(ring);                                           // hinten (obere Hälfte liegt hinter dem Planeten)
-            g.setClip(null);
-            g.setPaint(new java.awt.RadialGradientPaint(new java.awt.geom.Point2D.Double(c - r * 0.35, c - r * 0.35), (float) (r * 1.4),
-                    new float[]{0f, 0.55f, 1f}, new Color[]{new Color(196, 242, 246), new Color(104, 196, 208), new Color(36, 92, 110)}));
-            g.fill(new java.awt.geom.Ellipse2D.Double(c - r, c - r, 2 * r, 2 * r));
-            g.setColor(new Color(200, 238, 242, 230));
-            g.setClip(new java.awt.Rectangle(0, (int) Math.round(c), n, n));
-            g.draw(ring);                                           // vorn
-            g.dispose();
-            l.add(im);
-        }
+        for (int n : ICON_SIZES) l.add(shrink(n <= 32 ? coarse : full, n));
         return l;
+    }
+
+    /** Goldkante wie beim Heidelberg-Symbol. */
+    static final Color ICON_GOLD = new Color(236, 192, 100);
+
+    /**
+     * Programmsymbol als Kachel wie beim Heidelberg-Projekt: abgerundetes Quadrat mit Nachthimmel, darin Uranus
+     * mit Ring, eingefasst von einer Goldkante. coarse = grobe Fassung für 32 px und kleiner: ohne Kante,
+     * Sterne und Bänder, Planet größer, damit es in der Taskleiste lesbar bleibt.
+     */
+    public static java.awt.image.BufferedImage iconTile(int n, boolean coarse) {
+        java.awt.image.BufferedImage im = new java.awt.image.BufferedImage(n, n, java.awt.image.BufferedImage.TYPE_INT_ARGB);
+        java.awt.Graphics2D g = im.createGraphics();
+        g.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+        g.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING, java.awt.RenderingHints.VALUE_RENDER_QUALITY);
+        g.setRenderingHint(java.awt.RenderingHints.KEY_INTERPOLATION, java.awt.RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+        double inset = n * (coarse ? 0.01 : 0.0234), side = n - 2 * inset, arc = n * 0.24;
+        java.awt.geom.RoundRectangle2D tile = new java.awt.geom.RoundRectangle2D.Double(inset, inset, side, side, arc, arc);
+        // Nachthimmel: oben tiefes Blau, unten etwas heller, hinter dem Planeten ein kühler Schein
+        g.setPaint(new java.awt.GradientPaint(0, (float) inset, new Color(10, 16, 40), 0, (float) (n - inset), new Color(22, 46, 76)));
+        g.fill(tile);
+        g.setClip(tile);
+        g.setPaint(new java.awt.RadialGradientPaint(new java.awt.geom.Point2D.Double(n * 0.5, n * 0.5), (float) (n * 0.48),
+                new float[]{0f, 1f}, new Color[]{new Color(110, 200, 214, coarse ? 70 : 90), new Color(110, 200, 214, 0)}));
+        g.fill(tile);
+        if (!coarse) {                                              // ein paar feste Sterne
+            java.util.Random rnd = new java.util.Random(1781);
+            for (int k = 0; k < 46; k++) {
+                double x = inset + rnd.nextDouble() * side, y = inset + rnd.nextDouble() * side;
+                if (Math.hypot(x - n / 2.0, y - n / 2.0) < n * 0.36) continue;
+                double r = n * (0.003 + 0.006 * Math.pow(rnd.nextDouble(), 3));
+                g.setColor(new Color(220, 236, 255, 120 + rnd.nextInt(130)));
+                g.fill(new java.awt.geom.Ellipse2D.Double(x - r, y - r, 2 * r, 2 * r));
+            }
+        }
+        // Planet mit Ring, auf die Kachel verkleinert
+        double scale = coarse ? 1.0 : 0.8;
+        java.awt.image.BufferedImage planet = iconMaster(n, coarse);
+        int pw = (int) Math.round(n * scale);
+        g.drawImage(planet, (n - pw) / 2, (n - pw) / 2, pw, pw, null);
+        g.setClip(null);
+        if (!coarse) {
+            double w = n * 0.0195;                                  // 5 px bei 256 px
+            g.setStroke(new java.awt.BasicStroke((float) w));
+            g.setColor(ICON_GOLD);
+            g.draw(new java.awt.geom.RoundRectangle2D.Double(inset + w / 2, inset + w / 2, side - w, side - w, arc - w, arc - w));
+        }
+        g.dispose();
+        return im;
+    }
+
+    /** Das Motiv in Größe n × n (ARGB). */
+    public static java.awt.image.BufferedImage iconMaster(int n) { return iconMaster(n, false); }
+
+    /** Das Motiv; coarse = kräftigere Linien und keine Bänder (für kleine Größen). */
+    public static java.awt.image.BufferedImage iconMaster(int n, boolean coarse) {
+        java.awt.image.BufferedImage im = new java.awt.image.BufferedImage(n, n, java.awt.image.BufferedImage.TYPE_INT_ARGB);
+        java.awt.Graphics2D g = im.createGraphics();
+        g.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+        g.setRenderingHint(java.awt.RenderingHints.KEY_STROKE_CONTROL, java.awt.RenderingHints.VALUE_STROKE_PURE);
+        g.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING, java.awt.RenderingHints.VALUE_RENDER_QUALITY);
+        double c = n / 2.0, r = n * 0.315;
+        java.awt.geom.Ellipse2D ring = new java.awt.geom.Ellipse2D.Double(c - n * 0.145, c - n * 0.43, n * 0.29, n * 0.86);
+        java.awt.geom.AffineTransform tilt = java.awt.geom.AffineTransform.getRotateInstance(Math.toRadians(-14), c, c);
+        java.awt.Shape ringT = tilt.createTransformedShape(ring);
+        // Hälften des Rings im gekippten Rahmen: rechts liegt hinter, links vor dem Planeten
+        java.awt.Shape backHalf = tilt.createTransformedShape(new java.awt.geom.Rectangle2D.Double(c, -n, 2 * n, 3 * n));
+        java.awt.Shape frontHalf = tilt.createTransformedShape(new java.awt.geom.Rectangle2D.Double(-2 * n, -n, 2 * n + c, 3 * n));
+        java.awt.BasicStroke edge = new java.awt.BasicStroke((float) (n * (coarse ? 0.10 : 0.075)), java.awt.BasicStroke.CAP_ROUND, java.awt.BasicStroke.JOIN_ROUND);
+        java.awt.BasicStroke band = new java.awt.BasicStroke((float) (n * (coarse ? 0.06 : 0.042)), java.awt.BasicStroke.CAP_ROUND, java.awt.BasicStroke.JOIN_ROUND);
+        // hinten
+        g.setClip(backHalf);
+        g.setStroke(edge); g.setColor(new Color(10, 34, 44, 200)); g.draw(ringT);
+        g.setStroke(band); g.setColor(new Color(150, 214, 222)); g.draw(ringT);
+        g.setClip(null);
+        // Planet mit dunklem Rand
+        java.awt.geom.Ellipse2D ball = new java.awt.geom.Ellipse2D.Double(c - r, c - r, 2 * r, 2 * r);
+        g.setColor(new Color(12, 40, 52));
+        g.fill(new java.awt.geom.Ellipse2D.Double(c - r * 1.045, c - r * 1.045, 2 * r * 1.045, 2 * r * 1.045));
+        g.setPaint(new java.awt.RadialGradientPaint(new java.awt.geom.Point2D.Double(c - r * 0.38, c - r * 0.42), (float) (r * 1.55),
+                new float[]{0f, 0.45f, 0.8f, 1f}, new Color[]{new Color(214, 248, 250), new Color(122, 210, 222), new Color(58, 144, 162), new Color(26, 78, 96)}));
+        g.fill(ball);
+        // feine Bänder, nur in großen Größen sichtbar
+        if (!coarse) {
+        g.setClip(ball);
+        g.setStroke(new java.awt.BasicStroke((float) (n * 0.012)));
+        g.setColor(new Color(255, 255, 255, 34));
+        for (int k = -2; k <= 2; k++) {
+            double y = c + k * r * 0.34;
+            g.draw(tilt.createTransformedShape(new java.awt.geom.Line2D.Double(c - r * 1.2, y, c + r * 1.2, y)));
+        }
+        g.setClip(null);
+        }
+        // vorn
+        g.setClip(frontHalf);
+        g.setStroke(edge); g.setColor(new Color(10, 34, 44, 220)); g.draw(ringT);
+        g.setStroke(band); g.setColor(new Color(214, 244, 246)); g.draw(ringT);
+        g.setClip(null);
+        g.dispose();
+        return im;
+    }
+
+    /** Schrittweise halbieren (bilinear), dann auf n: sauberer als ein einziger großer Schritt. */
+    static java.awt.image.BufferedImage shrink(java.awt.image.BufferedImage src, int n) {
+        java.awt.image.BufferedImage cur = src;
+        while (cur.getWidth() / 2 >= n) cur = scale(cur, cur.getWidth() / 2);
+        return cur.getWidth() == n ? cur : scale(cur, n);
+    }
+
+    private static java.awt.image.BufferedImage scale(java.awt.image.BufferedImage src, int n) {
+        java.awt.image.BufferedImage out = new java.awt.image.BufferedImage(n, n, java.awt.image.BufferedImage.TYPE_INT_ARGB);
+        java.awt.Graphics2D g = out.createGraphics();
+        g.setRenderingHint(java.awt.RenderingHints.KEY_INTERPOLATION, java.awt.RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        g.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING, java.awt.RenderingHints.VALUE_RENDER_QUALITY);
+        g.drawImage(src, 0, 0, n, n, null);
+        g.dispose();
+        return out;
     }
 
     public FFrame frame() { return frame; }
